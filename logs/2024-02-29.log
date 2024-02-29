@@ -1,0 +1,1039 @@
+2024-02-29 10:29:33 I/main: Starting mirai-console...
+2024-02-29 10:29:33 I/main: 
+
+===================================[ Mirai console 2.16.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2024-02-29 10:29:33 I/main: Backend: version 2.16.0, built on 2023-10-19 22:28:10.
+2024-02-29 10:29:33 I/main: Frontend Terminal: version 2.16.0, provided by Mamoe Technologies
+2024-02-29 10:29:33 I/main: Welcome to visit https://mirai.mamoe.net/
+2024-02-29 10:30:01 I/plugin: Successfully loaded plugin MCL Addon v2.1.1
+2024-02-29 10:30:01 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2024-02-29 10:30:01 I/MCL Addon: iTXTech MCL Version: 2.1.2-61c8bd8
+2024-02-29 10:30:01 W/MCL Addon: iTXTech Soyuz 未安装，Soyuz MCL Handler 特性已禁用
+2024-02-29 10:30:01 I/main: 2 plugin(s) enabled.
+2024-02-29 10:32:10 I/main: mirai-console started successfully.
+2024-02-29 10:33:10 I/main: Starting mirai-console...
+2024-02-29 10:33:10 I/main: 
+
+===================================[ Mirai console 2.16.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2024-02-29 10:33:10 I/main: Backend: version 2.16.0, built on 2023-10-19 22:28:10.
+2024-02-29 10:33:10 I/main: Frontend Terminal: version 2.16.0, provided by Mamoe Technologies
+2024-02-29 10:33:10 I/main: Welcome to visit https://mirai.mamoe.net/
+2024-02-29 10:34:11 I/plugin: Successfully loaded plugin mirai-api-http v2.9.1
+2024-02-29 10:34:11 I/plugin: Successfully loaded plugin MCL Addon v2.1.1
+2024-02-29 10:34:12 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2024-02-29 10:34:12 W/mirai-api-http: USING INITIAL KEY, please edit the key
+2024-02-29 10:34:12 I/Mirai HTTP API: ********************************************************
+2024-02-29 10:34:12 I/MahKtorAdapter[http]: Autoreload is disabled because the development mode is off.
+2024-02-29 10:34:12 I/MahKtorAdapter[http]: Application started in 0.11 seconds.
+2024-02-29 10:34:12 E/mirai-api-http: kotlinx.coroutines.JobCancellationException: LazyStandaloneCoroutine is cancelling; job=LazyStandaloneCoroutine{Cancelling}@770cae59
+kotlinx.coroutines.JobCancellationException: LazyStandaloneCoroutine is cancelling; job=LazyStandaloneCoroutine{Cancelling}@770cae59
+Caused by: java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Unknown Source)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(Unknown Source)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at mirai-api-http-2.9.1.mirai2.jar[shared]//io.ktor.network.sockets.ConnectUtilsJvmKt.bind(ConnectUtilsJvm.kt:35)
+	at mirai-api-http-2.9.1.mirai2.jar[shared]//io.ktor.network.sockets.TcpSocketBuilder.bind(TcpSocketBuilder.kt:45)
+	at mirai-api-http-2.9.1.mirai2.jar[shared]//io.ktor.network.sockets.TcpSocketBuilder.bind(TcpSocketBuilder.kt:29)
+	at mirai-api-http-2.9.1.mirai2.jar[shared]//io.ktor.network.sockets.TcpSocketBuilder.bind$default(TcpSocketBuilder.kt:25)
+	at mirai-api-http-2.9.1.mirai2.jar[shared]//io.ktor.server.cio.backend.HttpServerKt$httpServer$acceptJob$1.invokeSuspend(HttpServer.kt:48)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.internal.LimitedDispatcher.run(LimitedDispatcher.kt:42)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:95)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+
+2024-02-29 10:34:12 I/MCL Addon: iTXTech MCL Version: 2.1.2-61c8bd8
+2024-02-29 10:34:12 W/MCL Addon: iTXTech Soyuz 未安装，Soyuz MCL Handler 特性已禁用
+2024-02-29 10:34:12 E/MahKtorAdapter[http]: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Unknown Source)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(Unknown Source)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at mirai-api-http-2.9.1.mirai2.jar[shared]//io.ktor.network.sockets.ConnectUtilsJvmKt.bind(ConnectUtilsJvm.kt:35)
+	at mirai-api-http-2.9.1.mirai2.jar[shared]//io.ktor.network.sockets.TcpSocketBuilder.bind(TcpSocketBuilder.kt:45)
+	at mirai-api-http-2.9.1.mirai2.jar[shared]//io.ktor.network.sockets.TcpSocketBuilder.bind(TcpSocketBuilder.kt:29)
+	at mirai-api-http-2.9.1.mirai2.jar[shared]//io.ktor.network.sockets.TcpSocketBuilder.bind$default(TcpSocketBuilder.kt:25)
+	at mirai-api-http-2.9.1.mirai2.jar[shared]//io.ktor.server.cio.backend.HttpServerKt$httpServer$acceptJob$1.invokeSuspend(HttpServer.kt:48)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.internal.LimitedDispatcher.run(LimitedDispatcher.kt:42)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:95)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+
+2024-02-29 10:34:12 I/main: 2 plugin(s) enabled.
+2024-02-29 10:34:12 I/main: mirai-console started successfully.
+2024-02-29 10:35:21 I/main: Starting mirai-console...
+2024-02-29 10:35:21 I/main: 
+
+===================================[ Mirai console 2.16.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2024-02-29 10:35:21 I/main: Backend: version 2.16.0, built on 2023-10-19 22:28:10.
+2024-02-29 10:35:21 I/main: Frontend Terminal: version 2.16.0, provided by Mamoe Technologies
+2024-02-29 10:35:21 I/main: Welcome to visit https://mirai.mamoe.net/
+2024-02-29 10:35:22 I/plugin: Successfully loaded plugin mirai-api-http v2.9.1
+2024-02-29 10:35:22 I/plugin: Successfully loaded plugin MCL Addon v2.1.1
+2024-02-29 10:35:22 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2024-02-29 10:35:22 W/mirai-api-http: USING INITIAL KEY, please edit the key
+2024-02-29 10:35:22 I/Mirai HTTP API: ********************************************************
+2024-02-29 10:35:22 I/MahKtorAdapter[http]: Autoreload is disabled because the development mode is off.
+2024-02-29 10:35:23 I/MahKtorAdapter[http]: Application started in 0.144 seconds.
+2024-02-29 10:35:23 E/MahKtorAdapter[http]: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Unknown Source)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(Unknown Source)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at mirai-api-http-2.9.1.mirai2.jar[shared]//io.ktor.network.sockets.ConnectUtilsJvmKt.bind(ConnectUtilsJvm.kt:35)
+	at mirai-api-http-2.9.1.mirai2.jar[shared]//io.ktor.network.sockets.TcpSocketBuilder.bind(TcpSocketBuilder.kt:45)
+	at mirai-api-http-2.9.1.mirai2.jar[shared]//io.ktor.network.sockets.TcpSocketBuilder.bind(TcpSocketBuilder.kt:29)
+	at mirai-api-http-2.9.1.mirai2.jar[shared]//io.ktor.network.sockets.TcpSocketBuilder.bind$default(TcpSocketBuilder.kt:25)
+	at mirai-api-http-2.9.1.mirai2.jar[shared]//io.ktor.server.cio.backend.HttpServerKt$httpServer$acceptJob$1.invokeSuspend(HttpServer.kt:48)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.internal.LimitedDispatcher.run(LimitedDispatcher.kt:42)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:95)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+
+2024-02-29 10:35:23 E/mirai-api-http: kotlinx.coroutines.JobCancellationException: LazyStandaloneCoroutine is cancelling; job=LazyStandaloneCoroutine{Cancelling}@167a21b
+kotlinx.coroutines.JobCancellationException: LazyStandaloneCoroutine is cancelling; job=LazyStandaloneCoroutine{Cancelling}@167a21b
+Caused by: java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Unknown Source)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(Unknown Source)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at mirai-api-http-2.9.1.mirai2.jar[shared]//io.ktor.network.sockets.ConnectUtilsJvmKt.bind(ConnectUtilsJvm.kt:35)
+	at mirai-api-http-2.9.1.mirai2.jar[shared]//io.ktor.network.sockets.TcpSocketBuilder.bind(TcpSocketBuilder.kt:45)
+	at mirai-api-http-2.9.1.mirai2.jar[shared]//io.ktor.network.sockets.TcpSocketBuilder.bind(TcpSocketBuilder.kt:29)
+	at mirai-api-http-2.9.1.mirai2.jar[shared]//io.ktor.network.sockets.TcpSocketBuilder.bind$default(TcpSocketBuilder.kt:25)
+	at mirai-api-http-2.9.1.mirai2.jar[shared]//io.ktor.server.cio.backend.HttpServerKt$httpServer$acceptJob$1.invokeSuspend(HttpServer.kt:48)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.internal.LimitedDispatcher.run(LimitedDispatcher.kt:42)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:95)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+
+2024-02-29 10:35:23 I/MCL Addon: iTXTech MCL Version: 2.1.2-61c8bd8
+2024-02-29 10:35:23 W/MCL Addon: iTXTech Soyuz 未安装，Soyuz MCL Handler 特性已禁用
+2024-02-29 10:35:23 I/main: 2 plugin(s) enabled.
+2024-02-29 10:35:23 I/main: mirai-console started successfully.
+2024-02-29 10:40:26 I/main: Starting mirai-console...
+2024-02-29 10:40:26 I/main: 
+
+===================================[ Mirai console 2.16.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2024-02-29 10:40:26 I/main: Backend: version 2.16.0, built on 2023-10-19 22:28:10.
+2024-02-29 10:40:26 I/main: Frontend Terminal: version 2.16.0, provided by Mamoe Technologies
+2024-02-29 10:40:26 I/main: Welcome to visit https://mirai.mamoe.net/
+2024-02-29 10:40:45 I/plugin: Successfully loaded plugin mirai-login-solver-sakura v0.0.12
+2024-02-29 10:40:45 I/plugin: Successfully loaded plugin mirai-api-http v2.9.1
+2024-02-29 10:40:45 I/plugin: Successfully loaded plugin MCL Addon v2.1.1
+2024-02-29 10:40:45 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2024-02-29 10:40:45 I/Mirai HTTP API: ********************************************************
+2024-02-29 10:40:45 I/MahKtorAdapter[http,ws]: Autoreload is disabled because the development mode is off.
+2024-02-29 10:40:45 I/MahKtorAdapter[http,ws]: Application started in 0.128 seconds.
+2024-02-29 10:40:45 I/MahKtorAdapter[http,ws]: Responding at http://localhost:8090
+2024-02-29 10:40:45 I/http adapter: >>> [http adapter] is listening at http://localhost:8090
+2024-02-29 10:40:45 I/ws adapter: >>> [ws adapter] is listening at ws://localhost:8090
+2024-02-29 10:40:45 I/Mirai HTTP API: Http api server is running with verifyKey: ServiceVerifyKey
+2024-02-29 10:40:45 I/Mirai HTTP API: adaptors: [http,ws]
+2024-02-29 10:40:45 I/Mirai HTTP API: ********************************************************
+2024-02-29 10:40:45 I/MCL Addon: iTXTech MCL Version: 2.1.2-61c8bd8
+2024-02-29 10:40:45 W/MCL Addon: iTXTech Soyuz 未安装，Soyuz MCL Handler 特性已禁用
+2024-02-29 10:40:45 I/main: 4 plugin(s) enabled.
+2024-02-29 10:40:45 I/main: mirai-console started successfully.
+2024-02-29 10:41:02 I/Bot.3079809050: Calculating type 2 PoW, it can take some time....
+2024-02-29 10:41:02 I/Bot.3079809050: Got PoW result, cost: 45 ms
+2024-02-29 10:42:04 I/Bot.3079809050: Bot cancelled: Bot closed
+2024-02-29 10:42:04 E/console: net.mamoe.mirai.network.BotAuthorizationException: BotAuthorization(BotAuthorization.byPassword(<ERASED>)) threw an exception during authorization process. See cause below.
+net.mamoe.mirai.network.BotAuthorizationException: BotAuthorization(BotAuthorization.byPassword(<ERASED>)) threw an exception during authorization process. See cause below.
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl.login(SsoProcessor.kt:263)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$StateConnecting$startState$2.invokeSuspend(CommonNetworkHandler.kt:247)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+	Suppressed: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3079809050), code=45, title=禁止登录, message=登录失败，请前往QQ官网im.qq.com下载最新版QQ后重试，或通过问题反馈与我们联系。, errorInfo=)
+		at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl.doLogin(SsoProcessor.kt:490)
+		at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl$doLogin$1.invokeSuspend(SsoProcessor.kt)
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+		at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+		at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+		... 5 more
+Caused by: [CIRCULAR REFERENCE: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3079809050), code=45, title=禁止登录, message=登录失败，请前往QQ官网im.qq.com下载最新版QQ后重试，或通过问题反馈与我们联系。, errorInfo=)]
+
+2024-02-29 10:43:01 I/Bot.3079809050: Calculating type 2 PoW, it can take some time....
+2024-02-29 10:43:01 I/Bot.3079809050: Got PoW result, cost: 45 ms
+2024-02-29 10:43:24 E/console: net.mamoe.mirai.network.BotAuthorizationException: BotAuthorization(BotAuthorization.byPassword(<ERASED>)) threw an exception during authorization process. See cause below.
+net.mamoe.mirai.network.BotAuthorizationException: BotAuthorization(BotAuthorization.byPassword(<ERASED>)) threw an exception during authorization process. See cause below.
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl.login(SsoProcessor.kt:263)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$StateConnecting$startState$2.invokeSuspend(CommonNetworkHandler.kt:247)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+	Suppressed: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3079809050), code=45, title=禁止登录, message=登录失败，请前往QQ官网im.qq.com下载最新版QQ后重试，或通过问题反馈与我们联系。, errorInfo=)
+		at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl.doLogin(SsoProcessor.kt:490)
+		at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl$doLogin$1.invokeSuspend(SsoProcessor.kt)
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+		at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+		at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+		... 5 more
+Caused by: [CIRCULAR REFERENCE: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3079809050), code=45, title=禁止登录, message=登录失败，请前往QQ官网im.qq.com下载最新版QQ后重试，或通过问题反馈与我们联系。, errorInfo=)]
+
+2024-02-29 10:43:24 I/Bot.3079809050: Bot cancelled: Bot closed
+2024-02-29 10:45:24 W/io.netty.channel.DefaultChannelPipeline: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.timeout.ReadTimeoutException
+
+2024-02-29 10:46:30 I/main: Starting mirai-console...
+2024-02-29 10:46:30 I/main: 
+
+===================================[ Mirai console 2.16.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2024-02-29 10:46:30 I/main: Backend: version 2.16.0, built on 2023-10-19 22:28:10.
+2024-02-29 10:46:30 I/main: Frontend Terminal: version 2.16.0, provided by Mamoe Technologies
+2024-02-29 10:46:30 I/main: Welcome to visit https://mirai.mamoe.net/
+2024-02-29 10:46:42 I/QSign: Loading QSign v1.2.1-beta-dev-d62ddce (unidbg-fetch-qsign vNull)
+2024-02-29 10:46:42 I/QSign: 正在 Mirai 2.16.0 上运行
+2024-02-29 10:46:42 I/QSign: 签名服务目录: /home/non/qqbot/bot/txlib/8.9.63
+2024-02-29 10:46:42 I/QSign: FEBound sum = 7680
+2024-02-29 10:46:42 I/QSign: 已成功读取签名服务配置
+2024-02-29 10:46:42 I/QSign:   签名协议包名: com.tencent.mobileqq
+2024-02-29 10:46:42 I/QSign:   签名服务版本: 8.9.63
+2024-02-29 10:46:42 I/QSign:   签名服务QUA: V1_AND_SQ_8.9.63_4194_YYB_D
+2024-02-29 10:46:42 I/QSign: =============================================
+2024-02-29 10:46:42 I/QSign: 已加载 ANDROID_PHONE 协议变更: 8.9.63.11390 (2023年05月26日 02:46:18)
+2024-02-29 10:46:42 I/QSign: 已加载 ANDROID_PAD 协议变更: 8.9.63.11390 (2023年05月26日 02:46:18)
+2024-02-29 10:46:42 I/QSign: 支持签名服务的协议: ANDROID_PHONE, ANDROID_PAD
+2024-02-29 10:46:42 I/QSignService: 已注册加密算法提供服务
+2024-02-29 10:46:42 I/plugin: Successfully loaded plugin QSign v1.2.1-beta-dev-d62ddce
+2024-02-29 10:46:42 I/plugin: Successfully loaded plugin mirai-login-solver-sakura v0.0.12
+2024-02-29 10:46:42 I/plugin: Successfully loaded plugin mirai-api-http v2.9.1
+2024-02-29 10:46:42 I/plugin: Successfully loaded plugin MCL Addon v2.1.1
+2024-02-29 10:46:43 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2024-02-29 10:46:43 I/Mirai HTTP API: ********************************************************
+2024-02-29 10:46:43 I/MahKtorAdapter[http,ws]: Autoreload is disabled because the development mode is off.
+2024-02-29 10:46:43 I/MahKtorAdapter[http,ws]: Application started in 0.118 seconds.
+2024-02-29 10:46:43 I/MahKtorAdapter[http,ws]: Responding at http://localhost:8090
+2024-02-29 10:46:43 I/http adapter: >>> [http adapter] is listening at http://localhost:8090
+2024-02-29 10:46:43 I/ws adapter: >>> [ws adapter] is listening at ws://localhost:8090
+2024-02-29 10:46:43 I/Mirai HTTP API: Http api server is running with verifyKey: ServiceVerifyKey
+2024-02-29 10:46:43 I/Mirai HTTP API: adaptors: [http,ws]
+2024-02-29 10:46:43 I/Mirai HTTP API: ********************************************************
+2024-02-29 10:46:43 I/MCL Addon: iTXTech MCL Version: 2.1.2-61c8bd8
+2024-02-29 10:46:43 W/MCL Addon: iTXTech Soyuz 未安装，Soyuz MCL Handler 特性已禁用
+2024-02-29 10:46:43 I/main: 5 plugin(s) enabled.
+2024-02-29 10:46:43 I/main: mirai-console started successfully.
+2024-02-29 10:46:58 W/EncryptService.alert: Encrypt service was loaded: top.mrxiaom.qsign.QSignService$Factory@10b9be07
+2024-02-29 10:46:58 W/EncryptService.alert: All outgoing message may be leaked by this service.
+2024-02-29 10:46:58 W/EncryptService.alert: Use this service if and only if you trusted this service and the service provider.
+2024-02-29 10:46:58 W/EncryptService.alert: Service details:
+2024-02-29 10:46:58 W/EncryptService.alert:   `- Jvm Class: class top.mrxiaom.qsign.QSignService$Factory
+2024-02-29 10:46:58 W/EncryptService.alert:   `- ClassLoader: JvmPluginClassLoader{qsign-1.2.1-beta-dev-d62ddce.mirai2.jar}
+2024-02-29 10:46:58 W/EncryptService.alert:   `- Source: file:/home/non/qqbot/bot/plugins/qsign-1.2.1-beta-dev-d62ddce.mirai2.jar
+2024-02-29 10:46:58 W/EncryptService.alert:   `- Protected Domain: ProtectionDomain  (file:/home/non/qqbot/bot/plugins/qsign-1.2.1-beta-dev-d62ddce.mirai2.jar <no signer certificates>)
+ JvmPluginClassLoader{qsign-1.2.1-beta-dev-d62ddce.mirai2.jar}
+ <no principals>
+ java.security.Permissions@55ed10dc (
+ ("java.io.FilePermission" "/home/non/qqbot/bot/plugins/qsign-1.2.1-beta-dev-d62ddce.mirai2.jar" "read")
+)
+
+
+2024-02-29 10:46:58 I/QSignService: register 3079809050
+2024-02-29 10:46:59 I/QSecVM: QSign-Unidbg 白名单模式
+2024-02-29 10:47:00 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly1
+2024-02-29 10:47:00 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly1
+2024-02-29 10:47:00 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 10:47:00 W/FileResolver: Couldn't find file: /sdcard/Documents/r1n9t0ne/gamefree/jly3
+2024-02-29 10:47:00 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly3
+2024-02-29 10:47:00 I/QSignService: energy 810_9
+2024-02-29 10:47:01 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly1
+2024-02-29 10:47:01 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly1
+2024-02-29 10:47:01 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 10:47:01 W/FileResolver: Couldn't find file: /sdcard/Documents/r1n9t0ne/gamefree/jly3
+2024-02-29 10:47:01 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly3
+2024-02-29 10:47:01 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly1/a
+2024-02-29 10:47:01 W/FileResolver: Couldn't find file: /system/usr/share/zoneinfo/tzdata
+2024-02-29 10:47:01 W/FileResolver: Couldn't find file: /system/usr/share/zoneinfo/tzdata
+2024-02-29 10:47:01 W/com.github.unidbg.linux.ARM64SyscallHandler: handleInterrupt intno=2, NR=88, svcNumber=0x0, PC=RX@0x40b5a23c[libc.so]0x6a23c, LR=RX@0x40859bc8[libfekit.so]0x859bc8, syscall=null
+2024-02-29 10:47:01 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 10:47:01 W/FileResolver: Couldn't find file: /sdcard/Documents/r1n9t0ne/gamefree/jly3
+2024-02-29 10:47:01 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone
+2024-02-29 10:47:01 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree
+2024-02-29 10:47:01 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 10:47:01 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3/a/tone.xml
+2024-02-29 10:47:01 W/com.github.unidbg.linux.ARM64SyscallHandler: handleInterrupt intno=2, NR=88, svcNumber=0x0, PC=RX@0x40b5a23c[libc.so]0x6a23c, LR=RX@0x4085c1d8[libfekit.so]0x85c1d8, syscall=null
+2024-02-29 10:47:02 I/Bot.3079809050: Calculating type 2 PoW, it can take some time....
+2024-02-29 10:47:02 I/Bot.3079809050: Got PoW result, cost: 78 ms
+2024-02-29 10:47:15 I/QSignService: energy 810_2
+2024-02-29 10:47:47 I/QSignService: energy 810_7
+2024-02-29 10:47:48 I/Bot.3079809050: Login successful
+2024-02-29 10:47:48 I/Bot.3079809050: Saved account secrets to local cache for fast login.
+2024-02-29 10:47:48 I/Bot.3079809050: Login successful.
+2024-02-29 10:47:48 V/Bot.3079809050: Event: BotOnlineEvent(bot=Bot(3079809050))
+2024-02-29 10:47:48 I/Bot.3079809050: Bot login successful.
+2024-02-29 10:47:58 W/console: Closing input service...
+2024-02-29 10:48:24 V/Bot.3079809050: Event: BotOfflineEvent.Active(bot=Bot(3079809050), cause=null, reconnect=false)
+2024-02-29 10:48:24 I/QSignService: destroy 3079809050
+2024-02-29 10:48:24 I/Bot.3079809050: Bot is closed manually
+2024-02-29 10:48:24 I/Bot.3079809050: Bot cancelled: Job was cancelled
+2024-02-29 10:48:55 I/main: Starting mirai-console...
+2024-02-29 10:48:55 I/main: 
+
+===================================[ Mirai console 2.16.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2024-02-29 10:48:55 I/main: Backend: version 2.16.0, built on 2023-10-19 22:28:10.
+2024-02-29 10:48:55 I/main: Frontend Terminal: version 2.16.0, provided by Mamoe Technologies
+2024-02-29 10:48:55 I/main: Welcome to visit https://mirai.mamoe.net/
+2024-02-29 10:48:56 I/QSign: Loading QSign v1.2.1-beta-dev-d62ddce (unidbg-fetch-qsign vNull)
+2024-02-29 10:48:56 I/QSign: 正在 Mirai 2.16.0 上运行
+2024-02-29 10:48:56 I/QSign: 签名服务目录: /home/non/qqbot/bot/txlib/8.9.63
+2024-02-29 10:48:56 I/QSign: FEBound sum = 7680
+2024-02-29 10:48:56 I/QSign: 已成功读取签名服务配置
+2024-02-29 10:48:56 I/QSign:   签名协议包名: com.tencent.mobileqq
+2024-02-29 10:48:56 I/QSign:   签名服务版本: 8.9.63
+2024-02-29 10:48:56 I/QSign:   签名服务QUA: V1_AND_SQ_8.9.63_4194_YYB_D
+2024-02-29 10:48:56 I/QSign: =============================================
+2024-02-29 10:48:56 I/QSign: 已加载 ANDROID_PHONE 协议变更: 8.9.63.11390 (2023年05月26日 02:46:18)
+2024-02-29 10:48:56 I/QSign: 已加载 ANDROID_PAD 协议变更: 8.9.63.11390 (2023年05月26日 02:46:18)
+2024-02-29 10:48:56 I/QSign: 支持签名服务的协议: ANDROID_PHONE, ANDROID_PAD
+2024-02-29 10:48:56 I/QSignService: 已注册加密算法提供服务
+2024-02-29 10:48:56 I/plugin: Successfully loaded plugin QSign v1.2.1-beta-dev-d62ddce
+2024-02-29 10:48:57 I/plugin: Successfully loaded plugin mirai-login-solver-sakura v0.0.12
+2024-02-29 10:48:57 I/plugin: Successfully loaded plugin mirai-api-http v2.9.1
+2024-02-29 10:48:57 I/plugin: Successfully loaded plugin MCL Addon v2.1.1
+2024-02-29 10:48:57 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2024-02-29 10:48:57 I/Mirai HTTP API: ********************************************************
+2024-02-29 10:48:57 I/MahKtorAdapter[http,ws]: Autoreload is disabled because the development mode is off.
+2024-02-29 10:48:57 I/MahKtorAdapter[http,ws]: Application started in 0.112 seconds.
+2024-02-29 10:48:57 I/MahKtorAdapter[http,ws]: Responding at http://localhost:8090
+2024-02-29 10:48:57 I/http adapter: >>> [http adapter] is listening at http://localhost:8090
+2024-02-29 10:48:57 I/ws adapter: >>> [ws adapter] is listening at ws://localhost:8090
+2024-02-29 10:48:57 I/Mirai HTTP API: Http api server is running with verifyKey: ServiceVerifyKey
+2024-02-29 10:48:57 I/Mirai HTTP API: adaptors: [http,ws]
+2024-02-29 10:48:57 I/Mirai HTTP API: ********************************************************
+2024-02-29 10:48:57 I/MCL Addon: iTXTech MCL Version: 2.1.2-61c8bd8
+2024-02-29 10:48:57 W/MCL Addon: iTXTech Soyuz 未安装，Soyuz MCL Handler 特性已禁用
+2024-02-29 10:48:57 I/main: 5 plugin(s) enabled.
+2024-02-29 10:48:57 I/main: mirai-console started successfully.
+2024-02-29 10:49:29 W/console: 参数不匹配, 你是否想执行: 
+/autoLogin add <account> <password> [passwordKind]    # 添加自动登录, passwordKind 可选 PLAIN 或 MD5
+/autoLogin clear    # 清除所有配置
+/autoLogin list    # 查看自动登录账号列表
+/autoLogin remove <account>    # 删除一个账号
+/autoLogin removeConfig <account> <configKey>    # 删除一个账号的一个配置项
+/autoLogin setConfig <account> <configKey> <value>    # 设置一个账号的一个配置项
+2024-02-29 10:49:45 W/EncryptService.alert: Encrypt service was loaded: top.mrxiaom.qsign.QSignService$Factory@724c97b5
+2024-02-29 10:49:45 W/EncryptService.alert: All outgoing message may be leaked by this service.
+2024-02-29 10:49:45 W/EncryptService.alert: Use this service if and only if you trusted this service and the service provider.
+2024-02-29 10:49:45 W/EncryptService.alert: Service details:
+2024-02-29 10:49:45 W/EncryptService.alert:   `- Jvm Class: class top.mrxiaom.qsign.QSignService$Factory
+2024-02-29 10:49:45 W/EncryptService.alert:   `- ClassLoader: JvmPluginClassLoader{qsign-1.2.1-beta-dev-d62ddce.mirai2.jar}
+2024-02-29 10:49:45 W/EncryptService.alert:   `- Source: file:/home/non/qqbot/bot/plugins/qsign-1.2.1-beta-dev-d62ddce.mirai2.jar
+2024-02-29 10:49:45 W/EncryptService.alert:   `- Protected Domain: ProtectionDomain  (file:/home/non/qqbot/bot/plugins/qsign-1.2.1-beta-dev-d62ddce.mirai2.jar <no signer certificates>)
+ JvmPluginClassLoader{qsign-1.2.1-beta-dev-d62ddce.mirai2.jar}
+ <no principals>
+ java.security.Permissions@438ef53e (
+ ("java.io.FilePermission" "/home/non/qqbot/bot/plugins/qsign-1.2.1-beta-dev-d62ddce.mirai2.jar" "read")
+)
+
+
+2024-02-29 10:49:45 I/Bot.3079809050: Loaded account secrets from local cache.
+2024-02-29 10:49:46 I/QSignService: register 3079809050
+2024-02-29 10:49:46 I/QSecVM: QSign-Unidbg 白名单模式
+2024-02-29 10:49:47 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly1
+2024-02-29 10:49:47 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly1
+2024-02-29 10:49:47 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 10:49:47 W/FileResolver: Couldn't find file: /sdcard/Documents/r1n9t0ne/gamefree/jly3
+2024-02-29 10:49:47 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly3
+2024-02-29 10:49:48 I/QSignService: energy 810_a
+2024-02-29 10:49:48 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly1
+2024-02-29 10:49:48 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly1
+2024-02-29 10:49:48 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 10:49:48 W/FileResolver: Couldn't find file: /sdcard/Documents/r1n9t0ne/gamefree/jly3
+2024-02-29 10:49:48 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly3
+2024-02-29 10:49:48 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly1/a
+2024-02-29 10:49:48 W/FileResolver: Couldn't find file: /system/usr/share/zoneinfo/tzdata
+2024-02-29 10:49:48 W/FileResolver: Couldn't find file: /system/usr/share/zoneinfo/tzdata
+2024-02-29 10:49:48 W/com.github.unidbg.linux.ARM64SyscallHandler: handleInterrupt intno=2, NR=88, svcNumber=0x0, PC=RX@0x40b5a23c[libc.so]0x6a23c, LR=RX@0x40859bc8[libfekit.so]0x859bc8, syscall=null
+2024-02-29 10:49:48 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 10:49:48 W/FileResolver: Couldn't find file: /sdcard/Documents/r1n9t0ne/gamefree/jly3
+2024-02-29 10:49:48 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone
+2024-02-29 10:49:48 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree
+2024-02-29 10:49:48 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 10:49:48 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3/a/tone.xml
+2024-02-29 10:49:48 W/com.github.unidbg.linux.ARM64SyscallHandler: handleInterrupt intno=2, NR=88, svcNumber=0x0, PC=RX@0x40b5a23c[libc.so]0x6a23c, LR=RX@0x4085c1d8[libfekit.so]0x85c1d8, syscall=null
+2024-02-29 10:49:50 I/Bot.3079809050: Saved account secrets to local cache for fast login.
+2024-02-29 10:49:50 I/Bot.3079809050: Login successful.
+2024-02-29 10:49:50 V/Bot.3079809050: Event: BotOnlineEvent(bot=Bot(3079809050))
+2024-02-29 10:49:50 I/Bot.3079809050: Bot login successful.
+2024-02-29 10:50:52 V/Bot.3079809050: Event: NewFriendRequestEvent(bot=Bot(3079809050), eventId=1709203851000000, message=我是Ivy, fromId=2579950433, fromGroupId=0, fromNick=Ivy)
+2024-02-29 10:52:54 W/console: 未知指令: /accept, 输入 ? 获取帮助
+2024-02-29 10:53:10 V/Bot.3079809050: Event: BotOfflineEvent.Active(bot=Bot(3079809050), cause=null, reconnect=false)
+2024-02-29 10:53:10 I/QSignService: destroy 3079809050
+2024-02-29 10:53:10 I/Bot.3079809050: Bot is closed manually
+2024-02-29 10:53:10 I/Bot.3079809050: Bot cancelled: Job was cancelled
+2024-02-29 10:56:14 I/main: Starting mirai-console...
+2024-02-29 10:56:14 I/main: 
+
+===================================[ Mirai console 2.16.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2024-02-29 10:56:14 I/main: Backend: version 2.16.0, built on 2023-10-19 22:28:10.
+2024-02-29 10:56:14 I/main: Frontend Terminal: version 2.16.0, provided by Mamoe Technologies
+2024-02-29 10:56:14 I/main: Welcome to visit https://mirai.mamoe.net/
+2024-02-29 10:56:15 I/QSign: Loading QSign v1.2.1-beta-dev-d62ddce (unidbg-fetch-qsign vNull)
+2024-02-29 10:56:15 I/QSign: 正在 Mirai 2.16.0 上运行
+2024-02-29 10:56:15 I/QSign: 签名服务目录: /home/non/qqbot/bot/txlib/8.9.63
+2024-02-29 10:56:15 I/QSign: FEBound sum = 7680
+2024-02-29 10:56:15 I/QSign: 已成功读取签名服务配置
+2024-02-29 10:56:15 I/QSign:   签名协议包名: com.tencent.mobileqq
+2024-02-29 10:56:15 I/QSign:   签名服务版本: 8.9.63
+2024-02-29 10:56:15 I/QSign:   签名服务QUA: V1_AND_SQ_8.9.63_4194_YYB_D
+2024-02-29 10:56:15 I/QSign: =============================================
+2024-02-29 10:56:15 I/QSign: 已加载 ANDROID_PHONE 协议变更: 8.9.63.11390 (2023年05月26日 02:46:18)
+2024-02-29 10:56:15 I/QSign: 已加载 ANDROID_PAD 协议变更: 8.9.63.11390 (2023年05月26日 02:46:18)
+2024-02-29 10:56:15 I/QSign: 支持签名服务的协议: ANDROID_PHONE, ANDROID_PAD
+2024-02-29 10:56:15 I/QSignService: 已注册加密算法提供服务
+2024-02-29 10:56:15 I/plugin: Successfully loaded plugin QSign v1.2.1-beta-dev-d62ddce
+2024-02-29 10:56:15 I/plugin: Successfully loaded plugin mirai-login-solver-sakura v0.0.12
+2024-02-29 10:56:16 I/plugin: Successfully loaded plugin mirai-api-http v2.9.1
+2024-02-29 10:56:16 I/plugin: Successfully loaded plugin MCL Addon v2.1.1
+2024-02-29 10:56:16 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2024-02-29 10:56:16 I/Mirai HTTP API: ********************************************************
+2024-02-29 10:56:16 I/MahKtorAdapter[http,ws]: Autoreload is disabled because the development mode is off.
+2024-02-29 10:56:16 I/MahKtorAdapter[http,ws]: Application started in 0.128 seconds.
+2024-02-29 10:56:16 I/MahKtorAdapter[http,ws]: Responding at http://localhost:8090
+2024-02-29 10:56:16 I/http adapter: >>> [http adapter] is listening at http://localhost:8090
+2024-02-29 10:56:16 I/ws adapter: >>> [ws adapter] is listening at ws://localhost:8090
+2024-02-29 10:56:16 I/Mirai HTTP API: Http api server is running with verifyKey: ServiceVerifyKey
+2024-02-29 10:56:16 I/Mirai HTTP API: adaptors: [http,ws]
+2024-02-29 10:56:16 I/Mirai HTTP API: ********************************************************
+2024-02-29 10:56:16 I/MCL Addon: iTXTech MCL Version: 2.1.2-61c8bd8
+2024-02-29 10:56:16 W/MCL Addon: iTXTech Soyuz 未安装，Soyuz MCL Handler 特性已禁用
+2024-02-29 10:56:16 I/main: 5 plugin(s) enabled.
+2024-02-29 10:56:16 I/main: Auto-login 3079809050, protocol: ANDROID_PHONE, heartbeatStrategy: STAT_HB
+2024-02-29 10:56:16 W/EncryptService.alert: Encrypt service was loaded: top.mrxiaom.qsign.QSignService$Factory@4c8d45cf
+2024-02-29 10:56:16 W/EncryptService.alert: All outgoing message may be leaked by this service.
+2024-02-29 10:56:16 W/EncryptService.alert: Use this service if and only if you trusted this service and the service provider.
+2024-02-29 10:56:16 W/EncryptService.alert: Service details:
+2024-02-29 10:56:16 W/EncryptService.alert:   `- Jvm Class: class top.mrxiaom.qsign.QSignService$Factory
+2024-02-29 10:56:16 W/EncryptService.alert:   `- ClassLoader: JvmPluginClassLoader{qsign-1.2.1-beta-dev-d62ddce.mirai2.jar}
+2024-02-29 10:56:16 W/EncryptService.alert:   `- Source: file:/home/non/qqbot/bot/plugins/qsign-1.2.1-beta-dev-d62ddce.mirai2.jar
+2024-02-29 10:56:16 W/EncryptService.alert:   `- Protected Domain: ProtectionDomain  (file:/home/non/qqbot/bot/plugins/qsign-1.2.1-beta-dev-d62ddce.mirai2.jar <no signer certificates>)
+ JvmPluginClassLoader{qsign-1.2.1-beta-dev-d62ddce.mirai2.jar}
+ <no principals>
+ java.security.Permissions@61b8c9de (
+ ("java.io.FilePermission" "/home/non/qqbot/bot/plugins/qsign-1.2.1-beta-dev-d62ddce.mirai2.jar" "read")
+)
+
+
+2024-02-29 10:56:17 I/Bot.3079809050: Loaded account secrets from local cache.
+2024-02-29 10:56:17 I/QSignService: register 3079809050
+2024-02-29 10:56:17 I/QSecVM: QSign-Unidbg 白名单模式
+2024-02-29 10:56:18 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly1
+2024-02-29 10:56:18 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly1
+2024-02-29 10:56:18 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 10:56:18 W/FileResolver: Couldn't find file: /sdcard/Documents/r1n9t0ne/gamefree/jly3
+2024-02-29 10:56:18 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly3
+2024-02-29 10:56:19 I/QSignService: energy 810_a
+2024-02-29 10:56:19 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly1
+2024-02-29 10:56:19 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly1
+2024-02-29 10:56:19 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 10:56:19 W/FileResolver: Couldn't find file: /sdcard/Documents/r1n9t0ne/gamefree/jly3
+2024-02-29 10:56:19 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly3
+2024-02-29 10:56:19 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly1/a
+2024-02-29 10:56:19 W/FileResolver: Couldn't find file: /system/usr/share/zoneinfo/tzdata
+2024-02-29 10:56:19 W/FileResolver: Couldn't find file: /system/usr/share/zoneinfo/tzdata
+2024-02-29 10:56:19 W/com.github.unidbg.linux.ARM64SyscallHandler: handleInterrupt intno=2, NR=88, svcNumber=0x0, PC=RX@0x40b5a23c[libc.so]0x6a23c, LR=RX@0x40859bc8[libfekit.so]0x859bc8, syscall=null
+2024-02-29 10:56:19 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 10:56:19 W/FileResolver: Couldn't find file: /sdcard/Documents/r1n9t0ne/gamefree/jly3
+2024-02-29 10:56:19 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone
+2024-02-29 10:56:19 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree
+2024-02-29 10:56:19 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 10:56:19 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3/a/tone.xml
+2024-02-29 10:56:19 W/com.github.unidbg.linux.ARM64SyscallHandler: handleInterrupt intno=2, NR=88, svcNumber=0x0, PC=RX@0x40b5a23c[libc.so]0x6a23c, LR=RX@0x4085c1d8[libfekit.so]0x85c1d8, syscall=null
+2024-02-29 10:56:20 I/Bot.3079809050: Saved account secrets to local cache for fast login.
+2024-02-29 10:56:20 I/Bot.3079809050: Bot cancelled: Bot closed
+2024-02-29 10:56:20 E/main: MsfOfflineToken(uin=3079809050, seq=2437671267, const=0)
+MsfOfflineToken(uin=3079809050, seq=2437671267, const=0)
+	at net.mamoe.mirai.internal.network.protocol.packet.login.StatSvc$ReqMSFOffline.decode(StatSvc.kt:299)
+	at net.mamoe.mirai.internal.network.components.PacketCodecImpl.processBody(PacketCodec.kt:586)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$PacketDecodePipeline.processBody(CommonNetworkHandler.kt:158)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$PacketDecodePipeline.access$processBody(CommonNetworkHandler.kt:103)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$PacketDecodePipeline$1$3$1.invokeSuspend(CommonNetworkHandler.kt:127)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$PacketDecodePipeline$1$3$1.invoke(CommonNetworkHandler.kt)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$PacketDecodePipeline$1$3$1.invoke(CommonNetworkHandler.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startCoroutineUndispatched(Undispatched.kt:55)
+	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:112)
+	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:126)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:56)
+	at kotlinx.coroutines.BuildersKt.launch(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(Builders.common.kt:47)
+	at kotlinx.coroutines.BuildersKt.launch$default(Unknown Source)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$PacketDecodePipeline$1.invokeSuspend(CommonNetworkHandler.kt:127)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+2024-02-29 10:56:20 V/Bot.3079809050: Event: AutoLoginEvent.Failure(bot=3079809050, protocol=ANDROID_PHONE, cause=MsfOfflineToken(uin=3079809050, seq=2437671267, const=0))
+2024-02-29 10:56:20 I/main: mirai-console started successfully.
+2024-02-29 10:56:51 I/main: Starting mirai-console...
+2024-02-29 10:56:51 I/main: 
+
+===================================[ Mirai console 2.16.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2024-02-29 10:56:51 I/main: Backend: version 2.16.0, built on 2023-10-19 22:28:10.
+2024-02-29 10:56:51 I/main: Frontend Terminal: version 2.16.0, provided by Mamoe Technologies
+2024-02-29 10:56:51 I/main: Welcome to visit https://mirai.mamoe.net/
+2024-02-29 10:56:51 I/QSign: Loading QSign v1.2.1-beta-dev-d62ddce (unidbg-fetch-qsign vNull)
+2024-02-29 10:56:51 I/QSign: 正在 Mirai 2.16.0 上运行
+2024-02-29 10:56:51 I/QSign: 签名服务目录: /home/non/qqbot/bot/txlib/8.9.63
+2024-02-29 10:56:52 I/QSign: FEBound sum = 7680
+2024-02-29 10:56:52 I/QSign: 已成功读取签名服务配置
+2024-02-29 10:56:52 I/QSign:   签名协议包名: com.tencent.mobileqq
+2024-02-29 10:56:52 I/QSign:   签名服务版本: 8.9.63
+2024-02-29 10:56:52 I/QSign:   签名服务QUA: V1_AND_SQ_8.9.63_4194_YYB_D
+2024-02-29 10:56:52 I/QSign: =============================================
+2024-02-29 10:56:52 I/QSign: 已加载 ANDROID_PHONE 协议变更: 8.9.63.11390 (2023年05月26日 02:46:18)
+2024-02-29 10:56:52 I/QSign: 已加载 ANDROID_PAD 协议变更: 8.9.63.11390 (2023年05月26日 02:46:18)
+2024-02-29 10:56:52 I/QSign: 支持签名服务的协议: ANDROID_PHONE, ANDROID_PAD
+2024-02-29 10:56:52 I/QSignService: 已注册加密算法提供服务
+2024-02-29 10:56:52 I/plugin: Successfully loaded plugin QSign v1.2.1-beta-dev-d62ddce
+2024-02-29 10:56:52 I/plugin: Successfully loaded plugin mirai-login-solver-sakura v0.0.12
+2024-02-29 10:56:52 I/plugin: Successfully loaded plugin mirai-api-http v2.9.1
+2024-02-29 10:56:52 I/plugin: Successfully loaded plugin MCL Addon v2.1.1
+2024-02-29 10:56:52 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2024-02-29 10:56:52 I/Mirai HTTP API: ********************************************************
+2024-02-29 10:56:52 I/MahKtorAdapter[http,ws]: Autoreload is disabled because the development mode is off.
+2024-02-29 10:56:52 I/MahKtorAdapter[http,ws]: Application started in 0.117 seconds.
+2024-02-29 10:56:52 I/MahKtorAdapter[http,ws]: Responding at http://localhost:8090
+2024-02-29 10:56:52 I/http adapter: >>> [http adapter] is listening at http://localhost:8090
+2024-02-29 10:56:52 I/ws adapter: >>> [ws adapter] is listening at ws://localhost:8090
+2024-02-29 10:56:53 I/Mirai HTTP API: Http api server is running with verifyKey: ServiceVerifyKey
+2024-02-29 10:56:53 I/Mirai HTTP API: adaptors: [http,ws]
+2024-02-29 10:56:53 I/Mirai HTTP API: ********************************************************
+2024-02-29 10:56:53 I/MCL Addon: iTXTech MCL Version: 2.1.2-61c8bd8
+2024-02-29 10:56:53 W/MCL Addon: iTXTech Soyuz 未安装，Soyuz MCL Handler 特性已禁用
+2024-02-29 10:56:53 I/main: 5 plugin(s) enabled.
+2024-02-29 10:56:53 I/main: Auto-login 3079809050, protocol: ANDROID_PHONE, heartbeatStrategy: STAT_HB
+2024-02-29 10:56:53 W/EncryptService.alert: Encrypt service was loaded: top.mrxiaom.qsign.QSignService$Factory@75c33608
+2024-02-29 10:56:53 W/EncryptService.alert: All outgoing message may be leaked by this service.
+2024-02-29 10:56:53 W/EncryptService.alert: Use this service if and only if you trusted this service and the service provider.
+2024-02-29 10:56:53 W/EncryptService.alert: Service details:
+2024-02-29 10:56:53 W/EncryptService.alert:   `- Jvm Class: class top.mrxiaom.qsign.QSignService$Factory
+2024-02-29 10:56:53 W/EncryptService.alert:   `- ClassLoader: JvmPluginClassLoader{qsign-1.2.1-beta-dev-d62ddce.mirai2.jar}
+2024-02-29 10:56:53 W/EncryptService.alert:   `- Source: file:/home/non/qqbot/bot/plugins/qsign-1.2.1-beta-dev-d62ddce.mirai2.jar
+2024-02-29 10:56:53 W/EncryptService.alert:   `- Protected Domain: ProtectionDomain  (file:/home/non/qqbot/bot/plugins/qsign-1.2.1-beta-dev-d62ddce.mirai2.jar <no signer certificates>)
+ JvmPluginClassLoader{qsign-1.2.1-beta-dev-d62ddce.mirai2.jar}
+ <no principals>
+ java.security.Permissions@68d8ae27 (
+ ("java.io.FilePermission" "/home/non/qqbot/bot/plugins/qsign-1.2.1-beta-dev-d62ddce.mirai2.jar" "read")
+)
+
+
+2024-02-29 10:56:54 I/QSignService: register 3079809050
+2024-02-29 10:56:54 I/QSecVM: QSign-Unidbg 白名单模式
+2024-02-29 10:56:55 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly1
+2024-02-29 10:56:55 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly1
+2024-02-29 10:56:55 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 10:56:55 W/FileResolver: Couldn't find file: /sdcard/Documents/r1n9t0ne/gamefree/jly3
+2024-02-29 10:56:55 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly3
+2024-02-29 10:56:56 I/QSignService: energy 810_9
+2024-02-29 10:56:56 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly1
+2024-02-29 10:56:56 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly1
+2024-02-29 10:56:56 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 10:56:56 W/FileResolver: Couldn't find file: /sdcard/Documents/r1n9t0ne/gamefree/jly3
+2024-02-29 10:56:56 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly3
+2024-02-29 10:56:56 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly1/a
+2024-02-29 10:56:56 W/FileResolver: Couldn't find file: /system/usr/share/zoneinfo/tzdata
+2024-02-29 10:56:56 W/FileResolver: Couldn't find file: /system/usr/share/zoneinfo/tzdata
+2024-02-29 10:56:56 W/com.github.unidbg.linux.ARM64SyscallHandler: handleInterrupt intno=2, NR=88, svcNumber=0x0, PC=RX@0x40b5a23c[libc.so]0x6a23c, LR=RX@0x40859bc8[libfekit.so]0x859bc8, syscall=null
+2024-02-29 10:56:56 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 10:56:56 W/FileResolver: Couldn't find file: /sdcard/Documents/r1n9t0ne/gamefree/jly3
+2024-02-29 10:56:56 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone
+2024-02-29 10:56:56 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree
+2024-02-29 10:56:56 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 10:56:56 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3/a/tone.xml
+2024-02-29 10:56:56 W/com.github.unidbg.linux.ARM64SyscallHandler: handleInterrupt intno=2, NR=88, svcNumber=0x0, PC=RX@0x40b5a23c[libc.so]0x6a23c, LR=RX@0x4085c1d8[libfekit.so]0x85c1d8, syscall=null
+2024-02-29 10:56:57 I/Bot.3079809050: Calculating type 2 PoW, it can take some time....
+2024-02-29 10:56:57 I/Bot.3079809050: Got PoW result, cost: 154 ms
+2024-02-29 10:57:49 I/QSignService: energy 810_2
+2024-02-29 10:58:08 I/QSignService: energy 810_7
+2024-02-29 10:58:09 I/Bot.3079809050: Login successful
+2024-02-29 10:58:09 I/Bot.3079809050: Saved account secrets to local cache for fast login.
+2024-02-29 10:58:09 I/Bot.3079809050: Login successful.
+2024-02-29 10:58:09 V/Bot.3079809050: Event: BotOnlineEvent(bot=Bot(3079809050))
+2024-02-29 10:58:09 I/Bot.3079809050: Bot login successful.
+2024-02-29 10:58:09 V/Bot.3079809050: Event: AutoLoginEvent.Success(bot=3079809050, protocol=ANDROID_PHONE, heartbeatStrategy=STAT_HB)
+2024-02-29 10:58:09 I/main: mirai-console started successfully.
+2024-02-29 10:59:09 V/Bot.3079809050: Event: BotOfflineEvent.RequireReconnect(bot=Bot(3079809050), cause=java.lang.IllegalStateException: Timeout waiting for ConfigPush., reconnect=true)
+2024-02-29 10:59:09 I/QSignService: destroy 3079809050
+2024-02-29 10:59:09 W/Bot.3079809050: Connection lost, reconnecting... (java.lang.IllegalStateException: Timeout waiting for ConfigPush.)
+2024-02-29 10:59:09 V/Bot.3079809050: Event: BotOfflineEvent.Active(bot=Bot(3079809050), cause=java.lang.IllegalStateException: Timeout waiting for ConfigPush., reconnect=false)
+2024-02-29 10:59:09 I/QSignService: destroy 3079809050
+2024-02-29 10:59:09 I/Bot.3079809050: Bot is closed manually with exception: java.lang.IllegalStateException: Timeout waiting for ConfigPush.
+java.lang.IllegalStateException: Timeout waiting for ConfigPush.
+	at net.mamoe.mirai.internal.network.components.ConfigPushProcessorImpl.syncConfigPush(ConfigPushProcessor.kt:45)
+	at net.mamoe.mirai.internal.network.components.ConfigPushProcessorImpl$syncConfigPush$1.invokeSuspend(ConfigPushProcessor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+
+2024-02-29 10:59:49 W/io.netty.channel.DefaultChannelPipeline: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.timeout.ReadTimeoutException
+
+2024-02-29 11:05:06 I/QSecVM: QSign-Unidbg 白名单模式
+2024-02-29 11:05:06 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly1
+2024-02-29 11:05:06 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly1
+2024-02-29 11:05:06 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 11:05:06 W/FileResolver: Couldn't find file: /sdcard/Documents/r1n9t0ne/gamefree/jly3
+2024-02-29 11:05:06 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly3
+2024-02-29 11:05:07 I/Bot.3079809050: Bot cancelled: Job was cancelled
+2024-02-29 11:05:23 I/main: Starting mirai-console...
+2024-02-29 11:05:23 I/main: 
+
+===================================[ Mirai console 2.16.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2024-02-29 11:05:23 I/main: Backend: version 2.16.0, built on 2023-10-19 22:28:10.
+2024-02-29 11:05:23 I/main: Frontend Terminal: version 2.16.0, provided by Mamoe Technologies
+2024-02-29 11:05:23 I/main: Welcome to visit https://mirai.mamoe.net/
+2024-02-29 11:05:24 I/QSign: Loading QSign v1.2.1-beta-dev-d62ddce (unidbg-fetch-qsign vNull)
+2024-02-29 11:05:24 I/QSign: 正在 Mirai 2.16.0 上运行
+2024-02-29 11:05:24 I/QSign: 签名服务目录: /home/non/qqbot/bot/txlib/8.9.63
+2024-02-29 11:05:24 I/QSign: FEBound sum = 7680
+2024-02-29 11:05:24 I/QSign: 已成功读取签名服务配置
+2024-02-29 11:05:24 I/QSign:   签名协议包名: com.tencent.mobileqq
+2024-02-29 11:05:24 I/QSign:   签名服务版本: 8.9.63
+2024-02-29 11:05:24 I/QSign:   签名服务QUA: V1_AND_SQ_8.9.63_4194_YYB_D
+2024-02-29 11:05:24 I/QSign: =============================================
+2024-02-29 11:05:24 I/QSign: 已加载 ANDROID_PHONE 协议变更: 8.9.63.11390 (2023年05月26日 02:46:18)
+2024-02-29 11:05:24 I/QSign: 已加载 ANDROID_PAD 协议变更: 8.9.63.11390 (2023年05月26日 02:46:18)
+2024-02-29 11:05:24 I/QSign: 支持签名服务的协议: ANDROID_PHONE, ANDROID_PAD
+2024-02-29 11:05:24 I/QSignService: 已注册加密算法提供服务
+2024-02-29 11:05:24 I/plugin: Successfully loaded plugin QSign v1.2.1-beta-dev-d62ddce
+2024-02-29 11:05:24 I/plugin: Successfully loaded plugin mirai-login-solver-sakura v0.0.12
+2024-02-29 11:05:24 I/plugin: Successfully loaded plugin mirai-api-http v2.9.1
+2024-02-29 11:05:24 I/plugin: Successfully loaded plugin MCL Addon v2.1.1
+2024-02-29 11:05:25 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2024-02-29 11:05:25 I/Mirai HTTP API: ********************************************************
+2024-02-29 11:05:25 I/MahKtorAdapter[http,ws]: Autoreload is disabled because the development mode is off.
+2024-02-29 11:05:25 I/MahKtorAdapter[http,ws]: Application started in 0.12 seconds.
+2024-02-29 11:05:25 I/MahKtorAdapter[http,ws]: Responding at http://localhost:8080
+2024-02-29 11:05:25 I/http adapter: >>> [http adapter] is listening at http://localhost:8080
+2024-02-29 11:05:25 I/ws adapter: >>> [ws adapter] is listening at ws://localhost:8080
+2024-02-29 11:05:25 I/Mirai HTTP API: Http api server is running with verifyKey: ServiceVerifyKey
+2024-02-29 11:05:25 I/Mirai HTTP API: adaptors: [http,ws]
+2024-02-29 11:05:25 I/Mirai HTTP API: ********************************************************
+2024-02-29 11:05:25 I/MCL Addon: iTXTech MCL Version: 2.1.2-61c8bd8
+2024-02-29 11:05:25 W/MCL Addon: iTXTech Soyuz 未安装，Soyuz MCL Handler 特性已禁用
+2024-02-29 11:05:25 I/main: 5 plugin(s) enabled.
+2024-02-29 11:05:25 I/main: Auto-login 3079809050, protocol: ANDROID_PHONE, heartbeatStrategy: STAT_HB
+2024-02-29 11:05:25 W/EncryptService.alert: Encrypt service was loaded: top.mrxiaom.qsign.QSignService$Factory@4c8d45cf
+2024-02-29 11:05:25 W/EncryptService.alert: All outgoing message may be leaked by this service.
+2024-02-29 11:05:25 W/EncryptService.alert: Use this service if and only if you trusted this service and the service provider.
+2024-02-29 11:05:25 W/EncryptService.alert: Service details:
+2024-02-29 11:05:25 W/EncryptService.alert:   `- Jvm Class: class top.mrxiaom.qsign.QSignService$Factory
+2024-02-29 11:05:25 W/EncryptService.alert:   `- ClassLoader: JvmPluginClassLoader{qsign-1.2.1-beta-dev-d62ddce.mirai2.jar}
+2024-02-29 11:05:25 W/EncryptService.alert:   `- Source: file:/home/non/qqbot/bot/plugins/qsign-1.2.1-beta-dev-d62ddce.mirai2.jar
+2024-02-29 11:05:25 W/EncryptService.alert:   `- Protected Domain: ProtectionDomain  (file:/home/non/qqbot/bot/plugins/qsign-1.2.1-beta-dev-d62ddce.mirai2.jar <no signer certificates>)
+ JvmPluginClassLoader{qsign-1.2.1-beta-dev-d62ddce.mirai2.jar}
+ <no principals>
+ java.security.Permissions@61b8c9de (
+ ("java.io.FilePermission" "/home/non/qqbot/bot/plugins/qsign-1.2.1-beta-dev-d62ddce.mirai2.jar" "read")
+)
+
+
+2024-02-29 11:05:25 I/Bot.3079809050: Loaded account secrets from local cache.
+2024-02-29 11:05:26 I/QSignService: register 3079809050
+2024-02-29 11:05:26 I/QSecVM: QSign-Unidbg 白名单模式
+2024-02-29 11:05:27 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly1
+2024-02-29 11:05:27 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly1
+2024-02-29 11:05:27 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 11:05:27 W/FileResolver: Couldn't find file: /sdcard/Documents/r1n9t0ne/gamefree/jly3
+2024-02-29 11:05:27 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly3
+2024-02-29 11:05:27 I/QSignService: energy 810_a
+2024-02-29 11:05:28 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly1
+2024-02-29 11:05:28 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly1
+2024-02-29 11:05:28 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 11:05:28 W/FileResolver: Couldn't find file: /sdcard/Documents/r1n9t0ne/gamefree/jly3
+2024-02-29 11:05:28 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly3
+2024-02-29 11:05:28 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly1/a
+2024-02-29 11:05:28 W/FileResolver: Couldn't find file: /system/usr/share/zoneinfo/tzdata
+2024-02-29 11:05:28 W/FileResolver: Couldn't find file: /system/usr/share/zoneinfo/tzdata
+2024-02-29 11:05:28 W/com.github.unidbg.linux.ARM64SyscallHandler: handleInterrupt intno=2, NR=88, svcNumber=0x0, PC=RX@0x40b5a23c[libc.so]0x6a23c, LR=RX@0x40859bc8[libfekit.so]0x859bc8, syscall=null
+2024-02-29 11:05:28 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 11:05:28 W/FileResolver: Couldn't find file: /sdcard/Documents/r1n9t0ne/gamefree/jly3
+2024-02-29 11:05:28 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone
+2024-02-29 11:05:28 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree
+2024-02-29 11:05:28 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 11:05:28 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3/a/tone.xml
+2024-02-29 11:05:28 W/com.github.unidbg.linux.ARM64SyscallHandler: handleInterrupt intno=2, NR=88, svcNumber=0x0, PC=RX@0x40b5a23c[libc.so]0x6a23c, LR=RX@0x4085c1d8[libfekit.so]0x85c1d8, syscall=null
+2024-02-29 11:05:29 I/Bot.3079809050: Saved account secrets to local cache for fast login.
+2024-02-29 11:05:29 I/Bot.3079809050: Login successful.
+2024-02-29 11:05:29 V/Bot.3079809050: Event: BotOnlineEvent(bot=Bot(3079809050))
+2024-02-29 11:05:29 I/Bot.3079809050: Bot login successful.
+2024-02-29 11:05:29 V/Bot.3079809050: Event: AutoLoginEvent.Success(bot=3079809050, protocol=ANDROID_PHONE, heartbeatStrategy=STAT_HB)
+2024-02-29 11:05:29 I/main: mirai-console started successfully.
+2024-02-29 11:06:12 V/Bot.3079809050: Ivy(2579950433) -> ?
+2024-02-29 11:06:13 V/Bot.3079809050: Friend(2579950433) <- Hello, World!
+2024-02-29 11:06:29 V/Bot.3079809050: Event: BotOfflineEvent.RequireReconnect(bot=Bot(3079809050), cause=java.lang.IllegalStateException: Timeout waiting for ConfigPush., reconnect=true)
+2024-02-29 11:06:29 I/QSignService: destroy 3079809050
+2024-02-29 11:06:29 W/Bot.3079809050: Connection lost, reconnecting... (java.lang.IllegalStateException: Timeout waiting for ConfigPush.)
+2024-02-29 11:06:29 V/Bot.3079809050: Event: BotOfflineEvent.Active(bot=Bot(3079809050), cause=java.lang.IllegalStateException: Timeout waiting for ConfigPush., reconnect=false)
+2024-02-29 11:06:29 I/QSignService: destroy 3079809050
+2024-02-29 11:06:29 I/Bot.3079809050: Bot is closed manually with exception: java.lang.IllegalStateException: Timeout waiting for ConfigPush.
+java.lang.IllegalStateException: Timeout waiting for ConfigPush.
+	at net.mamoe.mirai.internal.network.components.ConfigPushProcessorImpl.syncConfigPush(ConfigPushProcessor.kt:45)
+	at net.mamoe.mirai.internal.network.components.ConfigPushProcessorImpl$syncConfigPush$1.invokeSuspend(ConfigPushProcessor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+
+2024-02-29 11:09:12 I/QSecVM: QSign-Unidbg 白名单模式
+2024-02-29 11:09:12 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly1
+2024-02-29 11:09:12 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly1
+2024-02-29 11:09:12 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 11:09:12 W/FileResolver: Couldn't find file: /sdcard/Documents/r1n9t0ne/gamefree/jly3
+2024-02-29 11:09:12 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly3
+2024-02-29 11:12:22 I/main: Starting mirai-console...
+2024-02-29 11:12:22 I/main: 
+
+===================================[ Mirai console 2.16.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2024-02-29 11:12:22 I/main: Backend: version 2.16.0, built on 2023-10-19 22:28:10.
+2024-02-29 11:12:22 I/main: Frontend Terminal: version 2.16.0, provided by Mamoe Technologies
+2024-02-29 11:12:22 I/main: Welcome to visit https://mirai.mamoe.net/
+2024-02-29 11:12:23 I/QSign: Loading QSign v1.2.1-beta-dev-d62ddce (unidbg-fetch-qsign vNull)
+2024-02-29 11:12:23 I/QSign: 正在 Mirai 2.16.0 上运行
+2024-02-29 11:12:23 I/QSign: 签名服务目录: /home/non/qqbot/bot/txlib/8.9.63
+2024-02-29 11:12:23 I/QSign: FEBound sum = 7680
+2024-02-29 11:12:23 I/QSign: 已成功读取签名服务配置
+2024-02-29 11:12:23 I/QSign:   签名协议包名: com.tencent.mobileqq
+2024-02-29 11:12:23 I/QSign:   签名服务版本: 8.9.63
+2024-02-29 11:12:23 I/QSign:   签名服务QUA: V1_AND_SQ_8.9.63_4194_YYB_D
+2024-02-29 11:12:23 I/QSign: =============================================
+2024-02-29 11:12:23 I/QSign: 已加载 ANDROID_PHONE 协议变更: 8.9.63.11390 (2023年05月26日 02:46:18)
+2024-02-29 11:12:23 I/QSign: 已加载 ANDROID_PAD 协议变更: 8.9.63.11390 (2023年05月26日 02:46:18)
+2024-02-29 11:12:23 I/QSign: 支持签名服务的协议: ANDROID_PHONE, ANDROID_PAD
+2024-02-29 11:12:23 I/QSignService: 已注册加密算法提供服务
+2024-02-29 11:12:23 I/plugin: Successfully loaded plugin QSign v1.2.1-beta-dev-d62ddce
+2024-02-29 11:12:23 I/plugin: Successfully loaded plugin mirai-login-solver-sakura v0.0.12
+2024-02-29 11:12:24 I/plugin: Successfully loaded plugin mirai-api-http v2.9.1
+2024-02-29 11:12:24 I/plugin: Successfully loaded plugin MCL Addon v2.1.1
+2024-02-29 11:12:24 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2024-02-29 11:12:24 I/Mirai HTTP API: ********************************************************
+2024-02-29 11:12:24 I/MahKtorAdapter[http,ws]: Autoreload is disabled because the development mode is off.
+2024-02-29 11:12:24 I/MahKtorAdapter[http,ws]: Application started in 0.124 seconds.
+2024-02-29 11:12:24 I/MahKtorAdapter[http,ws]: Responding at http://localhost:8080
+2024-02-29 11:12:24 I/http adapter: >>> [http adapter] is listening at http://localhost:8080
+2024-02-29 11:12:24 I/ws adapter: >>> [ws adapter] is listening at ws://localhost:8080
+2024-02-29 11:12:24 I/Mirai HTTP API: Http api server is running with verifyKey: ServiceVerifyKey
+2024-02-29 11:12:24 I/Mirai HTTP API: adaptors: [http,ws]
+2024-02-29 11:12:24 I/Mirai HTTP API: ********************************************************
+2024-02-29 11:12:24 I/MCL Addon: iTXTech MCL Version: 2.1.2-61c8bd8
+2024-02-29 11:12:24 W/MCL Addon: iTXTech Soyuz 未安装，Soyuz MCL Handler 特性已禁用
+2024-02-29 11:12:24 I/main: 5 plugin(s) enabled.
+2024-02-29 11:12:24 I/main: Auto-login 3079809050, protocol: ANDROID_PHONE, heartbeatStrategy: STAT_HB
+2024-02-29 11:12:24 W/EncryptService.alert: Encrypt service was loaded: top.mrxiaom.qsign.QSignService$Factory@4cc4d454
+2024-02-29 11:12:24 W/EncryptService.alert: All outgoing message may be leaked by this service.
+2024-02-29 11:12:24 W/EncryptService.alert: Use this service if and only if you trusted this service and the service provider.
+2024-02-29 11:12:24 W/EncryptService.alert: Service details:
+2024-02-29 11:12:24 W/EncryptService.alert:   `- Jvm Class: class top.mrxiaom.qsign.QSignService$Factory
+2024-02-29 11:12:24 W/EncryptService.alert:   `- ClassLoader: JvmPluginClassLoader{qsign-1.2.1-beta-dev-d62ddce.mirai2.jar}
+2024-02-29 11:12:24 W/EncryptService.alert:   `- Source: file:/home/non/qqbot/bot/plugins/qsign-1.2.1-beta-dev-d62ddce.mirai2.jar
+2024-02-29 11:12:24 W/EncryptService.alert:   `- Protected Domain: ProtectionDomain  (file:/home/non/qqbot/bot/plugins/qsign-1.2.1-beta-dev-d62ddce.mirai2.jar <no signer certificates>)
+ JvmPluginClassLoader{qsign-1.2.1-beta-dev-d62ddce.mirai2.jar}
+ <no principals>
+ java.security.Permissions@5b490d5e (
+ ("java.io.FilePermission" "/home/non/qqbot/bot/plugins/qsign-1.2.1-beta-dev-d62ddce.mirai2.jar" "read")
+)
+
+
+2024-02-29 11:12:25 I/Bot.3079809050: Loaded account secrets from local cache.
+2024-02-29 11:12:25 I/QSignService: register 3079809050
+2024-02-29 11:12:25 I/QSecVM: QSign-Unidbg 白名单模式
+2024-02-29 11:12:26 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly1
+2024-02-29 11:12:26 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly1
+2024-02-29 11:12:26 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 11:12:26 W/FileResolver: Couldn't find file: /sdcard/Documents/r1n9t0ne/gamefree/jly3
+2024-02-29 11:12:26 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly3
+2024-02-29 11:12:27 I/QSignService: energy 810_a
+2024-02-29 11:12:27 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly1
+2024-02-29 11:12:27 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly1
+2024-02-29 11:12:27 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 11:12:27 W/FileResolver: Couldn't find file: /sdcard/Documents/r1n9t0ne/gamefree/jly3
+2024-02-29 11:12:27 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly3
+2024-02-29 11:12:27 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly1/a
+2024-02-29 11:12:27 W/FileResolver: Couldn't find file: /system/usr/share/zoneinfo/tzdata
+2024-02-29 11:12:27 W/FileResolver: Couldn't find file: /system/usr/share/zoneinfo/tzdata
+2024-02-29 11:12:27 W/com.github.unidbg.linux.ARM64SyscallHandler: handleInterrupt intno=2, NR=88, svcNumber=0x0, PC=RX@0x40b5a23c[libc.so]0x6a23c, LR=RX@0x40859bc8[libfekit.so]0x859bc8, syscall=null
+2024-02-29 11:12:27 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 11:12:27 W/FileResolver: Couldn't find file: /sdcard/Documents/r1n9t0ne/gamefree/jly3
+2024-02-29 11:12:27 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone
+2024-02-29 11:12:27 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree
+2024-02-29 11:12:27 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 11:12:27 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3/a/tone.xml
+2024-02-29 11:12:27 W/com.github.unidbg.linux.ARM64SyscallHandler: handleInterrupt intno=2, NR=88, svcNumber=0x0, PC=RX@0x40b5a23c[libc.so]0x6a23c, LR=RX@0x4085c1d8[libfekit.so]0x85c1d8, syscall=null
+2024-02-29 11:12:28 I/Bot.3079809050: Saved account secrets to local cache for fast login.
+2024-02-29 11:12:28 I/Bot.3079809050: Login successful.
+2024-02-29 11:12:29 V/Bot.3079809050: Event: BotOnlineEvent(bot=Bot(3079809050))
+2024-02-29 11:12:29 I/Bot.3079809050: Bot login successful.
+2024-02-29 11:12:29 V/Bot.3079809050: Event: AutoLoginEvent.Success(bot=3079809050, protocol=ANDROID_PHONE, heartbeatStrategy=STAT_HB)
+2024-02-29 11:12:29 I/main: mirai-console started successfully.
+2024-02-29 11:12:29 V/Bot.3079809050: Ivy(2579950433) -> l
+2024-02-29 11:12:29 V/Bot.3079809050: Ivy(2579950433) -> ?
+2024-02-29 11:12:29 V/Bot.3079809050: Ivy(2579950433) -> wadwdasd
+2024-02-29 11:12:29 V/Bot.3079809050: Ivy(2579950433) -> ?
+2024-02-29 11:12:37 V/Bot.3079809050: Event: BotOfflineEvent.Active(bot=Bot(3079809050), cause=null, reconnect=false)
+2024-02-29 11:12:37 I/QSignService: destroy 3079809050
+2024-02-29 11:12:37 I/Bot.3079809050: Bot is closed manually
+2024-02-29 11:12:37 I/Bot.3079809050: Bot cancelled: Job was cancelled
+2024-02-29 11:14:41 I/main: Starting mirai-console...
+2024-02-29 11:14:41 I/main: 
+
+===================================[ Mirai console 2.16.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2024-02-29 11:14:41 I/main: Backend: version 2.16.0, built on 2023-10-19 22:28:10.
+2024-02-29 11:14:41 I/main: Frontend Terminal: version 2.16.0, provided by Mamoe Technologies
+2024-02-29 11:14:41 I/main: Welcome to visit https://mirai.mamoe.net/
+2024-02-29 11:14:42 I/QSign: Loading QSign v1.2.1-beta-dev-d62ddce (unidbg-fetch-qsign vNull)
+2024-02-29 11:14:42 I/QSign: 正在 Mirai 2.16.0 上运行
+2024-02-29 11:14:42 I/QSign: 签名服务目录: /home/non/qqbot/bot/txlib/8.9.63
+2024-02-29 11:14:42 I/QSign: FEBound sum = 7680
+2024-02-29 11:14:42 I/QSign: 已成功读取签名服务配置
+2024-02-29 11:14:42 I/QSign:   签名协议包名: com.tencent.mobileqq
+2024-02-29 11:14:42 I/QSign:   签名服务版本: 8.9.63
+2024-02-29 11:14:42 I/QSign:   签名服务QUA: V1_AND_SQ_8.9.63_4194_YYB_D
+2024-02-29 11:14:42 I/QSign: =============================================
+2024-02-29 11:14:42 I/QSign: 已加载 ANDROID_PHONE 协议变更: 8.9.63.11390 (2023年05月26日 02:46:18)
+2024-02-29 11:14:42 I/QSign: 已加载 ANDROID_PAD 协议变更: 8.9.63.11390 (2023年05月26日 02:46:18)
+2024-02-29 11:14:42 I/QSign: 支持签名服务的协议: ANDROID_PHONE, ANDROID_PAD
+2024-02-29 11:14:42 I/QSignService: 已注册加密算法提供服务
+2024-02-29 11:14:42 I/plugin: Successfully loaded plugin QSign v1.2.1-beta-dev-d62ddce
+2024-02-29 11:14:42 I/plugin: Successfully loaded plugin mirai-login-solver-sakura v0.0.12
+2024-02-29 11:14:43 I/plugin: Successfully loaded plugin mirai-api-http v2.9.1
+2024-02-29 11:14:43 I/plugin: Successfully loaded plugin MCL Addon v2.1.1
+2024-02-29 11:14:43 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2024-02-29 11:14:43 I/Mirai HTTP API: ********************************************************
+2024-02-29 11:14:43 I/MahKtorAdapter[http,ws]: Autoreload is disabled because the development mode is off.
+2024-02-29 11:14:43 I/MahKtorAdapter[http,ws]: Application started in 0.121 seconds.
+2024-02-29 11:14:43 I/MahKtorAdapter[http,ws]: Responding at http://localhost:8080
+2024-02-29 11:14:43 I/http adapter: >>> [http adapter] is listening at http://localhost:8080
+2024-02-29 11:14:43 I/ws adapter: >>> [ws adapter] is listening at ws://localhost:8080
+2024-02-29 11:14:43 I/Mirai HTTP API: Http api server is running with verifyKey: ServiceVerifyKey
+2024-02-29 11:14:43 I/Mirai HTTP API: adaptors: [http,ws]
+2024-02-29 11:14:43 I/Mirai HTTP API: ********************************************************
+2024-02-29 11:14:43 I/MCL Addon: iTXTech MCL Version: 2.1.2-61c8bd8
+2024-02-29 11:14:43 W/MCL Addon: iTXTech Soyuz 未安装，Soyuz MCL Handler 特性已禁用
+2024-02-29 11:14:43 I/main: 5 plugin(s) enabled.
+2024-02-29 11:14:43 I/main: Auto-login 3079809050, protocol: ANDROID_PHONE, heartbeatStrategy: STAT_HB
+2024-02-29 11:14:43 W/EncryptService.alert: Encrypt service was loaded: top.mrxiaom.qsign.QSignService$Factory@61b8c9de
+2024-02-29 11:14:43 W/EncryptService.alert: All outgoing message may be leaked by this service.
+2024-02-29 11:14:43 W/EncryptService.alert: Use this service if and only if you trusted this service and the service provider.
+2024-02-29 11:14:43 W/EncryptService.alert: Service details:
+2024-02-29 11:14:43 W/EncryptService.alert:   `- Jvm Class: class top.mrxiaom.qsign.QSignService$Factory
+2024-02-29 11:14:43 W/EncryptService.alert:   `- ClassLoader: JvmPluginClassLoader{qsign-1.2.1-beta-dev-d62ddce.mirai2.jar}
+2024-02-29 11:14:43 W/EncryptService.alert:   `- Source: file:/home/non/qqbot/bot/plugins/qsign-1.2.1-beta-dev-d62ddce.mirai2.jar
+2024-02-29 11:14:43 W/EncryptService.alert:   `- Protected Domain: ProtectionDomain  (file:/home/non/qqbot/bot/plugins/qsign-1.2.1-beta-dev-d62ddce.mirai2.jar <no signer certificates>)
+ JvmPluginClassLoader{qsign-1.2.1-beta-dev-d62ddce.mirai2.jar}
+ <no principals>
+ java.security.Permissions@b808af5 (
+ ("java.io.FilePermission" "/home/non/qqbot/bot/plugins/qsign-1.2.1-beta-dev-d62ddce.mirai2.jar" "read")
+)
+
+
+2024-02-29 11:14:43 I/Bot.3079809050: Loaded account secrets from local cache.
+2024-02-29 11:14:44 I/QSignService: register 3079809050
+2024-02-29 11:14:44 I/QSecVM: QSign-Unidbg 白名单模式
+2024-02-29 11:14:45 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly1
+2024-02-29 11:14:45 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly1
+2024-02-29 11:14:45 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 11:14:45 W/FileResolver: Couldn't find file: /sdcard/Documents/r1n9t0ne/gamefree/jly3
+2024-02-29 11:14:45 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly3
+2024-02-29 11:14:45 I/QSignService: energy 810_a
+2024-02-29 11:14:46 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly1
+2024-02-29 11:14:46 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly1
+2024-02-29 11:14:46 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 11:14:46 W/FileResolver: Couldn't find file: /sdcard/Documents/r1n9t0ne/gamefree/jly3
+2024-02-29 11:14:46 W/FileResolver: Couldn't find file: /sdcard/Music/ringtone/gamefree/jly3
+2024-02-29 11:14:46 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly1/a
+2024-02-29 11:14:46 W/FileResolver: Couldn't find file: /system/usr/share/zoneinfo/tzdata
+2024-02-29 11:14:46 W/FileResolver: Couldn't find file: /system/usr/share/zoneinfo/tzdata
+2024-02-29 11:14:46 W/com.github.unidbg.linux.ARM64SyscallHandler: handleInterrupt intno=2, NR=88, svcNumber=0x0, PC=RX@0x40b5a23c[libc.so]0x6a23c, LR=RX@0x40859bc8[libfekit.so]0x859bc8, syscall=null
+2024-02-29 11:14:46 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 11:14:46 W/FileResolver: Couldn't find file: /sdcard/Documents/r1n9t0ne/gamefree/jly3
+2024-02-29 11:14:46 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone
+2024-02-29 11:14:46 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree
+2024-02-29 11:14:46 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3
+2024-02-29 11:14:46 W/FileResolver: Couldn't find file: /sdcard/Documents/ringtone/gamefree/jly3/a/tone.xml
+2024-02-29 11:14:46 W/com.github.unidbg.linux.ARM64SyscallHandler: handleInterrupt intno=2, NR=88, svcNumber=0x0, PC=RX@0x40b5a23c[libc.so]0x6a23c, LR=RX@0x4085c1d8[libfekit.so]0x85c1d8, syscall=null
+2024-02-29 11:14:47 I/Bot.3079809050: Saved account secrets to local cache for fast login.
+2024-02-29 11:14:47 I/Bot.3079809050: Login successful.
+2024-02-29 11:14:48 V/Bot.3079809050: Event: BotOnlineEvent(bot=Bot(3079809050))
+2024-02-29 11:14:48 I/Bot.3079809050: Bot login successful.
+2024-02-29 11:14:48 V/Bot.3079809050: Event: AutoLoginEvent.Success(bot=3079809050, protocol=ANDROID_PHONE, heartbeatStrategy=STAT_HB)
+2024-02-29 11:14:48 I/main: mirai-console started successfully.
+2024-02-29 11:15:00 W/console: 未知指令: /v, 输入 ? 获取帮助
+2024-02-29 11:15:02 W/console: 未知指令: /v, 输入 ? 获取帮助
+2024-02-29 11:15:22 V/Bot.3079809050: Ivy(2579950433) -> ?
+2024-02-29 11:15:26 V/Bot.3079809050: Ivy(2579950433) -> wads
+2024-02-29 11:15:40 V/Bot.3079809050: Ivy(2579950433) -> wa
+2024-02-29 11:15:41 V/Bot.3079809050: Friend(2579950433) <- Hello, World!
+2024-02-29 11:15:44 V/Bot.3079809050: Ivy(2579950433) -> sa
+2024-02-29 11:15:45 V/Bot.3079809050: Friend(2579950433) <- Hello, World!
