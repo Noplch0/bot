@@ -5,20 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54e0be22-18ee-40ac-846f-15c73673d001" name="更改" comment="init">
-      <change afterPath="$PROJECT_DIR$/plugins/mirai-console-dev-qrlogin-0.2.0.mirai2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bots/3079809050/cache/account.secrets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bots/3079809050/cache/servers.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bots/3079809050/cache/session.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bots/3079809050/cache/validator.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bots/3079809050/device.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bots/3079809050/logs/2024-02-29.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/top.mrxiaom.qsign/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/top.mrxiaom.qsign/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/fix-protocol-version-1.13.0.mirai2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/txlib/fix-protocol-version-1.13.0.mirai2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/qsign-1.2.1-beta-dev-d62ddce.mirai2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/txlib/qsign-1.2.1-beta-dev-d62ddce.mirai2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/txlib/8.9.63/.system_android_l2" beforeDir="false" afterPath="$PROJECT_DIR$/txlib/8.9.63/.system_android_l2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/3079809050/cache/account.secrets" beforeDir="false" afterPath="$PROJECT_DIR$/bots/3079809050/cache/account.secrets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/3079809050/cache/servers.json" beforeDir="false" afterPath="$PROJECT_DIR$/bots/3079809050/cache/servers.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/3079809050/cache/session.bin" beforeDir="false" afterPath="$PROJECT_DIR$/bots/3079809050/cache/session.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/3079809050/logs/2024-03-12.log" beforeDir="false" afterPath="$PROJECT_DIR$/bots/3079809050/logs/2024-03-12.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2024-03-12.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/2024-03-12.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/pixiv/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/pixiv/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +118,7 @@
       <workItem from="1710227090381" duration="15000" />
       <workItem from="1710227220253" duration="14000" />
       <workItem from="1710227240605" duration="11000" />
-      <workItem from="1710227298718" duration="920000" />
+      <workItem from="1710227298718" duration="3419000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -133,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709187742699</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init">
+      <option name="closed" value="true" />
+      <created>1710228361390</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710228361390</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +169,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ariadnebot$bot.coverage" NAME="bot 覆盖结果" MODIFIED="1709184491497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ariadnebot$bot.coverage" NAME="bot 覆盖结果" MODIFIED="1710230592167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

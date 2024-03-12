@@ -3862,3 +3862,68 @@ file:///C:/Users/c/PycharmProjects/ariadnebot/data/top.mrxiaom.qrlogin/mirai-qrc
 2024-03-12 15:01:07 V/Bot.3079809050: Event: BotOfflineEvent.Active(bot=Bot(3079809050), cause=null, reconnect=false)
 2024-03-12 15:01:07 I/Bot.3079809050: Bot is closed manually
 2024-03-12 15:01:07 I/Bot.3079809050: Bot cancelled: Job was cancelled
+2024-03-12 15:44:26 I/main: Starting mirai-console...
+2024-03-12 15:44:26 I/main: 
+
+===================================[ Mirai console 2.16.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2024-03-12 15:44:26 I/main: Backend: version 2.16.0, built on 2023-10-20 06:28:10.
+2024-03-12 15:44:26 I/main: Frontend Terminal: version 2.16.0, provided by Mamoe Technologies
+2024-03-12 15:44:26 I/main: Welcome to visit https://mirai.mamoe.net/
+2024-03-12 15:44:27 I/plugin: Successfully loaded plugin mirai-api-http v2.9.1
+2024-03-12 15:44:27 I/QRLogin: Loading QRLogin v0.2.0
+2024-03-12 15:44:27 W/QRLogin: 本插件仅在 2.15.0 或以上工作，且在正式版或先行发布版(RC)中可能无法使用
+2024-03-12 15:44:27 I/plugin: Successfully loaded plugin QRLogin v0.2.0
+2024-03-12 15:44:27 I/plugin: Successfully loaded plugin mirai-device-generator v1.3.0
+2024-03-12 15:44:27 I/plugin: Successfully loaded plugin mirai-login-solver-sakura v0.0.12
+2024-03-12 15:44:27 I/plugin: Successfully loaded plugin MCL Addon v2.1.1
+2024-03-12 15:44:28 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2024-03-12 15:44:28 I/Mirai HTTP API: ********************************************************
+2024-03-12 15:44:28 I/MahKtorAdapter[http,ws]: Autoreload is disabled because the development mode is off.
+2024-03-12 15:44:28 I/MahKtorAdapter[http,ws]: Application started in 0.245 seconds.
+2024-03-12 15:44:28 I/MahKtorAdapter[http,ws]: Responding at http://localhost:8080
+2024-03-12 15:44:28 I/http adapter: >>> [http adapter] is listening at http://localhost:8080
+2024-03-12 15:44:28 I/ws adapter: >>> [ws adapter] is listening at ws://localhost:8080
+2024-03-12 15:44:28 I/Mirai HTTP API: Http api server is running with verifyKey: lkijnfgh
+2024-03-12 15:44:28 I/Mirai HTTP API: adaptors: [http,ws]
+2024-03-12 15:44:28 I/Mirai HTTP API: ********************************************************
+2024-03-12 15:44:28 I/QRLogin: 正在启用插件 QRLogin v0.2.0
+2024-03-12 15:44:28 I/QRLogin: Mirai 版本: 2.16.0
+2024-03-12 15:44:28 W/QRLogin: 
+2024-03-12 15:44:28 W/QRLogin: 扫码登录可用状态不佳。若扫码登录无法使用，请参见以下链接部署签名服务
+2024-03-12 15:44:28 W/QRLogin: @see https://wiki.mrxiaom.top/mirai/45
+2024-03-12 15:44:28 W/QRLogin: @see https://mirai.mamoe.net/topic/223
+2024-03-12 15:44:28 W/QRLogin: 
+2024-03-12 15:44:28 I/MCL Addon: iTXTech MCL Version: 2.1.2-61c8bd8
+2024-03-12 15:44:28 W/MCL Addon: iTXTech Soyuz 未安装，Soyuz MCL Handler 特性已禁用
+2024-03-12 15:44:28 I/main: 6 plugin(s) enabled.
+2024-03-12 15:44:28 I/main: mirai-console started successfully.
+2024-03-12 15:44:44 I/QRLoginSolver: 登录解决器更换为 QRLoginSolver
+2024-03-12 15:44:45 I/Bot.3079809050: Loaded account secrets from local cache.
+2024-03-12 15:44:45 I/Bot.3079809050: Saved account secrets to local cache for fast login.
+2024-03-12 15:44:46 I/Bot.3079809050: Login successful.
+2024-03-12 15:44:46 V/Bot.3079809050: Event: BotOnlineEvent(bot=Bot(3079809050))
+2024-03-12 15:44:46 I/Bot.3079809050: Bot login successful.
+2024-03-12 15:47:23 V/Bot.3079809050: Ivy(2579950433) -> 蓝p 116674873
+2024-03-12 15:50:49 V/Bot.3079809050: Ivy(2579950433) -> 蓝p 116674873
+2024-03-12 15:54:58 V/Bot.3079809050: Ivy(2579950433) -> 蓝p 116674873
+2024-03-12 15:58:43 V/Bot.3079809050: Ivy(2579950433) -> 蓝p 116674873
+2024-03-12 16:00:09 V/Bot.3079809050: Ivy(2579950433) -> 蓝p 116674873
+2024-03-12 16:02:42 V/Bot.3079809050: Ivy(2579950433) -> 蓝p 99719038
+2024-03-12 16:03:20 V/Bot.3079809050: Ivy(2579950433) -> 蓝p 116674873
+2024-03-12 16:04:22 V/Bot.3079809050: Friend(2579950433) <- [mirai:image:{1BF856D5-5897-1F50-7AB5-0F265D28B8D7}.jpg, width=1080, height=2001, size=569590, type=JPG, isEmoji=false][mirai:image:{209D55E2-2BF8-7189-DD9D-FDA793498282}.jpg, width=1080, height=1346, size=277418, type=JPG, isEmoji=false][mirai:image:{621CEFF2-1673-4FD9-CE52-7F69D8F1FB79}.jpg, width=1080, height=1913, size=314598, type=JPG, isEmoji=false][mirai:image:{33822F59-5484-1035-26BE-4657640C1869}.jpg, width=1080, height=2016, size=560387, type=JPG, isEmoji=false][mirai:image:{1A7E8395-F146-25D2-785D-B50A2723A960}.jpg, width=849, height=39, size=28269, type=JPG, isEmoji=false][mirai:image:{8DE10CA7-9B54-CEC2-1A58-B2CA6A99E1F9}.jpg, width=838, height=27, size=19802, type=JPG, isEmoji=false][mirai:image:{10A876A0-FD99-D9EA-C719-6D1054880EDF}.jpg, width=1080, height=2002, size=506863, type=JPG, isEmoji=false][mirai:image:{521F13AA-4321-6B56-7887-3D7EB7400713}.jpg, width=1080, height=1861, size=465888, type=JPG, isEmoji=false][mirai:image:{7F0F0797-7CE3-E23D-13DE-D2C342093498}.jpg, width=1080, height=1977, size=534099, type=JPG, isEmoji=false][mirai:image:{9082FAEF-105E-EE7A-230D-B3D4EAF0FC96}.jpg, width=1080, height=1870, size=430784, type=JPG, isEmoji=false]
+2024-03-12 16:04:45 V/Bot.3079809050: Ivy(2579950433) -> 蓝p 101684813
+2024-03-12 16:05:35 V/Bot.3079809050: Friend(2579950433) <- [mirai:image:{261007CC-F5CF-ED70-BD55-9F200A52D8FF}.jpg, width=1286, height=1543, size=1827667, type=JPG, isEmoji=false][mirai:image:{C228BA14-5A7E-15CD-F167-27E4E4DE6817}.jpg, width=1286, height=1543, size=1905923, type=JPG, isEmoji=false]
+2024-03-12 16:06:44 V/Bot.3079809050: Event: BotOfflineEvent.Active(bot=Bot(3079809050), cause=null, reconnect=false)
+2024-03-12 16:06:44 I/Bot.3079809050: Bot is closed manually
+2024-03-12 16:06:44 I/Bot.3079809050: Bot cancelled: Job was cancelled

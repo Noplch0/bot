@@ -417,3 +417,104 @@ Caused by: [CIRCULAR REFERENCE: net.mamoe.mirai.network.WrongPasswordException: 
 [0m2024-03-12 15:01:06 V/Net 3079809050: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
 [0m2024-03-12 15:01:06 V/Net 3079809050: Recv: ConfigPushSvc.PushReq[0m
 [0m2024-03-12 15:01:07 V/Net 3079809050: Send: StatSvc.register(offline)[0m
+[0m2024-03-12 15:44:45 V/Net 3079809050: Validated caches.[0m
+[0m2024-03-12 15:44:45 V/Net 3079809050: Loading server list from cache.[0m
+[0m2024-03-12 15:44:45 V/Net 3079809050: Server list: 182.50.8.188:80, 123.125.0.210:80, 111.206.149.168:8080, msfwifi.3g.qq.com:8080, 123.125.0.195:443, 157.148.57.99:14000, 59.83.207.254:14000, 157.255.5.249:80, 220.194.118.236:8080, 157.148.57.99:80.[0m
+[92m2024-03-12 15:44:45 I/Net 3079809050: EncryptService SPI is not provided, sso secure ecdh will not be initialized.[0m
+[92m2024-03-12 15:44:45 I/Net 3079809050: ECDH key is valid.[0m
+[0m2024-03-12 15:44:45 V/Net 3079809050: Send: wtlogin.exchange_emp(10:fast-login)[0m
+[0m2024-03-12 15:44:45 V/Net 3079809050: Recv: wtlogin.exchange_emp[0m
+[0m2024-03-12 15:44:45 V/Net 3079809050: Send: StatSvc.register(online)[0m
+[92m2024-03-12 15:44:46 I/Net 3079809050: Server time updated, serverTime: 1710229485, diff: -1ms=-0.001s[0m
+[0m2024-03-12 15:44:46 V/Net 3079809050: Recv: StatSvc.register[0m
+[0m2024-03-12 15:44:46 V/Net 3079809050: Loading BdhSession from cache file[0m
+[92m2024-03-12 15:44:46 I/Net 3079809050: Syncing friend message history...[0m
+[92m2024-03-12 15:44:46 I/Net 3079809050: Start loading friend list...[0m
+[92m2024-03-12 15:44:46 I/Net 3079809050: Start loading stranger list...[0m
+[92m2024-03-12 15:44:46 I/Net 3079809050: Start loading friendGroup list...[0m
+[0m2024-03-12 15:44:46 V/Net 3079809050: Send: StatSvc.GetDevLoginInfo(StatSvc.GetDevLoginInfo)[0m
+[0m2024-03-12 15:44:46 V/Net 3079809050: Send: OidbSvc.0x496(OidbSvc.0x496)[0m
+[0m2024-03-12 15:44:46 V/Net 3079809050: Send: OidbSvc.0x5d2_0(OidbSvc.0x5d2_0)[0m
+[0m2024-03-12 15:44:46 V/Net 3079809050: Send: friendlist.getFriendGroupList(friendlist.getFriendGroupList)[0m
+[0m2024-03-12 15:44:46 V/Net 3079809050: Send: friendlist.getFriendGroupList(friendlist.getFriendGroupList)[0m
+[0m2024-03-12 15:44:46 V/Net 3079809050: Recv: OidbSvc.0x5d2_0[0m
+[92m2024-03-12 15:44:46 I/Net 3079809050: Successfully loaded stranger list: 0 in total[0m
+[0m2024-03-12 15:44:46 V/Net 3079809050: Recv: StatSvc.GetDevLoginInfo[0m
+[92m2024-03-12 15:44:46 I/Net 3079809050: No OtherClient online.[0m
+[0m2024-03-12 15:44:46 V/Net 3079809050: Recv: OidbSvc.0x496[0m
+[92m2024-03-12 15:44:46 I/Net 3079809050: Start loading group list...[0m
+[92m2024-03-12 15:44:46 I/Net 3079809050: Syncing friend message history: Success.[0m
+[0m2024-03-12 15:44:46 V/Net 3079809050: Send: friendlist.GetTroopListReqV2(friendlist.GetTroopListReqV2)[0m
+[0m2024-03-12 15:44:46 V/Net 3079809050: Recv: friendlist.getFriendGroupList[0m
+[0m2024-03-12 15:44:46 V/Net 3079809050: Loading friendGroup list: 1/1[0m
+[92m2024-03-12 15:44:46 I/Net 3079809050: Successfully loaded friendGroup list: 1 in total[0m
+[0m2024-03-12 15:44:46 V/Net 3079809050: Recv: friendlist.getFriendGroupList[0m
+[0m2024-03-12 15:44:46 V/Net 3079809050: Loading friend list: 3/3[0m
+[92m2024-03-12 15:44:46 I/Net 3079809050: Successfully loaded friend list: 3 in total[0m
+[0m2024-03-12 15:44:46 V/Net 3079809050: Recv: friendlist.GetTroopListReqV2[0m
+[0m2024-03-12 15:44:46 V/Net 3079809050: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2024-03-12 15:44:46 V/Net 3079809050: Recv: friendlist.GetTroopMemberListReq[0m
+[92m2024-03-12 15:44:46 I/Net 3079809050: Successfully loaded group list: 1 in total.[0m
+[92m2024-03-12 15:44:46 I/Net 3079809050: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2024-03-12 15:44:46 I/Net 3079809050: Scheduled key refresh in 23h 55min 0.0s.[0m
+[0m2024-03-12 15:44:49 V/Net 3079809050: Server list: 123.125.0.194:80, 153.3.46.25:14000, 60.29.242.161:8080, 111.206.149.168:443, 157.148.55.96:80, 153.3.149.95:80, 157.148.54.249:14000, 123.125.0.194:8080, msfwifi.3g.qq.com:8080, 157.148.54.249:80.[0m
+[0m2024-03-12 15:44:49 V/Net 3079809050: Saving bdh session to cache[0m
+[0m2024-03-12 15:44:49 V/Net 3079809050: Saving server list to cache[0m
+[0m2024-03-12 15:44:49 V/Net 3079809050: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2024-03-12 15:44:49 V/Net 3079809050: Recv: ConfigPushSvc.PushReq[0m
+[0m2024-03-12 15:44:49 V/Net 3079809050: Saving bdh session to cache[0m
+[0m2024-03-12 15:44:49 V/Net 3079809050: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2024-03-12 15:44:49 V/Net 3079809050: Recv: ConfigPushSvc.PushReq[0m
+[0m2024-03-12 16:04:03 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 16:04:03 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 16:04:03 V/Net 3079809050: [Highway] Uploading private image to 157.148.63.103:14000, size=556.24 KiB[0m
+[0m2024-03-12 16:04:05 V/Net 3079809050: [Highway] Uploading private image: succeed at 302 KiB/s[0m
+[0m2024-03-12 16:04:05 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 16:04:05 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 16:04:05 V/Net 3079809050: [Highway] Uploading private image to 116.130.223.119:8080, size=270.92 KiB[0m
+[0m2024-03-12 16:04:07 V/Net 3079809050: [Highway] Uploading private image: succeed at 174 KiB/s[0m
+[0m2024-03-12 16:04:07 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 16:04:07 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 16:04:07 V/Net 3079809050: [Highway] Uploading private image to 112.86.230.221:80, size=307.22 KiB[0m
+[0m2024-03-12 16:04:09 V/Net 3079809050: [Highway] Uploading private image: succeed at 179 KiB/s[0m
+[0m2024-03-12 16:04:09 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 16:04:09 V/Net 3079809050: [Highway] Uploading private image to 157.148.36.32:443, size=547.25 KiB[0m
+[0m2024-03-12 16:04:09 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 16:04:11 V/Net 3079809050: [Highway] Uploading private image: succeed at 296 KiB/s[0m
+[0m2024-03-12 16:04:11 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 16:04:11 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 16:04:11 V/Net 3079809050: [Highway] Uploading private image to 157.148.36.32:443, size=27.61 KiB[0m
+[0m2024-03-12 16:04:12 V/Net 3079809050: [Highway] Uploading private image: succeed at 114 KiB/s[0m
+[0m2024-03-12 16:04:12 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 16:04:12 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 16:04:12 V/Net 3079809050: [Highway] Uploading private image to 157.148.36.32:443, size=19.34 KiB[0m
+[0m2024-03-12 16:04:12 V/Net 3079809050: [Highway] Uploading private image: succeed at 83 KiB/s[0m
+[0m2024-03-12 16:04:12 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 16:04:12 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 16:04:12 V/Net 3079809050: [Highway] Uploading private image to 157.148.63.103:14000, size=494.98 KiB[0m
+[0m2024-03-12 16:04:14 V/Net 3079809050: [Highway] Uploading private image: succeed at 252 KiB/s[0m
+[0m2024-03-12 16:04:14 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 16:04:14 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 16:04:14 V/Net 3079809050: [Highway] Uploading private image to 112.86.230.221:80, size=454.97 KiB[0m
+[0m2024-03-12 16:04:16 V/Net 3079809050: [Highway] Uploading private image: succeed at 223 KiB/s[0m
+[0m2024-03-12 16:04:16 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 16:04:17 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 16:04:17 V/Net 3079809050: [Highway] Uploading private image to 116.130.223.119:8080, size=521.58 KiB[0m
+[0m2024-03-12 16:04:19 V/Net 3079809050: [Highway] Uploading private image: succeed at 198 KiB/s[0m
+[0m2024-03-12 16:04:19 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 16:04:19 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 16:04:19 V/Net 3079809050: [Highway] Uploading private image to 112.86.230.221:80, size=420.69 KiB[0m
+[0m2024-03-12 16:04:21 V/Net 3079809050: [Highway] Uploading private image: succeed at 220 KiB/s[0m
+[0m2024-03-12 16:04:21 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 16:04:22 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 16:05:20 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 16:05:21 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 16:05:21 V/Net 3079809050: [Highway] Uploading private image to 116.130.223.119:8080, size=1784.83 KiB[0m
+[0m2024-03-12 16:05:26 V/Net 3079809050: [Highway] Uploading private image: succeed at 319 KiB/s[0m
+[0m2024-03-12 16:05:26 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 16:05:26 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 16:05:26 V/Net 3079809050: [Highway] Uploading private image to 116.130.223.119:8080, size=1861.25 KiB[0m
+[0m2024-03-12 16:05:35 V/Net 3079809050: [Highway] Uploading private image: succeed at 217 KiB/s[0m
+[0m2024-03-12 16:05:35 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 16:05:35 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 16:06:44 V/Net 3079809050: Send: StatSvc.register(offline)[0m
