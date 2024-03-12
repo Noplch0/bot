@@ -36,6 +36,12 @@
       "version": "2.9.1",
       "type": "plugins",
       "versionLocked": false
+    },
+    "xyz.cssxsh.mirai:mirai-device-generator": {
+      "channel": "maven-stable",
+      "version": "1.3.0",
+      "type": "plugins",
+      "versionLocked": false
     }
   },
   "archiveSuffix": [

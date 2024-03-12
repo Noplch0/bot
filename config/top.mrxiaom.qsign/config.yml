@@ -1,5 +1,5 @@
 # unidbg-fetch-qsign 运行路径 (可填写相对于 mirai 运行目录的路径，或者绝对路径)
-base-path: 'txlib/8.9.63'
+base-path: './txlib/8.9.63'
 # 忽略环境为 Termux，强制加载签名服务
 # 部分人可以在 Termux 中使用，部分人无法通过 Termux 使用
 # 如果你执意要在 Termux 中使用本插件，请开启本选项

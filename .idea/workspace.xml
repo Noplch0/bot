@@ -5,21 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54e0be22-18ee-40ac-846f-15c73673d001" name="更改" comment="init">
-      <change afterPath="$PROJECT_DIR$/.idea/ariadnebot.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/fix-protocol-version-1.13.0.mirai2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/mirai-login-solver-sakura-0.0.12.mirai2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/mirai-console-dev-qrlogin-0.2.0.mirai2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/3079809050/cache/account.secrets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/3079809050/cache/servers.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/3079809050/cache/session.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/3079809050/cache/validator.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/3079809050/device.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/3079809050/logs/2024-02-29.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/top.mrxiaom.qsign/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/top.mrxiaom.qsign/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/fix-protocol-version-1.13.0.mirai2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/txlib/fix-protocol-version-1.13.0.mirai2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/qsign-1.2.1-beta-dev-d62ddce.mirai2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/txlib/qsign-1.2.1-beta-dev-d62ddce.mirai2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/txlib/8.9.63/.system_android_l2" beforeDir="false" afterPath="$PROJECT_DIR$/txlib/8.9.63/.system_android_l2" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,39 +38,42 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2d1gWiall4sM0WVqOrT4tfUlr7V" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.bot.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/c/PycharmProjects/ariadnebot/plugins",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.bot.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/c/PycharmProjects/ariadnebot/plugins&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\c\PycharmProjects\ariadnebot\plugins" />
       <recent name="C:\Users\c\PycharmProjects\ariadnebot" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\c\PycharmProjects\ariadnebot\modules" />
+      <recent name="C:\Users\c\PycharmProjects\ariadnebot\txlib" />
+      <recent name="C:\Users\c\PycharmProjects\ariadnebot\plugins" />
       <recent name="C:\Users\c\PycharmProjects\ariadnebot" />
     </key>
   </component>
@@ -103,8 +117,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709181031641</updated>
-      <workItem from="1709181033177" duration="5356000" />
+      <workItem from="1709181033177" duration="5662000" />
+      <workItem from="1709795649876" duration="748000" />
+      <workItem from="1710221417835" duration="5621000" />
+      <workItem from="1710227090381" duration="15000" />
+      <workItem from="1710227220253" duration="14000" />
+      <workItem from="1710227240605" duration="11000" />
+      <workItem from="1710227298718" duration="920000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <option name="closed" value="true" />
+      <created>1709187742699</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709187742699</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,7 +159,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/bot.py</url>
-          <line>8</line>
+          <line>21</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
