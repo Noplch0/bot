@@ -4,15 +4,285 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54e0be22-18ee-40ac-846f-15c73673d001" name="更改" comment="init">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="54e0be22-18ee-40ac-846f-15c73673d001" name="更改" comment="pixiv">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ariadnebot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ariadnebot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bots/3079809050/cache/account.secrets" beforeDir="false" afterPath="$PROJECT_DIR$/bots/3079809050/cache/account.secrets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bots/3079809050/cache/servers.json" beforeDir="false" afterPath="$PROJECT_DIR$/bots/3079809050/cache/servers.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bots/3079809050/cache/session.bin" beforeDir="false" afterPath="$PROJECT_DIR$/bots/3079809050/cache/session.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bots/3079809050/logs/2024-03-12.log" beforeDir="false" afterPath="$PROJECT_DIR$/bots/3079809050/logs/2024-03-12.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/Console/EndUserReadme.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/Console/EndUserReadme.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/WinFallbackLookup.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-console-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-console-l1-2-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-datetime-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-debug-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-errorhandling-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-fibers-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-file-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-file-l1-2-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-file-l2-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-handle-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-heap-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-interlocked-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-libraryloader-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-localization-l1-2-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-memory-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-namedpipe-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-processenvironment-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-processthreads-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-processthreads-l1-1-1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-profile-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-rtlsupport-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-string-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-synch-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-synch-l1-2-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-sysinfo-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-timezone-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-core-util-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-crt-conio-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-crt-convert-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-crt-environment-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-crt-filesystem-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-crt-heap-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-crt-locale-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-crt-math-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-crt-multibyte-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-crt-private-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-crt-process-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-crt-runtime-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-crt-stdio-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-crt-string-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-crt-time-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/api-ms-win-crt-utility-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/awt.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/dt_socket.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/extnet.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/fontmanager.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/freetype.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/instrument.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/j2gss.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/j2pcsc.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/j2pkcs11.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/jaas.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/jabswitch.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/jaccessinspector.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/jaccesswalker.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/java.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/java.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/javaaccessbridge.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/javajpeg.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/javaw.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/jawt.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/jdwp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/jfr.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/jimage.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/jli.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/jrunscript.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/jsound.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/jsvml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/keytool.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/kinit.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/klist.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/ktab.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/lcms.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/management.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/management_agent.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/management_ext.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/mlib_image.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/msvcp140.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/net.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/nio.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/prefs.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/rmi.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/rmiregistry.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/server/classes.jsa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/server/classes_nocoops.jsa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/server/jvm.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/splashscreen.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/sspi_bridge.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/sunmscapi.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/ucrtbase.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/vcruntime140.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/vcruntime140_1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/verify.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/w2k_lsa_auth.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/windowsaccessbridge-64.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/bin/zip.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/conf/net.properties" beforeDir="false" afterPath="$PROJECT_DIR$/java/conf/net.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/conf/security/java.security" beforeDir="false" afterPath="$PROJECT_DIR$/java/conf/security/java.security" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.base/wepoll.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.compiler/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.compiler/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.compiler/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.compiler/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.compiler/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.compiler/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.datatransfer/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.datatransfer/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.datatransfer/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.datatransfer/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.datatransfer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.datatransfer/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.desktop/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.desktop/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.desktop/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.desktop/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.desktop/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.desktop/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.desktop/freetype.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.instrument/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.instrument/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.instrument/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.instrument/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.instrument/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.instrument/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.logging/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.logging/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.logging/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.logging/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.logging/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.logging/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.management.rmi/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.management.rmi/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.management.rmi/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.management.rmi/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.management.rmi/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.management.rmi/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.management/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.management/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.management/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.management/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.management/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.management/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.naming/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.naming/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.naming/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.naming/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.naming/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.naming/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.net.http/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.net.http/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.net.http/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.net.http/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.net.http/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.net.http/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.prefs/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.prefs/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.prefs/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.prefs/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.prefs/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.prefs/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.rmi/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.rmi/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.rmi/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.rmi/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.rmi/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.rmi/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.scripting/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.scripting/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.scripting/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.scripting/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.scripting/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.scripting/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.se/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.se/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.se/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.se/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.se/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.se/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.security.jgss/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.security.jgss/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.security.jgss/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.security.jgss/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.security.jgss/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.security.jgss/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.security.sasl/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.security.sasl/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.security.sasl/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.security.sasl/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.security.sasl/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.security.sasl/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.smartcardio/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.smartcardio/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.smartcardio/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.smartcardio/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.smartcardio/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.smartcardio/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.sql.rowset/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.sql.rowset/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.sql.rowset/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.sql.rowset/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.sql.rowset/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.sql.rowset/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.sql/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.sql/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.sql/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.sql/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.sql/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.sql/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.transaction.xa/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.transaction.xa/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.transaction.xa/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.transaction.xa/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.transaction.xa/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.transaction.xa/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.xml.crypto/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.xml.crypto/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.xml.crypto/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.xml.crypto/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.xml.crypto/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.xml.crypto/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.xml/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.xml/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.xml/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.xml/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/java.xml/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/java.xml/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.accessibility/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.accessibility/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.accessibility/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.accessibility/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.accessibility/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.accessibility/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.charsets/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.charsets/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.charsets/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.charsets/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.charsets/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.charsets/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.crypto.cryptoki/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.crypto.cryptoki/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.crypto.cryptoki/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.crypto.cryptoki/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.crypto.cryptoki/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.crypto.cryptoki/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.crypto.ec/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.crypto.ec/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.crypto.ec/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.crypto.ec/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.crypto.ec/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.crypto.ec/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.crypto.mscapi/ADDITIONAL_LICENSE_INFO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.crypto.mscapi/ASSEMBLY_EXCEPTION" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.crypto.mscapi/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.dynalink/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.dynalink/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.dynalink/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.dynalink/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.dynalink/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.dynalink/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.httpserver/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.httpserver/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.httpserver/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.httpserver/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.httpserver/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.httpserver/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.incubator.foreign/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.incubator.foreign/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.incubator.foreign/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.incubator.foreign/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.incubator.foreign/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.incubator.foreign/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.incubator.vector/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.incubator.vector/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.incubator.vector/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.incubator.vector/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.incubator.vector/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.incubator.vector/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.internal.vm.ci/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.internal.vm.ci/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.internal.vm.ci/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.internal.vm.ci/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.internal.vm.ci/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.internal.vm.ci/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.internal.vm.compiler.management/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.internal.vm.compiler.management/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.internal.vm.compiler.management/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.internal.vm.compiler.management/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.internal.vm.compiler.management/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.internal.vm.compiler.management/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.internal.vm.compiler/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.internal.vm.compiler/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.internal.vm.compiler/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.internal.vm.compiler/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.internal.vm.compiler/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.internal.vm.compiler/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.jdwp.agent/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.jdwp.agent/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.jdwp.agent/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.jdwp.agent/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.jdwp.agent/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.jdwp.agent/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.jfr/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.jfr/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.jfr/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.jfr/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.jfr/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.jfr/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.jsobject/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.jsobject/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.jsobject/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.jsobject/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.jsobject/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.jsobject/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.localedata/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.localedata/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.localedata/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.localedata/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.localedata/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.localedata/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.localedata/cldr.md" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.localedata/cldr.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.management.agent/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.management.agent/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.management.agent/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.management.agent/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.management.agent/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.management.agent/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.management.jfr/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.management.jfr/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.management.jfr/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.management.jfr/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.management.jfr/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.management.jfr/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.management/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.management/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.management/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.management/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.management/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.management/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.naming.dns/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.naming.dns/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.naming.dns/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.naming.dns/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.naming.dns/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.naming.dns/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.naming.rmi/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.naming.rmi/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.naming.rmi/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.naming.rmi/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.naming.rmi/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.naming.rmi/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.net/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.net/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.net/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.net/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.net/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.net/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.nio.mapmode/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.nio.mapmode/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.nio.mapmode/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.nio.mapmode/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.nio.mapmode/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.nio.mapmode/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.sctp/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.sctp/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.sctp/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.sctp/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.sctp/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.sctp/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.security.auth/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.security.auth/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.security.auth/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.security.auth/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.security.auth/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.security.auth/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.security.jgss/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.security.jgss/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.security.jgss/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.security.jgss/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.security.jgss/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.security.jgss/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.unsupported/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.unsupported/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.unsupported/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.unsupported/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.unsupported/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.unsupported/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.xml.dom/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.xml.dom/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.xml.dom/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.xml.dom/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.xml.dom/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.xml.dom/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.zipfs/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.zipfs/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.zipfs/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.zipfs/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/legal/jdk.zipfs/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/java/legal/jdk.zipfs/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/lib/classlist" beforeDir="false" afterPath="$PROJECT_DIR$/java/lib/classlist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/lib/fontconfig.bfc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/lib/fontconfig.properties.src" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/lib/jawt.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/lib/jrt-fs.jar" beforeDir="false" afterPath="$PROJECT_DIR$/java/lib/jrt-fs.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/lib/jvm.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/lib/modules" beforeDir="false" afterPath="$PROJECT_DIR$/java/lib/modules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/lib/security/default.policy" beforeDir="false" afterPath="$PROJECT_DIR$/java/lib/security/default.policy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/lib/security/public_suffix_list.dat" beforeDir="false" afterPath="$PROJECT_DIR$/java/lib/security/public_suffix_list.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/lib/tzmappings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/release" beforeDir="false" afterPath="$PROJECT_DIR$/java/release" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/2024-03-12.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/2024-03-12.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcl" beforeDir="false" afterPath="$PROJECT_DIR$/mcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcl-installer-ae9f946-windows-amd64.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcl.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mcl.cmd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/pixiv/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/pixiv/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +300,8 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitLabMergeRequestsSettings"><![CDATA[{}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -42,24 +314,58 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python.bot.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/c/PycharmProjects/ariadnebot/plugins&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.bot.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "/home/non/bot",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
+    <layout>
+      <window_info id="Bookmarks" show_stripe_button="false" side_tool="true" />
+      <window_info id="Merge Requests" show_stripe_button="false" />
+      <window_info id="Commit_Guest" show_stripe_button="false" />
+      <window_info id="Pull Requests" show_stripe_button="false" />
+      <window_info id="Settings Sync History" show_stripe_button="false" />
+      <window_info id="Learn" show_stripe_button="false" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32994792" />
+      <window_info id="Commit" order="1" weight="0.32994792" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="bottom" id="Python Packages" order="5" weight="0.1" />
+      <window_info anchor="bottom" id="Python Console" order="6" weight="0.1" />
+      <window_info anchor="right" id="Endpoints" show_stripe_button="false" />
+      <window_info anchor="right" id="SciView" show_stripe_button="false" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Plots" order="5" weight="0.1" />
+    </layout>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\c\PycharmProjects\ariadnebot\plugins" />
@@ -100,7 +406,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
+        <option value="bundled-js-predefined-1d06a55b98c1-db596990d856-JavaScript-PY-241.13688.16" />
+        <option value="bundled-python-sdk-92048412f40e-12e42760b4d0-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.13688.16" />
       </set>
     </attachedChunks>
   </component>
@@ -119,6 +426,7 @@
       <workItem from="1710227220253" duration="14000" />
       <workItem from="1710227240605" duration="11000" />
       <workItem from="1710227298718" duration="3419000" />
+      <workItem from="1710238457454" duration="2879000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -155,7 +463,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="pixiv" />
+    <option name="LAST_COMMIT_MESSAGE" value="pixiv" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
