@@ -3927,3 +3927,167 @@ file:///C:/Users/c/PycharmProjects/ariadnebot/data/top.mrxiaom.qrlogin/mirai-qrc
 2024-03-12 16:06:44 V/Bot.3079809050: Event: BotOfflineEvent.Active(bot=Bot(3079809050), cause=null, reconnect=false)
 2024-03-12 16:06:44 I/Bot.3079809050: Bot is closed manually
 2024-03-12 16:06:44 I/Bot.3079809050: Bot cancelled: Job was cancelled
+2024-03-12 10:24:27 I/main: Starting mirai-console...
+2024-03-12 10:24:27 I/main: 
+
+===================================[ Mirai console 2.16.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2024-03-12 10:24:27 I/main: Backend: version 2.16.0, built on 2023-10-19 22:28:10.
+2024-03-12 10:24:27 I/main: Frontend Terminal: version 2.16.0, provided by Mamoe Technologies
+2024-03-12 10:24:27 I/main: Welcome to visit https://mirai.mamoe.net/
+2024-03-12 10:24:28 I/plugin: Successfully loaded plugin mirai-device-generator v1.3.0
+2024-03-12 10:24:28 I/plugin: Successfully loaded plugin mirai-login-solver-sakura v0.0.12
+2024-03-12 10:24:29 I/plugin: Successfully loaded plugin mirai-api-http v2.9.1
+2024-03-12 10:24:29 I/QRLogin: Loading QRLogin v0.2.0
+2024-03-12 10:24:29 W/QRLogin: 本插件仅在 2.15.0 或以上工作，且在正式版或先行发布版(RC)中可能无法使用
+2024-03-12 10:24:29 I/plugin: Successfully loaded plugin QRLogin v0.2.0
+2024-03-12 10:24:29 I/plugin: Successfully loaded plugin MCL Addon v2.1.1
+2024-03-12 10:24:29 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2024-03-12 10:24:29 I/Mirai HTTP API: ********************************************************
+2024-03-12 10:24:29 I/MahKtorAdapter[http,ws]: Autoreload is disabled because the development mode is off.
+2024-03-12 10:24:29 I/MahKtorAdapter[http,ws]: Application started in 0.145 seconds.
+2024-03-12 10:24:29 I/MahKtorAdapter[http,ws]: Responding at http://localhost:8080
+2024-03-12 10:24:29 I/http adapter: >>> [http adapter] is listening at http://localhost:8080
+2024-03-12 10:24:29 I/ws adapter: >>> [ws adapter] is listening at ws://localhost:8080
+2024-03-12 10:24:29 I/Mirai HTTP API: Http api server is running with verifyKey: lkijnfgh
+2024-03-12 10:24:29 I/Mirai HTTP API: adaptors: [http,ws]
+2024-03-12 10:24:29 I/Mirai HTTP API: ********************************************************
+2024-03-12 10:24:29 I/QRLogin: 正在启用插件 QRLogin v0.2.0
+2024-03-12 10:24:29 I/QRLogin: Mirai 版本: 2.16.0
+2024-03-12 10:24:29 W/QRLogin: 
+2024-03-12 10:24:29 W/QRLogin: 扫码登录可用状态不佳。若扫码登录无法使用，请参见以下链接部署签名服务
+2024-03-12 10:24:29 W/QRLogin: @see https://wiki.mrxiaom.top/mirai/45
+2024-03-12 10:24:29 W/QRLogin: @see https://mirai.mamoe.net/topic/223
+2024-03-12 10:24:29 W/QRLogin: 
+2024-03-12 10:24:29 I/MCL Addon: iTXTech MCL Version: 2.1.2-61c8bd8
+2024-03-12 10:24:29 W/MCL Addon: iTXTech Soyuz 未安装，Soyuz MCL Handler 特性已禁用
+2024-03-12 10:24:29 I/main: 6 plugin(s) enabled.
+2024-03-12 10:26:11 I/main: mirai-console started successfully.
+2024-03-12 10:26:28 W/QRLoginSolver: 当前没有桌面环境，将不使用窗口式扫码登录监听器。
+2024-03-12 10:26:28 I/QRLoginSolver: 登录解决器更换为 QRLoginSolver
+2024-03-12 10:26:28 I/Bot.3079809050: Loaded account secrets from local cache.
+2024-03-12 10:26:28 I/Bot.3079809050: Saved account secrets to local cache for fast login.
+2024-03-12 10:26:28 I/Bot.3079809050: Login successful.
+2024-03-12 10:26:29 V/Bot.3079809050: Event: BotOnlineEvent(bot=Bot(3079809050))
+2024-03-12 10:26:29 I/Bot.3079809050: Bot login successful.
+2024-03-12 10:26:31 W/console: Closing input service...
+2024-03-12 10:26:38 V/Bot.3079809050: Event: BotOfflineEvent.Active(bot=Bot(3079809050), cause=null, reconnect=false)
+2024-03-12 10:26:38 I/Bot.3079809050: Bot is closed manually
+2024-03-12 10:26:38 I/Bot.3079809050: Bot cancelled: Job was cancelled
+2024-03-12 10:27:11 I/main: Starting mirai-console...
+2024-03-12 10:27:11 I/main: 
+
+===================================[ Mirai console 2.16.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2024-03-12 10:27:11 I/main: Backend: version 2.16.0, built on 2023-10-19 22:28:10.
+2024-03-12 10:27:11 I/main: Frontend Terminal: version 2.16.0, provided by Mamoe Technologies
+2024-03-12 10:27:11 I/main: Welcome to visit https://mirai.mamoe.net/
+2024-03-12 10:27:12 I/plugin: Successfully loaded plugin mirai-device-generator v1.3.0
+2024-03-12 10:27:12 I/plugin: Successfully loaded plugin mirai-login-solver-sakura v0.0.12
+2024-03-12 10:27:12 I/plugin: Successfully loaded plugin mirai-api-http v2.9.1
+2024-03-12 10:27:12 I/QRLogin: Loading QRLogin v0.2.0
+2024-03-12 10:27:12 W/QRLogin: 本插件仅在 2.15.0 或以上工作，且在正式版或先行发布版(RC)中可能无法使用
+2024-03-12 10:27:12 I/plugin: Successfully loaded plugin QRLogin v0.2.0
+2024-03-12 10:27:12 I/plugin: Successfully loaded plugin MCL Addon v2.1.1
+2024-03-12 10:27:13 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2024-03-12 10:27:13 I/Mirai HTTP API: ********************************************************
+2024-03-12 10:27:13 I/MahKtorAdapter[http,ws]: Autoreload is disabled because the development mode is off.
+2024-03-12 10:27:13 I/MahKtorAdapter[http,ws]: Application started in 0.126 seconds.
+2024-03-12 10:27:13 I/MahKtorAdapter[http,ws]: Responding at http://localhost:8080
+2024-03-12 10:27:13 I/http adapter: >>> [http adapter] is listening at http://localhost:8080
+2024-03-12 10:27:13 I/ws adapter: >>> [ws adapter] is listening at ws://localhost:8080
+2024-03-12 10:27:13 I/Mirai HTTP API: Http api server is running with verifyKey: lkijnfgh
+2024-03-12 10:27:13 I/Mirai HTTP API: adaptors: [http,ws]
+2024-03-12 10:27:13 I/Mirai HTTP API: ********************************************************
+2024-03-12 10:27:13 I/QRLogin: 正在启用插件 QRLogin v0.2.0
+2024-03-12 10:27:13 I/QRLogin: Mirai 版本: 2.16.0
+2024-03-12 10:27:13 W/QRLogin: 
+2024-03-12 10:27:13 W/QRLogin: 扫码登录可用状态不佳。若扫码登录无法使用，请参见以下链接部署签名服务
+2024-03-12 10:27:13 W/QRLogin: @see https://wiki.mrxiaom.top/mirai/45
+2024-03-12 10:27:13 W/QRLogin: @see https://mirai.mamoe.net/topic/223
+2024-03-12 10:27:13 W/QRLogin: 
+2024-03-12 10:27:13 I/MCL Addon: iTXTech MCL Version: 2.1.2-61c8bd8
+2024-03-12 10:27:13 W/MCL Addon: iTXTech Soyuz 未安装，Soyuz MCL Handler 特性已禁用
+2024-03-12 10:27:13 I/main: 6 plugin(s) enabled.
+2024-03-12 10:27:13 I/main: mirai-console started successfully.
+2024-03-12 10:27:30 W/QRLoginSolver: 当前没有桌面环境，将不使用窗口式扫码登录监听器。
+2024-03-12 10:27:30 I/QRLoginSolver: 登录解决器更换为 QRLoginSolver
+2024-03-12 10:27:30 I/Bot.3079809050: Loaded account secrets from local cache.
+2024-03-12 10:27:30 I/Bot.3079809050: Saved account secrets to local cache for fast login.
+2024-03-12 10:27:30 I/Bot.3079809050: Login successful.
+2024-03-12 10:27:31 V/Bot.3079809050: Event: BotOnlineEvent(bot=Bot(3079809050))
+2024-03-12 10:27:31 I/Bot.3079809050: Bot login successful.
+2024-03-12 10:29:27 V/Bot.3079809050: Ivy(2579950433) -> 蓝p 116012319
+2024-03-12 10:31:20 V/Bot.3079809050: Friend(2579950433) <- [mirai:image:{FBA26652-B2A5-A9E8-F4F2-3585BBF0F711}.png, width=1748, height=2480, size=3983505, type=PNG, isEmoji=false][mirai:image:{9BEB88EB-144A-1B92-F5BD-DA78B1E8EF67}.png, width=1748, height=2480, size=2406839, type=PNG, isEmoji=false][mirai:image:{596068D9-8312-C04D-B513-586645C7A0BC}.png, width=1748, height=2480, size=2929673, type=PNG, isEmoji=false][mirai:image:{18F60DA6-8021-D061-38F1-1A4DF22BB87D}.png, width=1753, height=2480, size=2495857, type=PNG, isEmoji=false][mirai:image:{3EC3E39A-66C4-CA37-8B09-84ED677C19B6}.png, width=1748, height=2480, size=3451285, type=PNG, isEmoji=false][mirai:image:{D7A4BECD-6022-F798-B8EE-FDB6C26F5BD8}.png, width=1753, height=2480, size=2477051, type=PNG, isEmoji=false][mirai:image:{97ED0111-1891-59BC-462C-88E94AEE5BAA}.png, width=1748, height=2480, size=3169725, type=PNG, isEmoji=false][mirai:image:{CDB3D16B-5CF6-56F0-BCFC-5979819F76B7}.png, width=1753, height=2480, size=2704052, type=PNG, isEmoji=false][mirai:image:{F4077E27-304B-5609-AE9F-74A1A1DF0399}.png, width=1748, height=2480, size=2608517, type=PNG, isEmoji=false][mirai:image:{10609B20-53E5-2F27-D101-5FE8174AF4BC}.png, width=1748, height=2480, size=2270257, type=PNG, isEmoji=false][mirai:image:{EA459691-96F9-2AD9-B40D-A538D1086FE5}.png, width=1753, height=2480, size=3523147, type=PNG, isEmoji=false][mirai:image:{6E165B9F-E319-5375-6219-B1EEACD7CA5B}.png, width=1753, height=2480, size=3556965, type=PNG, isEmoji=false][mirai:image:{F4AFC822-7C1B-C189-31DC-F62B0ACF7C2C}.png, width=1748, height=2480, size=2815737, type=PNG, isEmoji=false]
+2024-03-12 10:31:51 V/Bot.3079809050: Ivy(2579950433) -> 蓝p 101684813
+2024-03-12 10:32:00 V/Bot.3079809050: Friend(2579950433) <- [mirai:image:{C228BA14-5A7E-15CD-F167-27E4E4DE6817}.jpg, width=1286, height=1543, size=1905923, type=UNKNOWN, isEmoji=false][mirai:image:{261007CC-F5CF-ED70-BD55-9F200A52D8FF}.jpg, width=1286, height=1543, size=1827667, type=UNKNOWN, isEmoji=false]
+2024-03-12 10:34:52 V/Bot.3079809050: Ivy(2579950433) -> 蓝p
+2024-03-12 10:35:47 V/Bot.3079809050: Ivy(2579950433) -> 蓝p
+2024-03-12 10:37:11 V/Bot.3079809050: Ivy(2579950433) -> 蓝p
+2024-03-12 10:37:11 V/Bot.3079809050: Friend(2579950433) <- 你发的什么几把
+2024-03-12 10:37:40 V/Bot.3079809050: Ivy(2579950433) -> 蓝p
+2024-03-12 10:37:40 V/Bot.3079809050: Friend(2579950433) <- 你发的什么几把
+2024-03-12 10:37:52 V/Bot.3079809050: Ivy(2579950433) -> 蓝p 116012319
+2024-03-12 10:38:10 V/Bot.3079809050: Friend(2579950433) <- [mirai:image:{FBA26652-B2A5-A9E8-F4F2-3585BBF0F711}.png, width=1748, height=2480, size=3983505, type=PNG, isEmoji=false][mirai:image:{9BEB88EB-144A-1B92-F5BD-DA78B1E8EF67}.png, width=1748, height=2480, size=2406839, type=PNG, isEmoji=false][mirai:image:{596068D9-8312-C04D-B513-586645C7A0BC}.png, width=1748, height=2480, size=2929673, type=PNG, isEmoji=false][mirai:image:{18F60DA6-8021-D061-38F1-1A4DF22BB87D}.png, width=1753, height=2480, size=2495857, type=PNG, isEmoji=false][mirai:image:{3EC3E39A-66C4-CA37-8B09-84ED677C19B6}.png, width=1748, height=2480, size=3451285, type=PNG, isEmoji=false][mirai:image:{D7A4BECD-6022-F798-B8EE-FDB6C26F5BD8}.png, width=1753, height=2480, size=2477051, type=PNG, isEmoji=false][mirai:image:{97ED0111-1891-59BC-462C-88E94AEE5BAA}.png, width=1748, height=2480, size=3169725, type=PNG, isEmoji=false][mirai:image:{CDB3D16B-5CF6-56F0-BCFC-5979819F76B7}.png, width=1753, height=2480, size=2704052, type=PNG, isEmoji=false][mirai:image:{F4077E27-304B-5609-AE9F-74A1A1DF0399}.png, width=1748, height=2480, size=2608517, type=PNG, isEmoji=false][mirai:image:{10609B20-53E5-2F27-D101-5FE8174AF4BC}.png, width=1748, height=2480, size=2270257, type=PNG, isEmoji=false][mirai:image:{EA459691-96F9-2AD9-B40D-A538D1086FE5}.png, width=1753, height=2480, size=3523147, type=PNG, isEmoji=false][mirai:image:{6E165B9F-E319-5375-6219-B1EEACD7CA5B}.png, width=1753, height=2480, size=3556965, type=PNG, isEmoji=false][mirai:image:{F4AFC822-7C1B-C189-31DC-F62B0ACF7C2C}.png, width=1748, height=2480, size=2815737, type=PNG, isEmoji=false]
+2024-03-12 10:39:58 V/Bot.3079809050: Ivy(2579950433) -> 我要 116012319/3.jpg
+2024-03-12 10:39:58 V/Bot.3079809050: Friend(2579950433) <- [mirai:image:{D7A4BECD-6022-F798-B8EE-FDB6C26F5BD8}.png, width=1753, height=2480, size=2477051, type=PNG, isEmoji=false]
+2024-03-12 10:41:05 V/Bot.3079809050: Ivy(2579950433) -> 我要 116012319/3
+2024-03-12 10:41:22 V/Bot.3079809050: Ivy(2579950433) -> 我要 116012319/3
+2024-03-12 10:41:22 V/Bot.3079809050: Friend(2579950433) <- 你在想什么不存在的东西
+2024-03-12 10:44:10 V/Bot.3079809050: Ivy(2579950433) -> 蓝p 116012319 分段
+2024-03-12 10:44:23 V/Bot.3079809050: Friend(2579950433) <- 2.jpg
+2024-03-12 10:44:23 V/Bot.3079809050: Friend(2579950433) <- 10.jpg
+2024-03-12 10:44:23 V/Bot.3079809050: Friend(2579950433) <- 5.jpg
+2024-03-12 10:44:23 V/Bot.3079809050: Friend(2579950433) <- 11.jpg
+2024-03-12 10:44:23 V/Bot.3079809050: Friend(2579950433) <- 7.jpg
+2024-03-12 10:44:24 V/Bot.3079809050: Friend(2579950433) <- 3.jpg
+2024-03-12 10:44:24 V/Bot.3079809050: Friend(2579950433) <- 8.jpg
+2024-03-12 10:44:24 V/Bot.3079809050: Friend(2579950433) <- 9.jpg
+2024-03-12 10:44:24 V/Bot.3079809050: Friend(2579950433) <- 13.jpg
+2024-03-12 10:44:25 V/Bot.3079809050: Friend(2579950433) <- 12.jpg
+2024-03-12 10:44:25 V/Bot.3079809050: Friend(2579950433) <- 1.jpg
+2024-03-12 10:44:25 V/Bot.3079809050: Friend(2579950433) <- 6.jpg
+2024-03-12 10:44:25 V/Bot.3079809050: Friend(2579950433) <- 4.jpg
+2024-03-12 10:45:28 V/Bot.3079809050: Ivy(2579950433) -> 蓝p 116012319 分段
+2024-03-12 10:46:39 V/Bot.3079809050: Ivy(2579950433) -> 蓝p 116012319 分段
+2024-03-12 10:46:54 V/Bot.3079809050: Friend(2579950433) <- [mirai:image:{FBA26652-B2A5-A9E8-F4F2-3585BBF0F711}.png, width=1748, height=2480, size=3983505, type=PNG, isEmoji=false]
+2024-03-12 10:46:56 V/Bot.3079809050: Friend(2579950433) <- [mirai:image:{9BEB88EB-144A-1B92-F5BD-DA78B1E8EF67}.png, width=1748, height=2480, size=2406839, type=PNG, isEmoji=false]
+2024-03-12 10:46:57 V/Bot.3079809050: Friend(2579950433) <- [mirai:image:{596068D9-8312-C04D-B513-586645C7A0BC}.png, width=1748, height=2480, size=2929673, type=PNG, isEmoji=false]
+2024-03-12 10:47:00 V/Bot.3079809050: Friend(2579950433) <- [mirai:image:{18F60DA6-8021-D061-38F1-1A4DF22BB87D}.png, width=1753, height=2480, size=2495857, type=PNG, isEmoji=false]
+2024-03-12 10:47:39 V/Bot.3079809050: Friend(2579950433) <- [mirai:image:{3EC3E39A-66C4-CA37-8B09-84ED677C19B6}.png, width=1748, height=2480, size=3451285, type=PNG, isEmoji=false]
+2024-03-12 10:49:17 V/Bot.3079809050: Ivy(2579950433) -> 蓝p 116012319
+2024-03-12 10:49:47 V/Bot.3079809050: Friend(2579950433) <- [mirai:image:{D7A4BECD-6022-F798-B8EE-FDB6C26F5BD8}.png, width=1753, height=2480, size=2477051, type=PNG, isEmoji=false][mirai:image:{18F60DA6-8021-D061-38F1-1A4DF22BB87D}.png, width=1753, height=2480, size=2495857, type=PNG, isEmoji=false][mirai:image:{6E165B9F-E319-5375-6219-B1EEACD7CA5B}.png, width=1753, height=2480, size=3556965, type=PNG, isEmoji=false][mirai:image:{CDB3D16B-5CF6-56F0-BCFC-5979819F76B7}.png, width=1753, height=2480, size=2704052, type=PNG, isEmoji=false][mirai:image:{9BEB88EB-144A-1B92-F5BD-DA78B1E8EF67}.png, width=1748, height=2480, size=2406839, type=PNG, isEmoji=false][mirai:image:{596068D9-8312-C04D-B513-586645C7A0BC}.png, width=1748, height=2480, size=2929673, type=PNG, isEmoji=false][mirai:image:{3EC3E39A-66C4-CA37-8B09-84ED677C19B6}.png, width=1748, height=2480, size=3451285, type=PNG, isEmoji=false][mirai:image:{EA459691-96F9-2AD9-B40D-A538D1086FE5}.png, width=1753, height=2480, size=3523147, type=PNG, isEmoji=false][mirai:image:{F4077E27-304B-5609-AE9F-74A1A1DF0399}.png, width=1748, height=2480, size=2608517, type=PNG, isEmoji=false][mirai:image:{10609B20-53E5-2F27-D101-5FE8174AF4BC}.png, width=1748, height=2480, size=2270257, type=PNG, isEmoji=false][mirai:image:{97ED0111-1891-59BC-462C-88E94AEE5BAA}.png, width=1748, height=2480, size=3169725, type=PNG, isEmoji=false][mirai:image:{FBA26652-B2A5-A9E8-F4F2-3585BBF0F711}.png, width=1748, height=2480, size=3983505, type=PNG, isEmoji=false][mirai:image:{F4AFC822-7C1B-C189-31DC-F62B0ACF7C2C}.png, width=1748, height=2480, size=2815737, type=PNG, isEmoji=false]
+2024-03-12 11:03:00 V/Bot.3079809050: Ivy(2579950433) -> 来图 https://i0.hdslb.com/bfs/new_dyn/7cc1368f5b95fec632e15eb7fc4afad11437582453.png
+2024-03-12 11:03:02 V/Bot.3079809050: Friend(2579950433) <- [mirai:image:{DEF62639-D564-B514-7430-B0DC2A37250E}.png, width=1919, height=1080, size=2623624, type=PNG, isEmoji=false]
+2024-03-12 11:33:32 V/Bot.3079809050: Ivy(2579950433) -> 蓝p 115852952
+2024-03-12 11:33:34 V/Bot.3079809050: Friend(2579950433) <- [mirai:image:{F585FB7A-59E7-7D1F-644C-A17261423BCA}.jpg, width=1074, height=1600, size=273237, type=UNKNOWN, isEmoji=false]
+2024-03-12 11:58:30 V/Bot.3079809050: Ivy(2579950433) -> 来图 https://github.com/LeonBlade/BDTHPlugin/raw/main/icon.png
+2024-03-12 12:00:21 V/Bot.3079809050: Ivy(2579950433) -> 蓝p 115852952
+2024-03-12 12:00:56 V/Bot.3079809050: Friend(2579950433) <- [mirai:image:{F585FB7A-59E7-7D1F-644C-A17261423BCA}.jpg, width=1074, height=1600, size=273237, type=UNKNOWN, isEmoji=false]
+2024-03-12 12:06:38 V/Bot.3079809050: Ivy(2579950433) -> 来图 https://i0.hdslb.com/bfs/new_dyn/fb58efe6a3c55365dc731174ff6543b7546495.png
+2024-03-12 12:06:39 V/Bot.3079809050: Friend(2579950433) <- [mirai:image:{1B1BAEE3-4D7A-3122-A4A4-B9436FBEC1EC}.png, width=1652, height=3035, size=5381970, type=PNG, isEmoji=false]
+2024-03-12 12:09:13 V/Bot.3079809050: Event: BotJoinGroupEvent.Invite(invitor=NormalMember(2579950433))
+2024-03-12 12:09:21 V/Bot.3079809050: [not god allu、Ivy(831364264)] Ivy(2579950433) -> 来图 https://i0.hdslb.com/bfs/new_dyn/fb58efe6a3c55365dc731174ff6543b7546495.png
+2024-03-12 12:09:22 V/Bot.3079809050: Group(831364264) <- [mirai:image:{1B1BAEE3-4D7A-3122-A4A4-B9436FBEC1EC}.png, width=1652, height=3035, size=5381970, type=PNG, isEmoji=false]
+2024-03-12 12:11:31 V/Bot.3079809050: [not god allu、Ivy(831364264)] Ivy(2579950433) -> 来图 https://i0.hdslb.com/bfs/new_dyn/3a294c4ce13d6a581b7286d1b68c0d661517060220.jpg
+2024-03-12 12:11:46 V/Bot.3079809050: Group(831364264) <- [mirai:image:{93C9AF50-3320-CBA5-BB17-BFB5220BA21A}.jpg, width=3020, height=5940, size=2154920, type=JPG, isEmoji=false]

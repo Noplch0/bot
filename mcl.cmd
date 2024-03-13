@@ -1,6 +1,6 @@
 @echo off
 setlocal
-set JAVA_BINARY="C:\Users\c\PycharmProjects\ariadnebot\java\bin\java.exe"
+set JAVA_BINARY=java
 %JAVA_BINARY% -jar mcl.jar %*
 
 set EL=%ERRORLEVEL%

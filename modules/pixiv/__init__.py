@@ -7,6 +7,7 @@ from graia.saya import Channel
 from graia.saya.builtins.broadcast.schema import ListenerSchema
 import requests
 import os
+from time import sleep
 from typing import Union
 
 channel = Channel.current()
@@ -41,18 +42,45 @@ def getpic(pid, geshi='jpg'):
 @channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
 async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
     path = "savedpic"
+    exist = os.listdir('savedpic')
     print(message.display)
-    pid = message.display.split(' ')[1]
-    if pid:
-        result = getpic(pid, geshi='jpg')
-        if result == -1:
-            await app.send_message(sender, '没有那种世俗的欲望（404')
-        elif result == 1:
-            image = element.Image(path=f'./savedpic/{pid}.jpg')
-            await app.send_message(sender, MessageChain(image))
-        elif result == 0:
-            file_list = os.listdir(f'./savedpic/{pid}')
-            imglist = []
-            for i in file_list:
-                imglist.append(element.Image(path=f'./savedpic/{pid}/{i}'))
-            await app.send_message(sender, MessageChain(imglist))
+    msg = message.display.split(' ')
+    if msg[0] == f'蓝p':
+        if len(msg) < 2:
+            await app.send_message(sender, "你发的什么几把")
+            return
+        if pid := message.display.split(' ')[1]:
+            fmt = 'png'
+            result = getpic(pid, geshi=fmt)
+            if result == -1:
+                await app.send_message(sender, '没有那种世俗的欲望（404')
+            elif result == 1:
+                image = element.Image(path=f'./savedpic/{pid}.{fmt}')
+                await app.send_message(sender, MessageChain(image))
+            elif result == 0:
+                file_list = os.listdir(f'./savedpic/{pid}')
+                img_list = []
+                for i in file_list:
+                    if i.endswith(fmt):
+                        img_list.append(element.Image(path=f'./savedpic/{pid}/{i}'))
+                if len(msg) == 3:
+                    if msg[2] == '分段':
+                        for i in img_list:
+                            await app.send_message(sender, MessageChain(i))
+                else:
+                    await app.send_message(sender, MessageChain(img_list))
+        else:
+            await app.send_message(sender, "你发的什么几把")
+    if msg[0] == '我要':
+        if len(msg) < 2:
+            await app.send_message(sender, "你发的什么几把")
+            return
+        if not os.path.exists(f'savedpic/{msg[1]}'):
+            await app.send_message(sender, '你在想什么不存在的东西')
+            return
+        await app.send_message(sender, element.Image(path=f'savedpic/{msg[1]}'))
+    if msg[0] == '来图':
+        if len(msg) < 2:
+            await app.send_message(sender, "你发的什么几把")
+            return
+        await app.send_message(sender,MessageChain(element.Image(url=f'{msg[1]}')))

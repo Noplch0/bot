@@ -15,7 +15,7 @@ from graia.ariadne.connection.config import (
 import requests
 import os
 
-saya=create(Saya)
+saya = create(Saya)
 
 app = Ariadne(
     config(

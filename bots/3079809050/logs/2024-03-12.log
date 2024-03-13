@@ -518,3 +518,283 @@ Caused by: [CIRCULAR REFERENCE: net.mamoe.mirai.network.WrongPasswordException: 
 [0m2024-03-12 16:05:35 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
 [0m2024-03-12 16:05:35 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
 [0m2024-03-12 16:06:44 V/Net 3079809050: Send: StatSvc.register(offline)[0m
+[0m2024-03-12 10:26:28 V/Net 3079809050: Validated caches.[0m
+[0m2024-03-12 10:26:28 V/Net 3079809050: Loading server list from cache.[0m
+[0m2024-03-12 10:26:28 V/Net 3079809050: Server list: 123.125.0.194:80, 153.3.46.25:14000, 60.29.242.161:8080, 111.206.149.168:443, 157.148.55.96:80, 153.3.149.95:80, 157.148.54.249:14000, 123.125.0.194:8080, msfwifi.3g.qq.com:8080, 157.148.54.249:80.[0m
+[92m2024-03-12 10:26:28 I/Net 3079809050: EncryptService SPI is not provided, sso secure ecdh will not be initialized.[0m
+[92m2024-03-12 10:26:28 I/Net 3079809050: ECDH key is valid.[0m
+[0m2024-03-12 10:26:28 V/Net 3079809050: Send: wtlogin.exchange_emp(10:fast-login)[0m
+[0m2024-03-12 10:26:28 V/Net 3079809050: Recv: wtlogin.exchange_emp[0m
+[0m2024-03-12 10:26:28 V/Net 3079809050: Send: StatSvc.register(online)[0m
+[92m2024-03-12 10:26:28 I/Net 3079809050: Server time updated, serverTime: 1710239188, diff: 0ms=0.0s[0m
+[0m2024-03-12 10:26:28 V/Net 3079809050: Recv: StatSvc.register[0m
+[0m2024-03-12 10:26:28 V/Net 3079809050: Loading BdhSession from cache file[0m
+[92m2024-03-12 10:26:28 I/Net 3079809050: Syncing friend message history...[0m
+[92m2024-03-12 10:26:28 I/Net 3079809050: Start loading friend list...[0m
+[0m2024-03-12 10:26:28 V/Net 3079809050: Send: StatSvc.GetDevLoginInfo(StatSvc.GetDevLoginInfo)[0m
+[92m2024-03-12 10:26:28 I/Net 3079809050: Start loading friendGroup list...[0m
+[92m2024-03-12 10:26:28 I/Net 3079809050: Start loading stranger list...[0m
+[0m2024-03-12 10:26:28 V/Net 3079809050: Send: OidbSvc.0x496(OidbSvc.0x496)[0m
+[0m2024-03-12 10:26:28 V/Net 3079809050: Send: OidbSvc.0x5d2_0(OidbSvc.0x5d2_0)[0m
+[0m2024-03-12 10:26:28 V/Net 3079809050: Send: friendlist.getFriendGroupList(friendlist.getFriendGroupList)[0m
+[0m2024-03-12 10:26:28 V/Net 3079809050: Send: friendlist.getFriendGroupList(friendlist.getFriendGroupList)[0m
+[92m2024-03-12 10:26:28 I/Net 3079809050: Start loading group list...[0m
+[0m2024-03-12 10:26:28 V/Net 3079809050: Recv: OidbSvc.0x496[0m
+[0m2024-03-12 10:26:28 V/Net 3079809050: Send: friendlist.GetTroopListReqV2(friendlist.GetTroopListReqV2)[0m
+[92m2024-03-12 10:26:28 I/Net 3079809050: Syncing friend message history: Success.[0m
+[0m2024-03-12 10:26:28 V/Net 3079809050: Recv: StatSvc.GetDevLoginInfo[0m
+[92m2024-03-12 10:26:28 I/Net 3079809050: No OtherClient online.[0m
+[0m2024-03-12 10:26:28 V/Net 3079809050: Recv: OidbSvc.0x5d2_0[0m
+[92m2024-03-12 10:26:28 I/Net 3079809050: Successfully loaded stranger list: 0 in total[0m
+[0m2024-03-12 10:26:28 V/Net 3079809050: Recv: friendlist.getFriendGroupList[0m
+[0m2024-03-12 10:26:28 V/Net 3079809050: Loading friendGroup list: 1/1[0m
+[92m2024-03-12 10:26:28 I/Net 3079809050: Successfully loaded friendGroup list: 1 in total[0m
+[0m2024-03-12 10:26:28 V/Net 3079809050: Recv: friendlist.getFriendGroupList[0m
+[0m2024-03-12 10:26:28 V/Net 3079809050: Loading friend list: 3/3[0m
+[92m2024-03-12 10:26:28 I/Net 3079809050: Successfully loaded friend list: 3 in total[0m
+[0m2024-03-12 10:26:28 V/Net 3079809050: Recv: friendlist.GetTroopListReqV2[0m
+[0m2024-03-12 10:26:28 V/Net 3079809050: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2024-03-12 10:26:29 V/Net 3079809050: Recv: friendlist.GetTroopMemberListReq[0m
+[92m2024-03-12 10:26:29 I/Net 3079809050: Successfully loaded group list: 1 in total.[0m
+[92m2024-03-12 10:26:29 I/Net 3079809050: Scheduled key refresh in 23h 55min 0.0s.[0m
+[92m2024-03-12 10:26:29 I/Net 3079809050: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[0m2024-03-12 10:26:31 V/Net 3079809050: Server list: 180.109.192.57:14000, 49.7.253.65:80, 157.148.54.28:80, 220.194.118.236:80, msfwifi.3g.qq.com:8080, 14.22.9.53:8080, 42.187.183.5:443, 120.232.31.164:443.[0m
+[0m2024-03-12 10:26:31 V/Net 3079809050: Saving bdh session to cache[0m
+[0m2024-03-12 10:26:31 V/Net 3079809050: Saving server list to cache[0m
+[0m2024-03-12 10:26:31 V/Net 3079809050: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2024-03-12 10:26:31 V/Net 3079809050: Recv: ConfigPushSvc.PushReq[0m
+[0m2024-03-12 10:26:32 V/Net 3079809050: Saving bdh session to cache[0m
+[0m2024-03-12 10:26:32 V/Net 3079809050: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2024-03-12 10:26:32 V/Net 3079809050: Recv: ConfigPushSvc.PushReq[0m
+[0m2024-03-12 10:26:38 V/Net 3079809050: Send: StatSvc.register(offline)[0m
+[0m2024-03-12 10:27:30 V/Net 3079809050: Validated caches.[0m
+[0m2024-03-12 10:27:30 V/Net 3079809050: Loading server list from cache.[0m
+[0m2024-03-12 10:27:30 V/Net 3079809050: Server list: 180.109.192.57:14000, 49.7.253.65:80, 157.148.54.28:80, 220.194.118.236:80, msfwifi.3g.qq.com:8080, 14.22.9.53:8080, 42.187.183.5:443, 120.232.31.164:443.[0m
+[92m2024-03-12 10:27:30 I/Net 3079809050: EncryptService SPI is not provided, sso secure ecdh will not be initialized.[0m
+[92m2024-03-12 10:27:30 I/Net 3079809050: ECDH key is valid.[0m
+[0m2024-03-12 10:27:30 V/Net 3079809050: Send: wtlogin.exchange_emp(10:fast-login)[0m
+[0m2024-03-12 10:27:30 V/Net 3079809050: Recv: wtlogin.exchange_emp[0m
+[0m2024-03-12 10:27:30 V/Net 3079809050: Send: StatSvc.register(online)[0m
+[92m2024-03-12 10:27:30 I/Net 3079809050: Server time updated, serverTime: 1710239250, diff: 0ms=0.0s[0m
+[0m2024-03-12 10:27:30 V/Net 3079809050: Recv: StatSvc.register[0m
+[0m2024-03-12 10:27:30 V/Net 3079809050: Loading BdhSession from cache file[0m
+[92m2024-03-12 10:27:30 I/Net 3079809050: Syncing friend message history...[0m
+[92m2024-03-12 10:27:30 I/Net 3079809050: Start loading friend list...[0m
+[92m2024-03-12 10:27:30 I/Net 3079809050: Start loading friendGroup list...[0m
+[0m2024-03-12 10:27:30 V/Net 3079809050: Send: StatSvc.GetDevLoginInfo(StatSvc.GetDevLoginInfo)[0m
+[92m2024-03-12 10:27:30 I/Net 3079809050: Start loading stranger list...[0m
+[0m2024-03-12 10:27:30 V/Net 3079809050: Send: OidbSvc.0x496(OidbSvc.0x496)[0m
+[0m2024-03-12 10:27:30 V/Net 3079809050: Send: OidbSvc.0x5d2_0(OidbSvc.0x5d2_0)[0m
+[0m2024-03-12 10:27:30 V/Net 3079809050: Send: friendlist.getFriendGroupList(friendlist.getFriendGroupList)[0m
+[0m2024-03-12 10:27:30 V/Net 3079809050: Send: friendlist.getFriendGroupList(friendlist.getFriendGroupList)[0m
+[0m2024-03-12 10:27:30 V/Net 3079809050: Recv: StatSvc.GetDevLoginInfo[0m
+[92m2024-03-12 10:27:30 I/Net 3079809050: No OtherClient online.[0m
+[92m2024-03-12 10:27:30 I/Net 3079809050: Successfully loaded stranger list: 0 in total[0m
+[0m2024-03-12 10:27:30 V/Net 3079809050: Recv: OidbSvc.0x5d2_0[0m
+[92m2024-03-12 10:27:30 I/Net 3079809050: Start loading group list...[0m
+[0m2024-03-12 10:27:30 V/Net 3079809050: Recv: OidbSvc.0x496[0m
+[92m2024-03-12 10:27:30 I/Net 3079809050: Syncing friend message history: Success.[0m
+[0m2024-03-12 10:27:30 V/Net 3079809050: Send: friendlist.GetTroopListReqV2(friendlist.GetTroopListReqV2)[0m
+[0m2024-03-12 10:27:31 V/Net 3079809050: Recv: friendlist.getFriendGroupList[0m
+[0m2024-03-12 10:27:31 V/Net 3079809050: Loading friend list: 3/3[0m
+[92m2024-03-12 10:27:31 I/Net 3079809050: Successfully loaded friend list: 3 in total[0m
+[0m2024-03-12 10:27:31 V/Net 3079809050: Recv: friendlist.getFriendGroupList[0m
+[0m2024-03-12 10:27:31 V/Net 3079809050: Loading friendGroup list: 1/1[0m
+[92m2024-03-12 10:27:31 I/Net 3079809050: Successfully loaded friendGroup list: 1 in total[0m
+[0m2024-03-12 10:27:31 V/Net 3079809050: Recv: friendlist.GetTroopListReqV2[0m
+[0m2024-03-12 10:27:31 V/Net 3079809050: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2024-03-12 10:27:31 V/Net 3079809050: Recv: friendlist.GetTroopMemberListReq[0m
+[92m2024-03-12 10:27:31 I/Net 3079809050: Successfully loaded group list: 1 in total.[0m
+[92m2024-03-12 10:27:31 I/Net 3079809050: Scheduled key refresh in 23h 55min 0.0s.[0m
+[92m2024-03-12 10:27:31 I/Net 3079809050: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[0m2024-03-12 10:27:33 V/Net 3079809050: Server list: 183.47.102.193:8080, 49.7.253.58:80, 60.29.238.126:80, 120.233.17.156:443, 42.187.183.5:443, 222.94.109.78:14000, msfwifi.3g.qq.com:8080, 157.148.54.249:80.[0m
+[0m2024-03-12 10:27:33 V/Net 3079809050: Saving bdh session to cache[0m
+[0m2024-03-12 10:27:33 V/Net 3079809050: Saving server list to cache[0m
+[0m2024-03-12 10:27:33 V/Net 3079809050: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2024-03-12 10:27:33 V/Net 3079809050: Recv: ConfigPushSvc.PushReq[0m
+[0m2024-03-12 10:30:01 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:30:02 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:30:02 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:30:02 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:30:02 V/Net 3079809050: [Highway] Uploading private image to 119.45.78.105:443, size=2350.43 KiB[0m
+[0m2024-03-12 10:30:18 V/Net 3079809050: [Highway] Uploading private image: succeed at 145 KiB/s[0m
+[0m2024-03-12 10:30:18 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:30:19 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:30:19 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:30:19 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:30:19 V/Net 3079809050: [Highway] Uploading private image to 106.55.123.165:80, size=2437.36 KiB[0m
+[0m2024-03-12 10:30:36 V/Net 3079809050: [Highway] Uploading private image: succeed at 140 KiB/s[0m
+[0m2024-03-12 10:30:36 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:30:36 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:30:36 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:30:36 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:30:37 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:30:37 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:30:37 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:30:37 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:30:37 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:30:37 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:30:37 V/Net 3079809050: [Highway] Uploading private image to 106.55.123.165:80, size=2547.38 KiB[0m
+[0m2024-03-12 10:30:58 V/Net 3079809050: [Highway] Uploading private image: succeed at 122 KiB/s[0m
+[0m2024-03-12 10:30:58 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:30:58 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:30:58 V/Net 3079809050: [Highway] Uploading private image to 106.55.123.165:80, size=2217.05 KiB[0m
+[0m2024-03-12 10:31:19 V/Net 3079809050: [Highway] Uploading private image: succeed at 105 KiB/s[0m
+[0m2024-03-12 10:31:19 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:31:19 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:31:19 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:31:20 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:31:20 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:31:20 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:31:20 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 10:31:20 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 10:31:59 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:31:59 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:31:59 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:31:59 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:31:59 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 10:32:00 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 10:37:11 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 10:37:11 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 10:37:40 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 10:37:40 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 10:38:06 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:38:07 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:38:07 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:38:07 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:38:07 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:38:07 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:38:07 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:38:07 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:38:07 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:38:08 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:38:08 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:38:08 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:38:08 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:38:08 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:38:08 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:38:08 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:38:08 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:38:09 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:38:09 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:38:09 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:38:09 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:38:09 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:38:09 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:38:09 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:38:09 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:38:09 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:38:09 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 10:38:10 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 10:39:58 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:39:58 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:39:58 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 10:39:58 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 10:41:22 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 10:41:22 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 10:44:22 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 10:44:23 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 10:44:23 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 10:44:23 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 10:44:23 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 10:44:23 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 10:44:23 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 10:44:23 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 10:44:23 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 10:44:23 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 10:44:23 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 10:44:24 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 10:44:24 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 10:44:24 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 10:44:24 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 10:44:24 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 10:44:24 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 10:44:24 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 10:44:24 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 10:44:25 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 10:44:25 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 10:44:25 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 10:44:25 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 10:44:25 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 10:44:25 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 10:44:25 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 10:46:54 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:46:54 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:46:54 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 10:46:54 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 10:46:55 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:46:56 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:46:56 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 10:46:56 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 10:46:57 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:46:57 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:46:57 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 10:46:57 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 10:46:58 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:46:59 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:46:59 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 10:47:00 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 10:47:01 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:47:04 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:47:04 V/Net 3079809050: [Highway] Uploading private image to 119.45.78.105:443, size=3370.4 KiB[0m
+[0m2024-03-12 10:47:38 V/Net 3079809050: [Highway] Uploading private image: succeed at 98 KiB/s[0m
+[0m2024-03-12 10:47:38 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 10:47:39 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 10:49:44 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:49:44 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:49:44 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:49:44 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:49:45 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:49:45 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:49:45 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:49:45 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:49:45 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:49:45 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:49:45 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:49:45 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:49:45 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:49:45 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:49:45 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:49:46 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:49:46 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:49:46 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:49:46 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:49:46 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:49:46 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:49:46 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:49:46 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:49:47 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:49:47 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 10:49:47 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 10:49:47 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 10:49:47 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 11:03:01 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 11:03:01 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 11:03:01 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 11:03:02 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 11:33:34 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 11:33:34 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 11:33:34 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 11:33:34 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 12:00:56 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 12:00:56 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 12:00:56 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 12:00:56 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 12:06:39 V/Net 3079809050: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2024-03-12 12:06:39 V/Net 3079809050: Recv: LongConn.OffPicUp[0m
+[0m2024-03-12 12:06:39 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 12:06:39 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 12:09:12 V/Net 3079809050: Send: ProfileService.Pb.ReqSystemMsgNew.Group(ProfileService.Pb.ReqSystemMsgNew.Group)[0m
+[0m2024-03-12 12:09:12 V/Net 3079809050: Send: friendlist.GetTroopListReqV2(friendlist.GetTroopListReqV2)[0m
+[0m2024-03-12 12:09:13 V/Net 3079809050: Recv: ProfileService.Pb.ReqSystemMsgNew.Group[0m
+[0m2024-03-12 12:09:13 V/Net 3079809050: Recv: friendlist.GetTroopListReqV2[0m
+[0m2024-03-12 12:09:13 V/Net 3079809050: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2024-03-12 12:09:13 V/Net 3079809050: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2024-03-12 12:09:21 V/Net 3079809050: Send: ImgStore.GroupPicUp(ImgStore.GroupPicUp)[0m
+[0m2024-03-12 12:09:22 V/Net 3079809050: Recv: ImgStore.GroupPicUp[0m
+[0m2024-03-12 12:09:22 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 12:09:22 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-03-12 12:11:46 V/Net 3079809050: Send: ImgStore.GroupPicUp(ImgStore.GroupPicUp)[0m
+[0m2024-03-12 12:11:46 V/Net 3079809050: Recv: ImgStore.GroupPicUp[0m
+[0m2024-03-12 12:11:46 V/Net 3079809050: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-03-12 12:11:46 V/Net 3079809050: Recv: MessageSvc.PbSendMsg[0m

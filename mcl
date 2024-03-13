@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
-export JAVA_BINARY=java
+export JAVA_BINARY="/home/non/bot/java/bin/java"
 $JAVA_BINARY -jar mcl.jar $*
