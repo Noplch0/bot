@@ -1,5 +1,6 @@
 from graia.ariadne.app import Ariadne
 from graia.ariadne.event.message import GroupMessage, FriendMessage
+from graia.ariadne.event.mirai import NudgeEvent
 from graia.ariadne.message.chain import MessageChain
 from graia.ariadne.message import element
 from graia.ariadne.model import Group, Friend
@@ -9,6 +10,7 @@ import requests
 import os
 from time import sleep
 from typing import Union
+import random
 
 channel = Channel.current()
 
@@ -23,6 +25,7 @@ def getpic(pid, geshi='jpg'):
         image_url = f'https://pixiv.nl/{pid}.{geshi}'
         print(image_url)
         r = requests.get(image_url)
+        os.makedirs(f'./saved_image', exist_ok=True)
         with open(f'./saved_image/{pid}.{geshi}', 'wb') as f:
             f.write(r.content)
         return 1
@@ -38,10 +41,20 @@ def getpic(pid, geshi='jpg'):
                 f.write(r.content)
     return 0
 
+def random_Image():
+    imgList=os.listdir("saved_image")
+    img=random.choice(imgList)
+    if not img.endswith("png"):
+        return random_Image()
+    else:
+        print(img)
+        return img
+
 
 @channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
 async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
     path = "saved_image"
+    os.makedirs(f'./saved_image', exist_ok=True)
     exist = os.listdir('saved_image')
     print(message.display)
     msg = message.display.split(' ')
@@ -50,6 +63,10 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
             await app.send_message(sender, "你发的什么几把")
             return
         if pid := message.display.split(' ')[1]:
+            for i in pid:
+                if i not in ['0','1','2','3','4','5','6','7','8','9']:
+                    await app.send_message(sender, "你发的什么几把")
+                    return
             fmt = 'png'
             result = getpic(pid, geshi=fmt)
             if result == -1:
@@ -83,4 +100,13 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
         if len(msg) < 2:
             await app.send_message(sender, "你发的什么几把")
             return
-        await app.send_message(sender,MessageChain(element.Image(url=f'{msg[1]}')))
+        elif (code:=requests.get(f'{msg[1]}').status_code)!=200:
+            await app.send_message(sender,f"不对,错了,你要的是{code}")
+        else:
+            await app.send_message(sender,MessageChain(element.Image(url=f'{msg[1]}')))
+    if msg[0]== '随机':
+        await app.send_message(sender,MessageChain(element.Image(path=f'saved_image/{random_Image()}')))
+
+
+
+

@@ -12,24 +12,13 @@ from graia.ariadne.connection.config import (
     WebsocketClientConfig,
     config,
 )
-import requests
-import os
+from typing import Union
 
 saya = create(Saya)
 
 app = Ariadne(
-    config(
-        verify_key="lkijnfgh",  # 填入 VerifyKey
-        account=3079809050,  # 你的机器人的 qq 号
-        # 以下两行（不含注释）里的 host 参数的地址
-        # 是你的 mirai-api-http 地址中的地址与端口
-        # 他们默认为 "http://localhost:8080"
-        # 如果你 mirai-api-http 的地址与端口也是 localhost:8080
-        # 就可以删掉这两行，否则需要修改为 mirai-api-http 的地址与端口
-        #HttpClientConfig(host="localhost:8080"),
-        #WebsocketClientConfig(host="localhost:8080"),
-    ),
-)
+    connection=config(3079809050,"lkijnfgh",)
+    )
 
 with saya.module_context():
     for module_info in pkgutil.iter_modules(["modules"]):
