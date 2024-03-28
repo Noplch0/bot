@@ -7,9 +7,10 @@ from graia.ariadne.model import Group, Friend
 from graia.saya import Channel
 from graia.saya.builtins.broadcast.schema import ListenerSchema
 import requests
+from typing import Union
 import os
 from time import sleep
-from typing import Union
+
 import random
 
 channel = Channel.current()
@@ -20,6 +21,8 @@ def getpic(pid, geshi='jpg'):
     print(image_url)
     r = requests.get(image_url)
     if '這個作品可能已被刪除，或無法取得' in r.text:
+        return -1
+    elif r.status_code!=200:
         return -1
     elif '指定' in r.text:
         image_url = f'https://pixiv.nl/{pid}.{geshi}'
