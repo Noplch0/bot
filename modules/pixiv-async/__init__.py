@@ -10,6 +10,9 @@ import requests
 from typing import Union
 from pixivpy_async import *
 
+http_proxy='http://127.0.0.1:7890'
+
+
 channel = Channel.current()
 @channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
 async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
