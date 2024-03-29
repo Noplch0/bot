@@ -27,8 +27,6 @@ def getpic(pid,config):
     r = requests.get(image_url)
     if '這個作品可能已被刪除，或無法取得' in r.text:
         return -1
-    elif r.status_code!=200:
-        return -1
     elif '指定' in r.text:
         image_url = f'https://pixiv.{fix}/{pid}.{geshi}'
         print(image_url)
@@ -47,7 +45,7 @@ def getpic(pid,config):
                 break
             with open(f'./saved_image/{pid}/{i}.{geshi}', 'wb') as f:
                 f.write(r.content)
-    return 0
+    return r.status_code
 
 def random_Image():
     imgList=os.listdir("saved_image")
@@ -57,13 +55,6 @@ def random_Image():
     else:
         print(img)
         return img
-
-def check_member(*members: int):
-    async def check_member_deco(app: Ariadne, group: Group, member: Member):
-        if member.id not in members:
-            await app.send_message(group, MessageChain(At(member.id), "对不起，您的权限并不够"))
-            raise ExecutionStop
-    return Depend(check_member_deco)
 
 
 @channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
@@ -83,13 +74,13 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
                     await app.send_message(sender, "你发的什么几把")
                     return
             fmt = 'png'
-            result = getpic(pid, geshi=fmt)
+            result = getpic(pid,config)
             if result == -1:
                 await app.send_message(sender, '没有那种世俗的欲望（404')
             elif result == 1:
                 image = Image(path=f'./saved_image/{pid}.{fmt}')
                 await app.send_message(sender, MessageChain(image))
-            elif result == 0:
+            else:
                 file_list = os.listdir(f'./saved_image/{pid}')
                 img_list = []
                 for i in file_list:
@@ -125,10 +116,13 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
 
 
 
-@channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage],decorators=[Depend(check_member(config["Admin"]))]))
+@channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
 async def __(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
     msg = message.display.split(' ')
     if msg[0] == '蓝p修改':
+        if sender.id !=config["Admin"]:
+            await app.send_message(sender,"啊？")
+            return
         if len(msg)<=2:
             await app.send_message(sender,"格式错误！使用方法：蓝p修改 <网址后缀/文件后缀> <修改后内容>")
         else:
@@ -140,10 +134,14 @@ async def __(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
                 await app.send_message(sender,MessageChain(response))
             elif msg[1]=='文件后缀':
                 response = f'文件后缀已由{config["pixiv"]["img_format"]} 修改为 {msg[2]}'
-                config["pixiv"]["fix"]=msg[2]
+                config["pixiv"]["img_format"]=msg[2]
                 with open("./botconfig.json","w") as f:
                     json.dump(config,f,ensure_ascii=False,indent=4)
                 await app.send_message(sender,MessageChain(response))
     if msg[0]=="备份":
-        with open("botconfig.json.backup",'w') as f:
+        with open("botconfig.backup.json",'w') as f:
             json.dump(config,f,ensure_ascii=False,indent=4)
+        await app.send_message(sender,'哦')
+    
+    if msg[0]=="看看设置":
+        await app.send_message(sender,str(config))

@@ -13,11 +13,14 @@ from graia.ariadne.connection.config import (
     config,
 )
 from typing import Union
+import json
 
 saya = create(Saya)
+with open('botconfig.json','r') as f:
+    bot_config=json.load(f)
 
 app = Ariadne(
-    connection=config(3079809050,"lkijnfgh",)
+    connection=config(bot_config['Bot'],"lkijnfgh",)
     )
 
 with saya.module_context():

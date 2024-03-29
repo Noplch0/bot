@@ -1,7 +1,8 @@
 {
     "pixiv": {
         "fix": "nl",
-        "img_format": "png"
+        "img_format": "jpg"
     },
-    "Admin": 2579950433
+    "Admin": 2579950433,
+    "Bot":3079809050
 }
