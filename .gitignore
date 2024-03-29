@@ -5,9 +5,10 @@ java/
 logs/
 config.json
 mcl-installer-1.0.7-linux-amd64
-mcl.cmd
-plugins.zip
+mcl.cmdgit
 t544-enc-windows-x64.dll
 .idea/
 saved_image/
 modules/5000zhao/test.png
+mcl
+mcl.jar
