@@ -30,6 +30,8 @@ channel.author(__author__)
 @channel.use(ListenerSchema(listening_events=[GroupMessage,FriendMessage]))
 async def pornhub_style_logo_generator(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
     msg = message.display.split(' ')
+    if msg[0] == '5000' and len(msg) != 3:
+        await app.send_message(sender,MessageChain(Image(path='./modules/5000zhao/error.png')))
     if msg[0]=='5000' and len(msg)==3:
         _, left_text, right_text=msg
         try:
@@ -38,3 +40,4 @@ async def pornhub_style_logo_generator(app: Ariadne, sender: Union[Group, Friend
             await app.send_message(sender, MessageChain(Image(path="./modules/5000zhao/error.png")))
             return None
         await app.send_message(sender,MessageChain(Image(path='./modules/5000zhao/test.png')))
+    

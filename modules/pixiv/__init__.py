@@ -2,22 +2,27 @@ from graia.ariadne.app import Ariadne
 from graia.ariadne.event.message import GroupMessage, FriendMessage
 from graia.ariadne.event.mirai import NudgeEvent
 from graia.ariadne.message.chain import MessageChain
-from graia.ariadne.message import element
-from graia.ariadne.model import Group, Friend
+from graia.ariadne.message.element import *
+from graia.ariadne.model import Group, Friend, Member
 from graia.saya import Channel
 from graia.saya.builtins.broadcast.schema import ListenerSchema
 import requests
+from graia.broadcast.builtin.decorators import Depend
+from graia.broadcast.exceptions import ExecutionStop
 from typing import Union
 import os
-from time import sleep
-
+import json
 import random
 
 channel = Channel.current()
 
+with open('botconfig.json','r') as f:
+    config=json.load(f)
 
-def getpic(pid, geshi='jpg'):
-    image_url = f'https://pixiv.nl/{pid}-1.{geshi}'
+def getpic(pid,config):
+    fix=config['pixiv']['fix']
+    geshi=config['pixiv']["img_format"]
+    image_url = f'https://pixiv.{fix}/{pid}-1.{geshi}'
     print(image_url)
     r = requests.get(image_url)
     if '這個作品可能已被刪除，或無法取得' in r.text:
@@ -25,7 +30,7 @@ def getpic(pid, geshi='jpg'):
     elif r.status_code!=200:
         return -1
     elif '指定' in r.text:
-        image_url = f'https://pixiv.nl/{pid}.{geshi}'
+        image_url = f'https://pixiv.{fix}/{pid}.{geshi}'
         print(image_url)
         r = requests.get(image_url)
         os.makedirs(f'./saved_image', exist_ok=True)
@@ -35,7 +40,7 @@ def getpic(pid, geshi='jpg'):
     else:
         for i in range(1, 999):
             os.makedirs(f'./saved_image/{pid}', exist_ok=True)
-            image_url = f'https://pixiv.nl/{pid}-{i}.{geshi}'
+            image_url = f'https://pixiv.{fix}/{pid}-{i}.{geshi}'
             print(image_url)
             r = requests.get(image_url)
             if '作品' in r.text:
@@ -52,6 +57,13 @@ def random_Image():
     else:
         print(img)
         return img
+
+def check_member(*members: int):
+    async def check_member_deco(app: Ariadne, group: Group, member: Member):
+        if member.id not in members:
+            await app.send_message(group, MessageChain(At(member.id), "对不起，您的权限并不够"))
+            raise ExecutionStop
+    return Depend(check_member_deco)
 
 
 @channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
@@ -75,14 +87,14 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
             if result == -1:
                 await app.send_message(sender, '没有那种世俗的欲望（404')
             elif result == 1:
-                image = element.Image(path=f'./saved_image/{pid}.{fmt}')
+                image = Image(path=f'./saved_image/{pid}.{fmt}')
                 await app.send_message(sender, MessageChain(image))
             elif result == 0:
                 file_list = os.listdir(f'./saved_image/{pid}')
                 img_list = []
                 for i in file_list:
                     if i.endswith(fmt):
-                        img_list.append(element.Image(path=f'./saved_image/{pid}/{i}'))
+                        img_list.append(Image(path=f'./saved_image/{pid}/{i}'))
                 if len(msg) == 3:
                     if msg[2] == '分段':
                         for i in img_list:
@@ -98,7 +110,7 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
         if not os.path.exists(f'saved_image/{msg[1]}'):
             await app.send_message(sender, '你在想什么不存在的东西')
             return
-        await app.send_message(sender, element.Image(path=f'saved_image/{msg[1]}'))
+        await app.send_message(sender, Image(path=f'saved_image/{msg[1]}'))
     if msg[0] == '来图':
         if len(msg) < 2:
             await app.send_message(sender, "你发的什么几把")
@@ -106,10 +118,32 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
         elif (code:=requests.get(f'{msg[1]}').status_code)!=200:
             await app.send_message(sender,f"不对,错了,你要的是{code}")
         else:
-            await app.send_message(sender,MessageChain(element.Image(url=f'{msg[1]}')))
+            await app.send_message(sender,MessageChain(Image(url=f'{msg[1]}')))
     if msg[0]== '随机':
-        await app.send_message(sender,MessageChain(element.Image(path=f'saved_image/{random_Image()}')))
+        await app.send_message(sender,MessageChain(Image(path=f'saved_image/{random_Image()}')))
 
 
 
 
+@channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage],decorators=[Depend(check_member(config["Admin"]))]))
+async def __(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
+    msg = message.display.split(' ')
+    if msg[0] == '蓝p修改':
+        if len(msg)<=2:
+            await app.send_message(sender,"格式错误！使用方法：蓝p修改 <网址后缀/文件后缀> <修改后内容>")
+        else:
+            if msg[1]=='网址后缀':
+                response = f'网址后缀已由{config["pixiv"]["fix"]} 修改为 {msg[2]}'
+                config["pixiv"]["fix"]=msg[2]
+                with open("./botconfig.json","w") as f:
+                    json.dump(config,f)
+                await app.send_message(sender,MessageChain(response))
+            elif msg[1]=='文件后缀':
+                response = f'文件后缀已由{config["pixiv"]["img_format"]} 修改为 {msg[2]}'
+                config["pixiv"]["fix"]=msg[2]
+                with open("./botconfig.json","w") as f:
+                    json.dump(config,f,ensure_ascii=False,indent=4)
+                await app.send_message(sender,MessageChain(response))
+    if msg[0]=="备份":
+        with open("botconfig.json.backup",'w') as f:
+            json.dump(config,f,ensure_ascii=False,indent=4)
