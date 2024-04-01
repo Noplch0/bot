@@ -12,96 +12,62 @@ from graia.broadcast.exceptions import ExecutionStop
 from typing import Union
 import os
 import json
-import random
+from .img import *
 
 channel = Channel.current()
 
 with open('botconfig.json','r') as f:
     config=json.load(f)
 
-def getpic(pid,config):
-    fix=config['pixiv']['fix']
-    geshi=config['pixiv']["img_format"]
-    image_url = f'https://pixiv.{fix}/{pid}-1.{geshi}'
-    print(image_url)
-    r = requests.get(image_url)
-    if '這個作品可能已被刪除，或無法取得' in r.text:
-        return -1
-    elif '指定' in r.text:
-        image_url = f'https://pixiv.{fix}/{pid}.{geshi}'
-        print(image_url)
-        r = requests.get(image_url)
-        os.makedirs(f'./saved_image', exist_ok=True)
-        with open(f'./saved_image/{pid}.{geshi}', 'wb') as f:
-            f.write(r.content)
-        return 1
-    else:
-        for i in range(1, 999):
-            os.makedirs(f'./saved_image/{pid}', exist_ok=True)
-            image_url = f'https://pixiv.{fix}/{pid}-{i}.{geshi}'
-            print(image_url)
-            r = requests.get(image_url)
-            if '作品' in r.text:
-                break
-            with open(f'./saved_image/{pid}/{i}.{geshi}', 'wb') as f:
-                f.write(r.content)
-    return r.status_code
-
-def random_Image():
-    imgList=os.listdir("saved_image")
-    img=random.choice(imgList)
-    if not img.endswith("png"):
-        return random_Image()
-    else:
-        print(img)
-        return img
 
 
 @channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
 async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
-    path = "saved_image"
-    os.makedirs(f'./saved_image', exist_ok=True)
-    exist = os.listdir('saved_image')
+
+
+    img_path = "saved_image"
+    init_img_folder(img_path)
+
     print(message.display)
     msg = message.display.split(' ')
-    if msg[0] == f'蓝p':
-        if len(msg) < 2:
+
+
+    if msg[0] == '蓝p':
+        if len(msg) < 2 :
             await app.send_message(sender, "你发的什么几把")
             return
-        if pid := message.display.split(' ')[1]:
-            for i in pid:
-                if i not in ['0','1','2','3','4','5','6','7','8','9']:
-                    await app.send_message(sender, "你发的什么几把")
-                    return
-            fmt = 'png'
+        if pid := msg[1]:
+            if not pid.isnumeric():
+                await app.send_message(sender, "你发的什么几把")
+                return
             result = getpic(pid,config)
             if result == -1:
-                await app.send_message(sender, '没有那种世俗的欲望（404')
+                await app.send_message(sender, '不存在指定图片:(')
             elif result == 1:
-                image = Image(path=f'./saved_image/{pid}.{fmt}')
+                image = Image(path=f'./{img_path}/{pid}.{config["pixiv"]["img_format"]}')
                 await app.send_message(sender, MessageChain(image))
             else:
-                file_list = os.listdir(f'./saved_image/{pid}')
+                file_list = os.listdir(f'./{img_path}/{pid}')
                 img_list = []
                 for i in file_list:
-                    if i.endswith(fmt):
-                        img_list.append(Image(path=f'./saved_image/{pid}/{i}'))
-                if len(msg) == 3:
-                    if msg[2] == '分段':
-                        for i in img_list:
-                            await app.send_message(sender, MessageChain(i))
+                    if i.endswith(config["pixiv"]["img_format"]):
+                        img_list.append(Image(path=f'./{img_path}/{pid}/{i}'))
                 else:
                     await app.send_message(sender, MessageChain(img_list))
         else:
             await app.send_message(sender, "你发的什么几把")
+
+
     if msg[0] == '我要':
         if len(msg) < 2:
             await app.send_message(sender, "你发的什么几把")
             return
-        if not os.path.exists(f'saved_image/{msg[1]}'):
+        if not os.path.exists(f'{img_path}/{msg[1]}'):
             await app.send_message(sender, '你在想什么不存在的东西')
             return
-        await app.send_message(sender, Image(path=f'saved_image/{msg[1]}'))
+        await app.send_message(sender, Image(path=f'{img_path}/{msg[1]}'))
+
+
     if msg[0] == '来图':
         if len(msg) < 2:
             await app.send_message(sender, "你发的什么几把")
@@ -110,15 +76,30 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
             await app.send_message(sender,f"不对,错了,你要的是{code}")
         else:
             await app.send_message(sender,MessageChain(Image(url=f'{msg[1]}')))
+
+
     if msg[0]== '随机':
-        await app.send_message(sender,MessageChain(Image(path=f'saved_image/{random_Image()}')))
+        await app.send_message(sender,MessageChain(Image(path=f'{img_path}/{random_Image()}')))
 
 
+    if msg[0] == "图片删除":
+        if len(msg) < 2:
+            await app.send_message(sender, "你发的什么几把")
+            return
+        if del_img(msg[1]):
+            await app.send_message(sender,str(print_tree(img_path))+'删除成功')
+        else:
+            await app.send_message(sender,str(print_tree(img_path))+'删除失败')
+
+    if msg[0]=='图片列出':
+        await app.send_message(sender,str(print_tree(img_path)))
 
 
 @channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
 async def __(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
     msg = message.display.split(' ')
+
+
     if msg[0] == '蓝p修改':
         if sender.id !=config["Admin"]:
             await app.send_message(sender,"啊？")
@@ -138,10 +119,13 @@ async def __(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
                 with open("./botconfig.json","w") as f:
                     json.dump(config,f,ensure_ascii=False,indent=4)
                 await app.send_message(sender,MessageChain(response))
+
+
     if msg[0]=="备份":
         with open("botconfig.backup.json",'w') as f:
             json.dump(config,f,ensure_ascii=False,indent=4)
         await app.send_message(sender,'哦')
+
     
     if msg[0]=="看看设置":
         await app.send_message(sender,str(config))
