@@ -1,6 +1,7 @@
 savedpic/
 bots/
 config/
+config/*
 java/
 logs/
 config.json
@@ -18,3 +19,5 @@ botconfig.backup.json
 mcl.cmd
 data/top.mrxiaom.qrlogin/
 */__pycache__/
+config.json
+LICENSE

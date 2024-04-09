@@ -16,7 +16,7 @@ from typing import Union
 import json
 
 saya = create(Saya)
-with open('botconfig.json','r') as f:
+with open(r"botconfig.json",'r',encoding='utf-8')as f:
     bot_config=json.load(f)
 
 app = Ariadne(

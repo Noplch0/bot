@@ -16,7 +16,7 @@ from .img import *
 
 channel = Channel.current()
 
-with open('botconfig.json','r') as f:
+with open(r"botconfig.json",'r',encoding='utf-8')as f:
     config=json.load(f)
 
 

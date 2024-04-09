@@ -84,9 +84,9 @@ def get_price(item,configs):
         )
     return itemlist
     
-
+"""
 l=get_price(get_item_id('超强力胶',config)[0],config)
 for i in l:
     st=f'{i.id,i.name,i.isHQ}'
     print(st)
-    
+    """
