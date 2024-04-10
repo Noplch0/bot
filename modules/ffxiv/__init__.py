@@ -25,10 +25,12 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
     if msg[0]=='查价':
         if len(msg)<2:
             chain=MessageChain(Plain("?你想查什么玩意儿？"))
+            await app.send_message(sender,chain)
             return
         namelist=get_item_id(msg[1],config)
         if not namelist:
             chain=MessageChain(Plain("这种东西不存在吧"))
+            await app.send_message(sender,chain)
             return
         messagelist=['在 %s 的板子上找到这些数据：\n'%(config['ffxiv']['world'])]
         for i in namelist:
@@ -40,6 +42,4 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
                 rarestr=f'({"HQ" if items.isHQ else "NQ"}){items.price}x{items.quantity}(合计{items.totalprice}) {items.retainername}@{items.world}\n'
                 messagelist.append(rarestr)
         chain=MessageChain(messagelist)
-
-
-    await app.send_message(sender,chain)
+        await app.send_message(sender,chain)

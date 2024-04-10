@@ -5,11 +5,11 @@
     },
     "Admin": 2579950433,
     "Bot": 3790784417,
-    "ffxiv":{
-        "data_url":"https://cafemaker.wakingsands.com/",
-        "price_url":"https://universalis.app/api/v2/",
-        "world":"猫小胖",
-        "maxlistnumber":5,
-        "maxcurrentdata":10
+    "ffxiv": {
+        "data_url": "https://cafemaker.wakingsands.com/",
+        "price_url": "https://universalis.app/api/v2/",
+        "world": "猫小胖",
+        "maxlistnumber": 5,
+        "maxcurrentdata": 10
     }
 }
