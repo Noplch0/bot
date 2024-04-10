@@ -42,7 +42,11 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
                 rarestr=f'({"HQ" if items.isHQ else "NQ"}){items.price}x{items.quantity}(合计{items.totalprice}) {items.retainername}@{items.world}\n'
                 messagelist.append(rarestr)
         chain=MessageChain(messagelist)
+<<<<<<< HEAD
         await app.send_message(sender,chain)
         return
 
     
+=======
+        await app.send_message(sender,chain)
+>>>>>>> 5323e9a3e3e7ec7697379f4b3e0c5f0f7190c96c

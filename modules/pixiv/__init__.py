@@ -16,15 +16,16 @@ from .img import *
 
 channel = Channel.current()
 
-with open(r"botconfig.json",'r',encoding='utf-8')as f:
-    config=json.load(f)
-
+def getconfig():
+    with open(r"botconfig.json",'r',encoding='utf-8')as f:
+        config=json.load(f)
+    return config
 
 
 @channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
 async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
 
-
+    config=getconfig()
     img_path = "saved_image"
     init_img_folder(img_path)
 
@@ -95,10 +96,10 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
         await app.send_message(sender,str(print_tree(img_path)))
 
 
-@channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
+"""@channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
 async def __(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
     msg = message.display.split(' ')
-
+    config=getconfig()
 
     if msg[0] == '蓝p修改':
         if sender.id !=config["Admin"]:
@@ -129,3 +130,4 @@ async def __(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
     
     if msg[0]=="看看设置":
         await app.send_message(sender,str(config))
+"""
