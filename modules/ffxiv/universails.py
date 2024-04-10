@@ -40,6 +40,7 @@ class Itemonsale:
 
 def get_json(url,params):
     result=requests.get(url=url,params=params)
+    print(url)
     r=json.loads(result.text)
     return r
 
@@ -52,17 +53,21 @@ def get_item_id(name,config):
         "string":name
     }
     r=get_json(data_url,item_params)
+    print(len(r["Results"]))
     if len(r["Results"])==0:
         return False
     idList=[]
+    l=0
     for i in r["Results"]:
         idList.append(ItemswithID(i["ID"]))
+        l+=1
+        if l >=num:
+            break
     return idList[:num]
 
 
 def get_price(item,configs):
     price_url=configs["ffxiv"]["price_url"]+config["ffxiv"]["world"]+'/'+str(item.id)
-    print(price_url)
     params={
         "itemIds":item.id,
         "listings":configs["ffxiv"]["maxcurrentdata"]
