@@ -52,6 +52,12 @@ async def __(app: Ariadne, sender: Friend, message: MessageChain):
             )
     elif msg[0]==head[2] and len(msg)==1:
         saveconfig(config,backup=True)
+        mesg=MessageChain(["备份成功，现设置为：",
+                Plain(
+                    format_json(config)
+                )
+            ]
+            )
     elif msg[0]==head[3]:
         if len(msg)<=2:
             mesg=MessageChain(Plain('参数错误！使用方法例：增加设置 这个-设置-是 存在的!'))
@@ -78,3 +84,4 @@ async def __(app: Ariadne, sender: Friend, message: MessageChain):
                 )
             ]
             )
+    await app.send_message(sender,mesg)

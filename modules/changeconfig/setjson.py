@@ -1,5 +1,5 @@
 import json
-
+import distutils
 def format_json(origin_json):
     return json.dumps(origin_json,sort_keys=True,indent=4)
 
@@ -20,7 +20,23 @@ def change_list_intent(list,namelist,newintent=False):
         except:
             return False
     if newintent:
-        a[namelist[-1]]=newintent
+        a[namelist[-1]]=change_type(a[namelist[-1]],newintent)
+
+def change_type(origin,new):
+    if type(origin)==type(new):
+        return new
+    elif type(origin)==str:
+        print('changed to str')
+        return str(new)
+    elif type(origin)==int:
+        print('changed to int')
+        return int(new)
+    elif type(origin)==bool:
+        print('changed to bbool')
+        if new=="True":
+            return True
+        if new=="False":
+            return False
 
 
 def construct_dict(index:list,indent):
