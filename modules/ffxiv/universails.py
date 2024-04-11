@@ -1,5 +1,6 @@
 import requests
 import json
+import time
 
 def getconfig():
     with open(r"botconfig.json",'r',encoding='utf-8')as f:
@@ -93,9 +94,5 @@ def get_price(item,configs):
         )
     return itemlist
     
-"""
-l=get_price(get_item_id('超强力胶',config)[0],config)
-for i in l:
-    st=f'{i.id,i.name,i.isHQ}'
-    print(st)
-    """
+def timestirp(stamp):
+    return time.strftime("%Y-%m-%d %H:%M:%S",time.localtime(stamp))

@@ -41,5 +41,6 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
             for items in r:
                 rarestr=f'({"HQ" if items.isHQ else "NQ"}){items.price}x{items.quantity}(合计{items.totalprice}) {items.retainername}@{items.world}\n'
                 messagelist.append(rarestr)
+            messagelist.append(timestirp(r['lastUploadTime'])+"\n")
         chain=MessageChain(messagelist)
         await app.send_message(sender,chain)
