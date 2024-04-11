@@ -1,4 +1,3 @@
-
 from graia.saya import Saya, Channel
 from graia.saya.builtins.broadcast.schema import ListenerSchema
 from graia.ariadne.app import Ariadne
