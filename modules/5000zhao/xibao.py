@@ -6,30 +6,20 @@ background="./modules/5000zhao/background.jpg"
 color='#E4080A'
 
 def xibaodotjpg(text:list):
-    
-    fontsize=45
-    font=ImageFont.truetype(textfont,fontsize)
-    
-    #w,h=font.getsize(text)
 
     jpg=Image.open(background)
     draw=ImageDraw.Draw(jpg)
     width,height=jpg.size
-
-    #draw.text((((width-w)/2),height/2),text,fill=color,font=font)
+    fontsize=40
+    font=ImageFont.truetype(font=textfont,size=fontsize)    
     
-    space=28
+    space=fontsize
     h=(fontsize+space)*len(text)
     for i in range(len(text)):
-        w=len(text[i])*fontsize
+        w,h=font.getsize(text[i])
         draw.text(((width-w)/2,(height-h)/2+i*(fontsize+space)),text[i],font=font,fill=color)
-    
-    
-    
-    
-    
-    #jpg.show()
+
     jpg.save(img)
 
 
-xibaodotjpg(['1','2','3'])
+#xibaodotjpg(['有铸币想生成喜报','但是不写内容'])

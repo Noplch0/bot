@@ -230,4 +230,4 @@ def genImage(word_a="5000兆円", word_b="欲しい!", default_width=1500, heigh
     return final_image
 
 
-#genImage(word_a="出生！", word_b="你发了甚么！").save("./temp.png")
+#genImage(word_a="你发这种东西", word_b="给谁看啊").save("./modules/5000zhao/error.png")
