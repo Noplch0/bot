@@ -30,8 +30,8 @@ if not os.path.exists("botconfig.json"):
             "fix": "nl",
             "img_format": "png"
         },
-        "Admin": 2579950433,
-        "Bot": 3079809050,
+        "Admin": "<your own qq number>",
+        "Bot": "<bot qq number>",
         "ffxiv": {
             "data_url": "https://cafemaker.wakingsands.com/",
             "price_url": "https://universalis.app/api/v2/",
