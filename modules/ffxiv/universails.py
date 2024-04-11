@@ -92,7 +92,7 @@ def get_price(item,configs):
                 totalprice=i["total"]
             )
         )
-    return itemlist
+    return [itemlist,r["lastUploadTime"]]
     
 def timestirp(stamp):
     return time.strftime("%Y-%m-%d %H:%M:%S",time.localtime(stamp))

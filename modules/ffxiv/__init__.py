@@ -35,12 +35,12 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
         messagelist=['在 %s 的板子上找到这些数据：\n'%(config['ffxiv']['world'])]
         for i in namelist:
             r=get_price(i,config)
-            if len(r)==0:
+            if len(r[0])==0:
                 continue
             messagelist.append(f"{i.name}:\n")
-            for items in r:
+            for items in r[0]:
                 rarestr=f'({"HQ" if items.isHQ else "NQ"}){items.price}x{items.quantity}(合计{items.totalprice}) {items.retainername}@{items.world}\n'
                 messagelist.append(rarestr)
-            messagelist.append(timestirp(r['lastUploadTime'])+"\n")
+            messagelist.append(f"最近更新时间：{timestirp(int(r[1])/1000)}\n")
         chain=MessageChain(messagelist)
         await app.send_message(sender,chain)

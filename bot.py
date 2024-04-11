@@ -1,3 +1,5 @@
+import json
+import os
 from graia.ariadne.app import Ariadne
 import pkgutil
 from graia.ariadne.entry import config
@@ -13,17 +15,6 @@ from graia.ariadne.connection.config import (
     config,
 )
 from typing import Union
-import json
-import os
-
-saya = create(Saya)
-with open(r"botconfig.json",'r',encoding='utf-8')as f:
-    bot_config=json.load(f)
-
-app = Ariadne(
-    connection=config(bot_config['Bot'],"lkijnfgh",)
-    )
-
 if not os.path.exists("botconfig.json"):
     settings={
         "pixiv": {
@@ -42,6 +33,17 @@ if not os.path.exists("botconfig.json"):
     }
     with open('botconfig.json','w',encoding='utf-8') as f:
         json.dump(settings,f,ensure_ascii=False,sort_keys=True,indent=4)
+
+
+
+saya = create(Saya)
+with open(r"botconfig.json",'r',encoding='utf-8')as f:
+    bot_config=json.load(f)
+
+app = Ariadne(
+    connection=config(bot_config['Bot'],"lkijnfgh")
+    )
+
 
 with saya.module_context():
     for module_info in pkgutil.iter_modules(["modules"]):
