@@ -95,39 +95,3 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
     if msg[0]=='图片列出':
         await app.send_message(sender,str(print_tree(img_path)))
 
-
-"""@channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
-async def __(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
-    msg = message.display.split(' ')
-    config=getconfig()
-
-    if msg[0] == '蓝p修改':
-        if sender.id !=config["Admin"]:
-            await app.send_message(sender,"啊？")
-            return
-        if len(msg)<=2:
-            await app.send_message(sender,"格式错误！使用方法：蓝p修改 <网址后缀/文件后缀> <修改后内容>")
-        else:
-            if msg[1]=='网址后缀':
-                response = f'网址后缀已由{config["pixiv"]["fix"]} 修改为 {msg[2]}'
-                config["pixiv"]["fix"]=msg[2]
-                with open("./botconfig.json","w") as f:
-                    json.dump(config,f)
-                await app.send_message(sender,MessageChain(response))
-            elif msg[1]=='文件后缀':
-                response = f'文件后缀已由{config["pixiv"]["img_format"]} 修改为 {msg[2]}'
-                config["pixiv"]["img_format"]=msg[2]
-                with open("./botconfig.json","w") as f:
-                    json.dump(config,f,ensure_ascii=False,indent=4)
-                await app.send_message(sender,MessageChain(response))
-
-
-    if msg[0]=="备份":
-        with open("botconfig.backup.json",'w') as f:
-            json.dump(config,f,ensure_ascii=False,indent=4)
-        await app.send_message(sender,'哦')
-
-    
-    if msg[0]=="看看设置":
-        await app.send_message(sender,str(config))
-"""

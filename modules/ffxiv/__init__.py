@@ -16,12 +16,12 @@ from .universails import *
 
 channel = Channel.current()
 
-with open(r"botconfig.json",'r',encoding='utf-8')as f:
-    config=json.load(f)
+
 
 @channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
 async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain):
     msg = message.display.split(' ')
+    config=getconfig()
     if msg[0]=='查价':
         if len(msg)<2:
             chain=MessageChain(Plain("?你想查什么玩意儿？"))

@@ -14,6 +14,7 @@ from graia.ariadne.connection.config import (
 )
 from typing import Union
 import json
+import os
 
 saya = create(Saya)
 with open(r"botconfig.json",'r',encoding='utf-8')as f:
@@ -22,6 +23,25 @@ with open(r"botconfig.json",'r',encoding='utf-8')as f:
 app = Ariadne(
     connection=config(bot_config['Bot'],"lkijnfgh",)
     )
+
+if not os.path.exists("botconfig.json"):
+    settings={
+        "pixiv": {
+            "fix": "nl",
+            "img_format": "png"
+        },
+        "Admin": 2579950433,
+        "Bot": 3079809050,
+        "ffxiv": {
+            "data_url": "https://cafemaker.wakingsands.com/",
+            "price_url": "https://universalis.app/api/v2/",
+            "world": "猫小胖",
+            "maxlistnumber": 5,
+            "maxcurrentdata": 20
+        }
+    }
+    with open('botconfig.json','w',encoding='utf-8') as f:
+        json.dump(settings,f,ensure_ascii=False,sort_keys=True,indent=4)
 
 with saya.module_context():
     for module_info in pkgutil.iter_modules(["modules"]):

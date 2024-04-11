@@ -1,14 +1,17 @@
 import requests
 import json
 
-with open(r"botconfig.json",'r',encoding='utf-8')as f:
-    config=json.load(f)
+def getconfig():
+    with open(r"botconfig.json",'r',encoding='utf-8')as f:
+        config=json.load(f)
+    return config
 
 class ItemswithID:
     name=''
     id=0
     def __init__(self,id):
         self.id=id
+        config=getconfig()
         r=get_json(url=f'{config["ffxiv"]["data_url"]}Item/{id}',params={})
         self.name=r['Name_chs']
     def info(self):
@@ -67,6 +70,7 @@ def get_item_id(name,config):
 
 
 def get_price(item,configs):
+    config=getconfig()
     price_url=configs["ffxiv"]["price_url"]+config["ffxiv"]["world"]+'/'+str(item.id)
     params={
         "itemIds":item.id,

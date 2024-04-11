@@ -1,7 +1,7 @@
 import json
 import distutils
 def format_json(origin_json):
-    return json.dumps(origin_json,sort_keys=True,indent=4)
+    return json.dumps(origin_json,sort_keys=True,indent=4,ensure_ascii=False)
 
 def getconfig():
     with open(r"botconfig.json",'r',encoding='utf-8')as f:
@@ -10,7 +10,7 @@ def getconfig():
 
 def saveconfig(config,backup=False):
     with open("%s.json"%('botconfig'if not backup else "botconfig.backup"),'w',encoding='utf-8') as f:
-            json.dump(config,f,ensure_ascii=False,indent=4)
+            json.dump(config,f,ensure_ascii=False,indent=4,sort_keys=True)
 
 def change_list_intent(list,namelist,newintent=False):
     a=list
