@@ -5,12 +5,22 @@ textfont='./modules/5000zhao/fonts/ArialEnUnicodeBold.ttf'
 background="./modules/5000zhao/background.jpg"
 color='#E4080A'
 
+
+def setsize(text:list):
+    maxlength=0
+    for i in range(len(text)):
+        maxlength=(len(text[i]) if maxlength<len(text[i]) else maxlength)
+    
+    size=40*9/maxlength
+    
+    return int(size)
+
 def xibaodotjpg(text:list):
 
     jpg=Image.open(background)
     draw=ImageDraw.Draw(jpg)
     width,height=jpg.size
-    fontsize=40
+    fontsize=setsize(text)
     font=ImageFont.truetype(font=textfont,size=fontsize)    
     
     space=fontsize
