@@ -70,9 +70,11 @@ def get_item_id(name,config):
     return idList[:num]
 
 
-def get_price(item,configs):
+def get_price(item,configs,world=None):
+    if not world:
+        world=config["ffxiv"]["world"]
     config=getconfig()
-    price_url=configs["ffxiv"]["price_url"]+config["ffxiv"]["world"]+'/'+str(item.id)
+    price_url=configs["ffxiv"]["price_url"]+world+'/'+str(item.id)
     params={
         "itemIds":item.id,
         "listings":configs["ffxiv"]["maxcurrentdata"]
