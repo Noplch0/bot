@@ -33,9 +33,10 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=De
         chain=MessageChain(Plain("这种东西不存在吧"))
         await app.send_message(sender,chain)
         return
-    messagelist=['在 %s 的板子上找到这些数据：\n'%(config['ffxiv']['world'])]
+    world=msg[-1] if len(msg)>1 else config['ffxiv']['world']
+    messagelist=['在 %s 的板子上找到这些数据：\n'%(world)]
     for i in namelist:
-        r=get_price(i,config)
+        r=get_price(i,config,world)
         if len(r[0])==0:
             continue
         messagelist.append(f"{i.name}:\n")
