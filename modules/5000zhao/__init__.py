@@ -36,7 +36,7 @@ async def pornhub_style_logo_generator(app: Ariadne, sender: Union[Group, Friend
 @channel.use(ListenerSchema(listening_events=[GroupMessage,FriendMessage]))
 async def pornhub_style_logo_generator(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=DetectPrefix("喜报 ")):
     msg = message.display.split(' ')
-    if len(msg)!=1:
+    if len(msg)<1:
         mesg=MessageChain(element.Image(path='./modules/5000zhao/xibaoerror.jpg'))
     else:
         xibaodotjpg(msg)
