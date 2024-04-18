@@ -28,7 +28,11 @@ if not os.path.exists("botconfig.json"):
             "price_url": "https://universalis.app/api/v2/",
             "world": "猫小胖",
             "maxlistnumber": 5,
-            "maxcurrentdata": 20
+            "maxcurrentdata": 20,
+            "logs": {
+            "id":"<Your client ID>",
+            "secret":"<Your client sceret>"
+            }
         }
     }
     with open('botconfig.json','w',encoding='utf-8') as f:
