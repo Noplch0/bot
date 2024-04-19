@@ -100,7 +100,8 @@ class Allstage:
         self.tea=PlayerInfInOneStage(this_player,1062)
         self.dsr=PlayerInfInOneStage(this_player,1065)
         self.top=PlayerInfInOneStage(this_player,1068)
-        self.extreme=PlayerInfInOneStage(this_player,1070)
+        self.extreme1=PlayerInfInOneStage(this_player,1069)
+        self.extreme2=PlayerInfInOneStage(this_player,1070)
         
 def format_reply(this_result:Allstage):
     mesg=f"查询的{this_result.player.name}@{this_result.player.server}数据如下：\n"
