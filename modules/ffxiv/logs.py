@@ -1,7 +1,5 @@
-#from mybotlib import config
-CLIENT_ID="9bd5c9c2-fa60-419a-b943-a2be210c4150"
-CLIENT_SECRET="Srnc8CvEJnegzYzYlSV1UeEvbyg5YOs3CEPXUEd9"
-API_KEY='3d59e549e758a5057ef923eff9ce0e70'
+from mybotlib import config
+
 from fflogsapi import FFLogsClient, GQLEnum, FightDifficulty
 import json
 import requests
@@ -117,14 +115,3 @@ def format_reply(this_result:Allstage):
             mesg+=f"{dicts[i].stagename}:{dicts[i].highest.color}{dicts[i].highest.percent}({dicts[i].bestjob}) 过本次数{dicts[i].kills}\n"
     return mesg[:-1]
 
-playera=PlayerInf('Storia','琥珀原')
-
-this_result=PlayerInfInOneStage(playera,get_zone_id('dsr'))
-mesg=f"""所查询的玩家\n{this_result.stagename} 数据如下:
-击杀次数：{this_result.kills}"""
-"""
-最高：{this_result.highest.color}{this_result.highest.percent}({this_result.bestjob})
-中位数：{this_result.medium.color}{this_result.medium.percent}
-平均数：{this_result.avarge.color}{this_result.avarge.percent}"""
-
-print(mesg)
