@@ -74,5 +74,5 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=De
         if this_result.kills==0:
             mesg+='未过本'
         else:
-            mesg+=f"""击杀次数：{this_result.kills}\n最高：{this_result.highest.color}{this_result.highest.percent}{this_result.bestjob}\n中位数：{this_result.medium.color}{this_result.medium.percent}\n平均数：{this_result.avarge.color}{this_result.avarge.percent}"""
+            mesg+=f"""击杀次数：{this_result.kills}\n最高：{this_result.highest.color}{this_result.highest.percent}({this_result.bestjob})\n中位数：{this_result.medium.color}{this_result.medium.percent}\n平均数：{this_result.avarge.color}{this_result.avarge.percent}"""
     await app.send_message(sender,mesg)
