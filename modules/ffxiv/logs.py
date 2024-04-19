@@ -28,6 +28,16 @@ def get_zone_id(name):
         return 1065
     elif name in ['TOP','绝o','绝欧','欧米茄绝境验证战']:
         return 1068
+    elif name in ['p5s']:
+        return 83
+    elif name in ['p6s']:
+        return 84
+    elif name in ['p7s']:
+        return 85
+    elif name in ['p8s门神']:
+        return 86
+    elif name in ['p8s本体']:
+        return 87
     
 def get_zone_name(id):
     text=requests.get(f"https://cn.fflogs.com/v1/zones?api_key={API_KEY}")

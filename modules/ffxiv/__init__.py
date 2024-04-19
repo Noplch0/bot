@@ -51,6 +51,7 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=De
 @channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
 async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=DetectPrefix("查logs ")):
     msg = message.display.split(' ')
+    await app.send_message(sender,f'正在翻{msg[0]}的户口本')
     config=getconfig()
     if len(msg)<1:
         mesg=MessageChain(Plain("?你想查什么玩意儿？"))
