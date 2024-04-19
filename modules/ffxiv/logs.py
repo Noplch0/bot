@@ -1,5 +1,4 @@
-from mybotlib import config
-
+from mybotlib.config import *
 from fflogsapi import FFLogsClient, GQLEnum, FightDifficulty
 import json
 import requests
