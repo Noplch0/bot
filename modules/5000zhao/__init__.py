@@ -13,7 +13,7 @@ from graia.ariadne.message.parser.base import DetectPrefix
 from .utils import genImage
 from .xibao import *
 
-from mylib.check import *
+from mybotlib.check import *
 saya = Saya.current()
 channel = Channel.current()
 

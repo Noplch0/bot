@@ -1,20 +1,6 @@
 import json
 import os
-from graia.ariadne.app import Ariadne
-import pkgutil
-from graia.ariadne.entry import config
-from graia.ariadne.event.message import GroupMessage
-from graia.ariadne.message.chain import MessageChain
-from graia.ariadne.model import Group
-from graia.saya import Saya
-from creart import create
-from graia.ariadne.app import Ariadne
-from graia.ariadne.connection.config import (
-    HttpClientConfig,
-    WebsocketClientConfig,
-    config,
-)
-from typing import Union
+
 if not os.path.exists("botconfig.json"):
     settings={
         "pixiv": {
@@ -37,6 +23,27 @@ if not os.path.exists("botconfig.json"):
     }
     with open('botconfig.json','w',encoding='utf-8') as f:
         json.dump(settings,f,ensure_ascii=False,sort_keys=True,indent=4)
+
+    print("未检测到配置文件，已自动生成\n请修改botconfig.json后重新运行")
+    exit()   
+
+
+from graia.ariadne.app import Ariadne
+import pkgutil
+from graia.ariadne.entry import config
+from graia.ariadne.event.message import GroupMessage
+from graia.ariadne.message.chain import MessageChain
+from graia.ariadne.model import Group
+from graia.saya import Saya
+from creart import create
+from graia.ariadne.app import Ariadne
+from graia.ariadne.connection.config import (
+    HttpClientConfig,
+    WebsocketClientConfig,
+    config,
+)
+from typing import Union
+
 
 
 

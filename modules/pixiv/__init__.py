@@ -14,16 +14,11 @@ from typing import Union
 import os
 import json
 from .img import *
-from mylib.check import *
+from mybotlib.check import *
 channel = Channel.current()
 
-def getconfig():
-    with open(r"botconfig.json",'r',encoding='utf-8')as f:
-        config=json.load(f)
-    return config
 
-
-@channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
+@channel.use(ListenerSchema(listening_events=[FriendMessage]))
 async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=DetectPrefix('蓝p ')):
 
     config=getconfig()
@@ -56,7 +51,7 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=De
     else:
         await app.send_message(sender, "你发的什么几把")
 
-@channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
+@channel.use(ListenerSchema(listening_events=[FriendMessage]))
 async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=DetectPrefix('我要 ')):
     img_path = "saved_image"
     init_img_folder(img_path)
@@ -70,7 +65,7 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=De
         return
     await app.send_message(sender, Image(path=f'{img_path}/{msg[1]}'))
 
-@channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
+@channel.use(ListenerSchema(listening_events=[FriendMessage]))
 async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=DetectPrefix('来图 ')):
 
     img_path = "saved_image"
@@ -85,7 +80,7 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=De
     else:
         await app.send_message(sender,MessageChain(Image(url=f'{msg[1]}')))
 
-@channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
+@channel.use(ListenerSchema(listening_events=[FriendMessage]))
 async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=DetectPrefix('随机')):
     
     if checksuf(message.display):
@@ -95,7 +90,7 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=De
 
     await app.send_message(sender,MessageChain(Image(path=f'{img_path}/{random_Image()}')))
 
-@channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
+@channel.use(ListenerSchema(listening_events=[FriendMessage]))
 async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=DetectPrefix('图片删除 ')):
 
     img_path = "saved_image"
@@ -113,7 +108,7 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=De
             failedlist.append(i)
     await app.send_message(sender,MessageChain(f"{(len(msg)-len(failedlist))} 项删除成功\n{(len(failedlist))} 项删除失败"))
 
-@channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
+@channel.use(ListenerSchema(listening_events=[ FriendMessage]))
 async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=DetectPrefix('图片列出')):
 
     if checksuf(message.display):

@@ -14,7 +14,7 @@ from typing import Union
 import os
 import json
 from graia.ariadne.message.parser.base import DetectPrefix
-from mylib.check import *
+from mybotlib.check import *
 from .setjson import *
 
 channel = Channel.current()

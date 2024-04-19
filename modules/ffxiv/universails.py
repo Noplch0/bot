@@ -1,11 +1,7 @@
 import requests
 import json
 import time
-
-def getconfig():
-    with open(r"botconfig.json",'r',encoding='utf-8')as f:
-        config=json.load(f)
-    return config
+from mybotlib.check import getconfig
 
 class ItemswithID:
     name=''

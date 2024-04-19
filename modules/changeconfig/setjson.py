@@ -1,12 +1,9 @@
 import json
 import distutils
+from mybotlib.check import getconfig
 def format_json(origin_json):
     return json.dumps(origin_json,sort_keys=True,indent=4,ensure_ascii=False)
 
-def getconfig():
-    with open(r"botconfig.json",'r',encoding='utf-8')as f:
-        config=json.load(f)
-    return config
 
 def saveconfig(config,backup=False):
     with open("%s.json"%('botconfig'if not backup else "botconfig.backup"),'w',encoding='utf-8') as f:
