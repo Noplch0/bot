@@ -51,29 +51,38 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=De
 @channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
 async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=DetectPrefix("查logs ")):
     msg = message.display.split(' ')
-    await app.send_message(sender,f'正在翻{msg[0]}的户口本')
+    await app.send_message(sender,f'正在查{msg[0]}的橙粉')
     config=getconfig()
     if len(msg)<1:
         mesg=MessageChain(Plain("?你想查什么玩意儿？"))
     elif len(msg)==1:
         name,server=msg[0].split('@')
         player=PlayerInf(name,server)
-        if not player.isexist:
+        if player.client.hidden():
+            mesg="该玩家已隐藏logs"
+        elif not player.isexist:
             mesg="查询玩家不存在！"
         else:
-            this_result=Allstage(player)
-            mesg=format_reply(this_result)
+            mesg=f"""所查询的玩家{name}@{server}数据如下:\n"""
+            mesg+=add_enconuterlist(player)
         
     elif len(msg)==2:
         name,server=msg[0].split('@')
         player=PlayerInf(name,server)
         if not player.isexist:
             mesg="查询玩家不存在！"
-        this_result=PlayerInfInOneStage(player,get_zone_id(msg[1]))
-
-        mesg=f"""所查询的玩家{name}@{server}\n在{this_result.stagename}中数据如下:\n"""
-        if this_result.kills==0:
-            mesg+='未过本'
         else:
-            mesg+=f"""击杀次数：{this_result.kills}\n最高：{this_result.highest.color}{this_result.highest.percent}({this_result.bestjob})\n中位数：{this_result.medium.color}{this_result.medium.percent}\n平均数：{this_result.avarge.color}{this_result.avarge.percent}"""
+            zonename=get_zone_id(msg[1])
+            if zonename==False:
+                mesg='查询副本不存在!'
+            else:
+                this_result=PlayerInfInOneStage(player,get_zone_id(msg[1]))
+                mesg=f"""所查询的玩家{name}@{server}\n在{this_result.stagename}中数据如下:\n"""
+                if this_result.kills==0:
+                    mesg+='未过本'
+                else:
+                    mesg+=f"""击杀次数：{this_result.kills}\n最高：{this_result.highest.color}{this_result.highest.percent}({this_result.bestjob})\n中位数：{this_result.medium.color}{this_result.medium.percent}\n平均数：{this_result.avarge.color}{this_result.avarge.percent}"""
     await app.send_message(sender,mesg)
+@channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
+async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=DetectPrefix("查户籍 ")):
+    await app.send_message(sender,'你查你妈呢')

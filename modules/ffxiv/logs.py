@@ -1,11 +1,13 @@
-from mybotlib.config import *
-from fflogsapi import FFLogsClient, GQLEnum, FightDifficulty
+#from mybotlib.config import *
+CLIENT_ID="9bd5c9c2-fa60-419a-b943-a2be210c4150"
+CLIENT_SECRET="Srnc8CvEJnegzYzYlSV1UeEvbyg5YOs3CEPXUEd9"
+API_KEY='3d59e549e758a5057ef923eff9ce0e70'
+from fflogsapi import FFLogsClient,GQLEnum, FightDifficulty
+import fflogsapi
 import json
+import fflogsapi.data
 import requests
-"""fapi = FFLogsClient(CLIENT_ID, CLIENT_SECRET)
-character = fapi.get_character({'name':"Storia",'serverSlug':"琥珀原"," serverRegion":"CN"})
 
-print(character.encounter_rankings({"encounterID":1070}))"""
 
 def get_zone_id(name):
     if name in ['p9s','P9S','零式万魔殿 荒天之狱1']:
@@ -38,6 +40,8 @@ def get_zone_id(name):
         return 86
     elif name in ['p8s本体']:
         return 87
+    else:
+        return False
     
 def get_zone_name(id):
     text=requests.get(f"https://cn.fflogs.com/v1/zones?api_key={API_KEY}")
@@ -48,12 +52,11 @@ def get_zone_name(id):
                 return j['name']
             
 def get_job_name(id):
-    text=requests.get(f"https://cn.fflogs.com/v1/classes?api_key={API_KEY}")
-    a=json.loads(text.text)
-    for i in a:
-        for j in i["specs"]:
-            if id==j['id']:
-                return j['name']
+    jbl=['占','诗','黑魔','黑骑','龙骑','机工','武僧','忍者','骑士','学','召','战','白魔','赤魔','盘','舞','绝枪','镰','贤']
+    return jbl[id-1]
+      
+        
+            
 
 
 class PlayerInf:
@@ -78,8 +81,7 @@ class LogsColor:
         colorlist.extend(['橙']*3)
         colorlist.extend(['粉'])
         colorlist.extend(['金'])
-        self.color=colorlist[int(percent)]
-    
+        self.color=colorlist[int(percent)-1]  
 
 class PlayerInfInOneStage:
     def __init__(self,player:PlayerInf,encounterID:int):
@@ -94,34 +96,32 @@ class PlayerInfInOneStage:
         self.medium=LogsColor(inf.median_performance)
         self.bestjob=get_job_name(inf.ranks[0].best_job.id)
 
+class Onestage:
+    def __init__(self,inf:fflogsapi.data.FFLogsZoneEncounterRanking) -> None:
+        self.name=get_zone_name(inf.encounter.id)
+        self.logs=LogsColor(inf.rank_percent)
+        self.kills=inf.kills
+        self.job=get_job_name(inf.best_job.id)
+        self.msg=f'{self.name}: {self.logs.color}{self.logs.percent}({self.job}) 过本次数:{self.kills}\n'
 
 
-class Allstage:
-    def __init__(self,this_player:PlayerInf) -> None:
-        self.player=this_player
-        self.savage1=PlayerInfInOneStage(this_player,88)
-        self.savage2=PlayerInfInOneStage(this_player,89)
-        self.savage3=PlayerInfInOneStage(this_player,90)
-        self.savage4_front=PlayerInfInOneStage(this_player,91)
-        self.savage4_behind=PlayerInfInOneStage(this_player,92)
-        self.ucob=PlayerInfInOneStage(this_player,1060)
-        self.uwu=PlayerInfInOneStage(this_player,1061)
-        self.tea=PlayerInfInOneStage(this_player,1062)
-        self.dsr=PlayerInfInOneStage(this_player,1065)
-        self.top=PlayerInfInOneStage(this_player,1068)
-        self.extreme1=PlayerInfInOneStage(this_player,1069)
-        self.extreme2=PlayerInfInOneStage(this_player,1070)
-        
-def format_reply(this_result:Allstage):
-    mesg=f"查询的{this_result.player.name}@{this_result.player.server}数据如下：\n"
-    dicts=this_result.__dict__
-    for i in dicts:
-        if i=='player':
+def add_enconuterlist(player:PlayerInf):
+    zoneidlist=[54,49,44,53,45,43,55,50,42,46]
+    zonenamelist={54:'天狱',49:'炼狱',44:"边狱",53:"绝o",45:'绝龙诗',43:'老三绝',55:'极神III',50:'极神II',42:"极神I",46:'幻巧'}
+    encounterlist=[]
+    msg=''
+    for i in zoneidlist:
+        rankings=player.client.zone_rankings(filters={
+        'metric': GQLEnum('rdps'),
+        'zoneID': i,
+        'difficulty':(101 if i in [54,49,44] else 100 )
+        })
+        if len (rankings.encounter_ranks) <1:
             continue
-        else:
-            if dicts[i].kills==0:
-                mesg+=f'{dicts[i].stagename}:未过本\n'
-                continue
-            mesg+=f"{dicts[i].stagename}:{dicts[i].highest.color}{dicts[i].highest.percent}({dicts[i].bestjob}) 过本次数{dicts[i].kills}\n"
-    return mesg[:-1]
+        msg+=f'{zonenamelist[i]}:\n'
+        for j in rankings.encounter_ranks:
+            msg+=Onestage(j).msg
+    return msg
+        
+
 
