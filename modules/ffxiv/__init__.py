@@ -24,6 +24,7 @@ channel = Channel.current()
 @channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
 async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=DetectPrefix("查价 ")):
     msg = message.display.split(' ')
+    print(msg)
     config=getconfig()
     if len(msg)<1:
         mesg=MessageChain(Plain("?你想查什么玩意儿？"))
@@ -42,10 +43,11 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=De
             continue
         mesg+=f"{i.name}:\n"
         for items in r[0]:
-            rarestr=f'({"HQ" if items.isHQ else "NQ"}){items.price}x{items.quantity}(合计{items.totalprice}) {items.retainername}@{items.world}\n'
-            mesg+=rarestr
+            mesg+=items.say
         mesg+=f"最近更新时间：{timestirp(int(r[1])/1000)}\n"
     await app.send_message(sender,mesg[:-1])
+
+
 
 @channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
 async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=DetectPrefix("查logs ")):
