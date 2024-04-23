@@ -12,6 +12,7 @@ data/top.mrxiaom.qrlogin/
 **/__pycache__/
 LICENSE
 log*
+!logs.py
 test*
 mcl*
 !mcl-addon-2.1.1.jar*

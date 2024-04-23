@@ -26,27 +26,26 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=De
     msg = message.display.split(' ')
     config=getconfig()
     if len(msg)<1:
-        chain=MessageChain(Plain("?你想查什么玩意儿？"))
-        await app.send_message(sender,chain)
+        mesg=MessageChain(Plain("?你想查什么玩意儿？"))
+        await app.send_message(sender,mesg)
         return
     namelist=get_item_id(msg[0],config)
     if not namelist:
-        chain=MessageChain(Plain("这种东西不存在吧"))
-        await app.send_message(sender,chain)
+        mesg=MessageChain(Plain("这种东西不存在吧"))
+        await app.send_message(sender,mesg)
         return
     world=msg[-1] if len(msg)>1 else config['ffxiv']['world']
-    messagelist=['在 %s 的板子上找到这些数据：\n'%(world)]
+    mesg='在 %s 的板子上找到这些数据：\n'%(world)
     for i in namelist:
         r=get_price(i,config,world)
         if len(r[0])==0:
             continue
-        messagelist.append(f"{i.name}:\n")
+        mesg+=f"{i.name}:\n"
         for items in r[0]:
             rarestr=f'({"HQ" if items.isHQ else "NQ"}){items.price}x{items.quantity}(合计{items.totalprice}) {items.retainername}@{items.world}\n'
-            messagelist.append(rarestr)
-        messagelist.append(f"最近更新时间：{timestirp(int(r[1])/1000)}\n")
-    chain=MessageChain(messagelist)
-    await app.send_message(sender,chain)
+            mesg+=rarestr
+        mesg+=f"最近更新时间：{timestirp(int(r[1])/1000)}\n"
+    await app.send_message(sender,mesg[:-1])
 
 @channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
 async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=DetectPrefix("查logs ")):
@@ -81,8 +80,10 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=De
                 if this_result.kills==0:
                     mesg+='未过本'
                 else:
-                    mesg+=f"""击杀次数：{this_result.kills}\n最高：{this_result.highest.color}{this_result.highest.percent}({this_result.bestjob})\n中位数：{this_result.medium.color}{this_result.medium.percent}\n平均数：{this_result.avarge.color}{this_result.avarge.percent}"""
-    await app.send_message(sender,mesg)
+                    mesg+=f"""击杀次数：{this_result.kills}\n最高：{this_result.highest.color}{this_result.highest.percent}({this_result.bestjob})\n中位数：{this_result.medium.color}{this_result.medium.percent}\n平均数：{this_result.avarge.color}{this_result.avarge.percent}\n"""
+    await app.send_message(sender,mesg[:-1])
+
+
 @channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
 async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=DetectPrefix("查户籍 ")):
     await app.send_message(sender,'你查你妈呢')
