@@ -14,5 +14,5 @@ LICENSE
 log*
 test*
 mcl*
-!mcl-addon-2.1.1.jar
+!mcl-addon-2.1.1.jar*
 .conda/
