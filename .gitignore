@@ -26,3 +26,5 @@ test.py
 botconfig.json
 mcl-installer-ae9f946-linux-amd64
 .conda/
+test.txt
+test2.py
