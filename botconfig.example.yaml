@@ -1,0 +1,37 @@
+#有修改权限的qq号（应该没人把唯一且主力的qq号拿来当bot吧）
+Admin: 2579950433
+#bot的QQ号
+Bot: 3079809050
+#对应config/net.mamoe.mirai-api-http/setting.yml里的verifyKey
+key: ''
+
+
+ffxiv:
+  #每个物品最多有几条数据
+  maxcurrentdata: 0
+
+  #结果有多个物品时，显示几个物品
+  maxlistnumber: 0
+
+  #查价时默认的大区名称 如：莫古力
+  world: ''
+  logs:
+
+    #在fflogs创建V2APP时取得的ID和SCERET
+    CLIENT_ID: ''
+    CLIENT_SECRET: ''
+
+    #fflogs获得的V1 API_KEY
+    API_KEY: ''
+
+
+  data_url: https://cafemaker.wakingsands.com/
+  price_url: https://universalis.app/api/v2/
+
+
+pixiv:
+  #pixiv.cat的镜像网址后缀
+  fix: nl
+
+  #保存的图片格式
+  img_format: png

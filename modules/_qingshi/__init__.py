@@ -6,8 +6,6 @@ from graia.ariadne.message import element
 from graia.ariadne.model import Group, Friend
 from graia.saya import Channel
 from graia.saya.builtins.broadcast.schema import ListenerSchema
-import requests
-import os
 from time import sleep
 from typing import Union
 import random

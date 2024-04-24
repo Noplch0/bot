@@ -12,7 +12,6 @@ from graia.broadcast.builtin.decorators import Depend
 from graia.broadcast.exceptions import ExecutionStop
 from typing import Union
 import os
-import json
 from .img import *
 from mybotlib.check import *
 channel = Channel.current()
@@ -21,7 +20,7 @@ channel = Channel.current()
 @channel.use(ListenerSchema(listening_events=[FriendMessage]))
 async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=DetectPrefix('蓝p ')):
 
-    config=getconfig()
+    config=BotConfig()
     img_path = "saved_image"
     init_img_folder(img_path)
     msg = message.display.split(' ')
@@ -34,17 +33,17 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=De
         if not pid.isnumeric():
             await app.send_message(sender, "你发的什么几把")
             return
-        result = getpic(pid,config)
+        result = getpic(pid,config.data)
         if result == -1:
             await app.send_message(sender, '不存在指定图片:(')
         elif result == 1:
-            image = Image(path=f'./{img_path}/{pid}.{config["pixiv"]["img_format"]}')
+            image = Image(path=f'./{img_path}/{pid}.{config.data["pixiv"]["img_format"]}')
             await app.send_message(sender, MessageChain(image))
         else:
             file_list = os.listdir(f'./{img_path}/{pid}')
             img_list = []
             for i in file_list:
-                if i.endswith(config["pixiv"]["img_format"]):
+                if i.endswith(config.data["pixiv"]["img_format"]):
                     img_list.append(Image(path=f'./{img_path}/{pid}/{i}'))
             else:
                 await app.send_message(sender, MessageChain(img_list))

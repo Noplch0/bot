@@ -1,19 +1,19 @@
 import requests
 import json
 import time
-from mybotlib.check import getconfig
+from mybotlib.check import *
 
 class ItemswithID:
     def __init__(self,id):
         self.id=id
-        config=getconfig()
-        r=get_json(url=f'{config["ffxiv"]["data_url"]}Item/{id}',params={})
+        config=BotConfig()
+        r=get_json(url=f'{config.data["ffxiv"]["data_url"]}Item/{id}',params={})
         self.name=r['Name_chs']
     def info(self):
         print("{'name':%s,'id':%s}"%(self.name,self.id))
 
 class Itemonsale:
-    def __init__(self,name,id,i,world=getconfig()['ffxiv'][ "world"]):
+    def __init__(self,name,id,i,world=BotConfig().data['ffxiv'][ "world"]):
         self.name=name
         self.id=id
         self.isHQ=i['hq']
@@ -54,7 +54,6 @@ def get_item_id(name,config):
 
 
 def get_price(item:ItemswithID,configs,world):
-    config=getconfig()
     price_url=configs["ffxiv"]["price_url"]+world+'/'+str(item.id)
     params={
         "itemIds":item.id,
@@ -63,9 +62,7 @@ def get_price(item:ItemswithID,configs,world):
     r=get_json(price_url,params=params)
     itemlist=[]
     for i in r["listings"]:
-        print(i['hq'],type(i['hq']))
         item=Itemonsale(name=item.name,id=item.id,i=i)
-        print(item.say)
         itemlist.append(item)
     return [itemlist,r["lastUploadTime"]]
     

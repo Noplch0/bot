@@ -15,7 +15,6 @@ def getpic(pid,config):
 
     elif '指定' in r.text:
         image_url = f'https://pixiv.{fix}/{pid}.{geshi}'
-        print(image_url)
         r = requests.get(image_url)
         os.makedirs(f'./saved_image', exist_ok=True)
         with open(f'./saved_image/{pid}.{geshi}', 'wb') as f:
@@ -27,7 +26,6 @@ def getpic(pid,config):
         for i in range(1, 999):
             os.makedirs(f'./saved_image/{pid}', exist_ok=True)
             image_url = f'https://pixiv.{fix}/{pid}-{i}.{geshi}'
-            print(image_url)
             r = requests.get(image_url)
             if '作品' in r.text:
                 return 2
@@ -46,7 +44,6 @@ def random_Image():
     if '.' not in img:
         return random_Image()
     else:
-        print(img)
         return img
     
 def print_tree(path):

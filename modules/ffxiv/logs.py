@@ -1,13 +1,13 @@
-#from mybotlib.config import *
-CLIENT_ID="9bd5c9c2-fa60-419a-b943-a2be210c4150"
-CLIENT_SECRET="Srnc8CvEJnegzYzYlSV1UeEvbyg5YOs3CEPXUEd9"
-API_KEY='3d59e549e758a5057ef923eff9ce0e70'
 from fflogsapi import FFLogsClient,GQLEnum, FightDifficulty
 import fflogsapi
 import json
 import fflogsapi.data
 import requests
-
+from mybotlib.check import *
+config=BotConfig()
+CLIENT_ID=config.data['ffxiv']["logs"][ "CLIENT_ID"]
+CLIENT_SECRET=config.data['ffxiv']["logs"][ "CLIENT_SECRET"]
+API_KEY=config.data['ffxiv']["logs"][ "API_KEY"]
 
 def get_zone_id(name):
     if name in ['p9s','P9S','零式万魔殿 荒天之狱1']:
@@ -55,9 +55,6 @@ def get_job_name(id):
     jbl=['占','诗','黑魔','黑骑','龙骑','机工','武僧','忍者','骑士','学','召','战','白魔','赤魔','盘','舞','绝枪','镰','贤']
     return jbl[id-1]
       
-        
-            
-
 
 class PlayerInf:
     def __init__(self,name,server,region='CN') -> None:
@@ -118,7 +115,7 @@ def add_enconuterlist(player:PlayerInf):
         })
         if len (rankings.encounter_ranks) <1:
             continue
-        msg+=f'{zonenamelist[i]}:\n'
+        msg+=f'\n{zonenamelist[i]}:\n'
         for j in rankings.encounter_ranks:
             msg+=Onestage(j).msg
     return msg

@@ -6,12 +6,7 @@ from graia.ariadne.message.element import *
 from graia.ariadne.model import Group, Friend, Member
 from graia.saya import Channel
 from graia.saya.builtins.broadcast.schema import ListenerSchema
-import requests
-from graia.broadcast.builtin.decorators import Depend
-from graia.broadcast.exceptions import ExecutionStop
 from typing import Union
-import os
-import json
 from .universails import *
 from .logs import *
 from graia.ariadne.message.parser.base import DetectPrefix
@@ -24,21 +19,21 @@ channel = Channel.current()
 @channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
 async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=DetectPrefix("查价 ")):
     msg = message.display.split(' ')
-    print(msg)
-    config=getconfig()
+    config=BotConfig()
     if len(msg)<1:
         mesg=MessageChain(Plain("?你想查什么玩意儿？"))
         await app.send_message(sender,mesg)
         return
-    namelist=get_item_id(msg[0],config)
+    namelist=get_item_id(msg[0],config.data)
     if not namelist:
         mesg=MessageChain(Plain("这种东西不存在吧"))
         await app.send_message(sender,mesg)
         return
-    world=msg[-1] if len(msg)>1 else config['ffxiv']['world']
+    world=msg[-1] if len(msg)>1 else config.data['ffxiv']['world']
     mesg='在 %s 的板子上找到这些数据：\n'%(world)
     for i in namelist:
-        r=get_price(i,config,world)
+        mesg+='\n'
+        r=get_price(i,config.data,world)
         if len(r[0])==0:
             continue
         mesg+=f"{i.name}:\n"
@@ -53,7 +48,6 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=De
 async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=DetectPrefix("查logs ")):
     msg = message.display.split(' ')
     await app.send_message(sender,f'正在查{msg[0]}的橙粉')
-    config=getconfig()
     if len(msg)<1:
         mesg=MessageChain(Plain("?你想查什么玩意儿？"))
     elif len(msg)==1:
@@ -86,6 +80,7 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=De
     await app.send_message(sender,mesg[:-1])
 
 
+#因为群里有个傻逼一直叫所以加了这个
 @channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
 async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=DetectPrefix("查户籍 ")):
     await app.send_message(sender,'你查你妈呢')

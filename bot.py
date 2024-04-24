@@ -1,30 +1,9 @@
-import json
+import json5 as json
+from mybotlib.check import *
 import os
 
-if not os.path.exists("botconfig.json"):
-    settings={
-        "pixiv": {
-            "fix": "nl",
-            "img_format": "png"
-        },
-        "Admin": "<your own qq number>",
-        "Bot": "<bot qq number>",
-        "ffxiv": {
-            "data_url": "https://cafemaker.wakingsands.com/",
-            "price_url": "https://universalis.app/api/v2/",
-            "world": "猫小胖",
-            "maxlistnumber": 5,
-            "maxcurrentdata": 20,
-            "logs": {
-            "id":"<Your client ID>",
-            "secret":"<Your client sceret>"
-            }
-        }
-    }
-    with open('botconfig.json','w',encoding='utf-8') as f:
-        json.dump(settings,f,ensure_ascii=False,sort_keys=True,indent=4)
-
-    print("未检测到配置文件，已自动生成\n请修改botconfig.json后重新运行")
+if not os.path.exists("botconfig.yaml"):
+    print("未检测到配置文件\n请修改botconfig.example.yaml并重命名为botconfig.yaml后重新运行")
     exit()   
 
 
@@ -48,11 +27,11 @@ from typing import Union
 
 
 saya = create(Saya)
-with open(r"botconfig.json",'r',encoding='utf-8')as f:
-    bot_config=json.load(f)
+
+bot_config=BotConfig('botconfig.yaml')
 
 app = Ariadne(
-    connection=config(bot_config['Bot'],"lkijnfgh")
+    connection=config(bot_config.data['Bot'],bot_config.data['key'])
     )
 
 

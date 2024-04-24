@@ -1,9 +1,8 @@
-import json
-import distutils
+import json5 as json
 from mybotlib.check import getconfig
+
 def format_json(origin_json):
     return json.dumps(origin_json,sort_keys=True,indent=4,ensure_ascii=False)
-
 
 def saveconfig(config,backup=False):
     with open("%s.json"%('botconfig'if not backup else "botconfig.backup"),'w',encoding='utf-8') as f:
@@ -23,13 +22,10 @@ def change_type(origin,new):
     if type(origin)==type(new):
         return new
     elif type(origin)==str:
-        print('changed to str')
         return str(new)
     elif type(origin)==int:
-        print('changed to int')
         return int(new)
     elif type(origin)==bool:
-        print('changed to bbool')
         if new=="True":
             return True
         if new=="False":
@@ -44,9 +40,12 @@ def construct_dict(index:list,indent):
         a.update({index[0]:construct_dict(index[1:],indent)})
     return a
 
-def add_2_list(list:dict,index:list,indent):
-    list.update(construct_dict(index,indent))
-    return list
+def add_2_list(cfg,index:list,indent):
+    if len(index)==1:
+        cfg[index[0]]=indent
+    else:
+        add_2_list(cfg[index[0]],index[1:],indent)
+    return cfg
 
 def del_item(dic:dict,index:list):
     if len(index)==1:

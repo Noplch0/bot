@@ -7,7 +7,7 @@ t544-enc-windows-x64.dll
 saved_image/
 modules/5000zhao/test1.png
 modules/5000zhao/xibao.jpg
-botconfig*
+botconfig.yaml*
 data/top.mrxiaom.qrlogin/
 **/__pycache__/
 LICENSE
