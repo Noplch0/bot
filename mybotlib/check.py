@@ -1,5 +1,6 @@
 import json5 as json
 from ruamel import yaml
+from ruamel.yaml.comments import CommentedMap
 
 class BotConfig:
     def read(self,data):
@@ -19,7 +20,16 @@ class BotConfig:
     def backup(self):
         with open(self.path+'.backup','w',encoding='utf-8') as f:
             self.loader.dump(self.data,f)
-    
+    def delitem(self,index:list):
+        def delitembyindex(data:CommentedMap,index:list):
+            if len(index)==1:
+                data.pop(index[0])
+            else:
+                delitembyindex(data[index[0]],index[1:])
+        delitembyindex(self.data,index)
+
+
+
 def notcom(text):
     if len(text)==0:
         return True
@@ -28,8 +38,3 @@ def notcom(text):
 def checksuf(text):
     #print(fr"'{text}',{len(text)}")
     return True if len(text)>0 else False
-
-def getconfig():
-    with open(r"botconfig.json",'r',encoding='utf-8')as f:
-        config=json.load(f)
-    return config

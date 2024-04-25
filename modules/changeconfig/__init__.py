@@ -74,8 +74,24 @@ async def __(app: Ariadne, sender: Friend, message: MessageChain=DetectPrefix('�
             intent=msg[1]
             add_2_list(config.data,index,intent)
             config.save()
-            mesg=MessageChain(["修改成功，现设置为：",
-                Plain(config.getstring())
-                ]
-            )
+            mesg=MessageChain(["修改成功，现设置为：",Plain(config.getstring())])
+    await app.send_message(sender,mesg)
+
+
+@channel.use(ListenerSchema(listening_events=[FriendMessage]))
+async def __(app: Ariadne, sender: Friend, message: MessageChain=DetectPrefix('删除设置 ')):
+    
+    config=BotConfig()
+    msg=message.display
+
+    if sender.id !=config.data["Admin"]:
+            mesg='啊？'
+
+    else:
+        if msg=='':
+            mesg=MessageChain(Plain('参数错误！使用方法例：删除设置 这个-设置-是不存在的'))
+        else:
+            index=msg.split('-')
+            config.delitem(index)
+            mesg=MessageChain(["修改成功，现设置为：",Plain(config.getstring())])
     await app.send_message(sender,mesg)

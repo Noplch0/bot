@@ -47,9 +47,3 @@ def add_2_list(cfg,index:list,indent):
         add_2_list(cfg[index[0]],index[1:],indent)
     return cfg
 
-def del_item(dic:dict,index:list):
-    if len(index)==1:
-        dic.pop(index[0])
-    else:
-        del_item(dic[index[0]],index[1:])
-
