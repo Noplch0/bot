@@ -1,8 +1,8 @@
 from PIL import Image,ImageFont,ImageDraw
 
-img="./modules/5000zhao/xibao.jpg"
-textfont='./modules/5000zhao/fonts/ArialEnUnicodeBold.ttf'
-background="./modules/5000zhao/background.jpg"
+img="./mybotlib/utils/xibao.jpg"
+textfont='./mybotlib/utils/fonts/ArialEnUnicodeBold.ttf'
+background="./mybotlib/utils/background.jpg"
 color='#E4080A'
 
 

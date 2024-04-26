@@ -115,8 +115,8 @@ def genImage(word_a="5000兆円", word_b="欲しい!", default_width=1500, heigh
     # width = max_width
     alpha = (0, 0, 0, 0)
     leftmargin = 50
-    font_upper = ImageFont.truetype("./modules/5000zhao/fonts/NotoSerifCJKSC-Black.ttf", _round(height/3))
-    font_downer = ImageFont.truetype("./modules/5000zhao/fonts/NotoSerifCJKSC-Black.ttf", _round(height/3))
+    font_upper = ImageFont.truetype("./mybotlib/utils/fonts/NotoSerifCJKSC-Black.ttf", _round(height/3))
+    font_downer = ImageFont.truetype("./mybotlib/utils/fonts/NotoSerifCJKSC-Black.ttf", _round(height/3))
 
     # Prepare Width
     upper_width = max([default_width,
@@ -220,7 +220,7 @@ def genImage(word_a="5000兆円", word_b="欲しい!", default_width=1500, heigh
     # previmg.paste(tiltres[1], (subset, _round(height/2)))
     previmg.alpha_composite(tiltres[0], (0, 50), (0, 0))
     previmg.alpha_composite(tiltres[1], (subset, _round(height/2) + 50), (0, 0))
-    previmg.save("./modules/5000zhao/test1.png")
+    previmg.save("./mybotlib/utils/test1.png")
     croprange = previmg.getbbox()
     img = previmg.crop(croprange)
     final_image = Image.new("RGB", (img.size[0] + 100, img.size[1] + 100), bg)
@@ -229,4 +229,4 @@ def genImage(word_a="5000兆円", word_b="欲しい!", default_width=1500, heigh
     return final_image
 
 
-#genImage(word_a="你发这种东西", word_b="给谁看啊").save("./modules/5000zhao/error.png")
+#genImage(word_a="你发这种东西", word_b="给谁看啊").save("./mybotlib/utils/error.png")

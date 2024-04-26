@@ -8,7 +8,7 @@ from graia.saya import Channel
 from graia.saya.builtins.broadcast.schema import ListenerSchema
 from graia.ariadne.message.parser.base import DetectPrefix
 from mybotlib.check import *
-from .setjson import *
+from mybotlib.setjson import *
 
 channel = Channel.current()
 

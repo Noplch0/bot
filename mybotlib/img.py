@@ -31,12 +31,10 @@ def getpic(pid,config):
                 return 2
             with open(f'./saved_image/{pid}/{i}.{geshi}', 'wb') as f:
                 f.write(r.content)
-            
 
 def init_img_folder(img_path):
     if not os.path.exists(f"{img_path}"):
         os.makedirs(f'./{img_path}')
-
 
 def random_Image():
     imgList=os.listdir("saved_image")

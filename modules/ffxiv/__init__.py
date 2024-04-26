@@ -7,8 +7,8 @@ from graia.ariadne.model import Group, Friend, Member
 from graia.saya import Channel
 from graia.saya.builtins.broadcast.schema import ListenerSchema
 from typing import Union
-from .universails import *
-from .logs import *
+from mybotlib.universails import *
+from mybotlib.logs import *
 from graia.ariadne.message.parser.base import DetectPrefix
 from mybotlib.check import *
 

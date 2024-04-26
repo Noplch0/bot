@@ -12,7 +12,7 @@ from graia.broadcast.builtin.decorators import Depend
 from graia.broadcast.exceptions import ExecutionStop
 from typing import Union
 import os
-from .img import *
+from mybotlib.img import *
 from mybotlib.check import *
 channel = Channel.current()
 
