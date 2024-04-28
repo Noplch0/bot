@@ -14,8 +14,6 @@ from mybotlib.check import *
 
 channel = Channel.current()
 
-
-
 @channel.use(ListenerSchema(listening_events=[GroupMessage, FriendMessage]))
 async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=DetectPrefix("查价 ")):
     msg = message.display.split(' ')
@@ -58,7 +56,7 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=De
         elif not player.isexist:
             mesg="查询玩家不存在！"
         else:
-            mesg=f"""所查询的玩家{name}@{server}数据如下:\n"""
+            mesg=f"所查询的玩家{name}@{server}数据如下:\n"
             mesg+=add_enconuterlist(player)
         
     elif len(msg)==2:
@@ -72,11 +70,11 @@ async def _(app: Ariadne, sender: Union[Group, Friend], message: MessageChain=De
                 mesg='查询副本不存在!'
             else:
                 this_result=PlayerInfInOneStage(player,get_zone_id(msg[1]))
-                mesg=f"""所查询的玩家{name}@{server}\n在{this_result.stagename}中数据如下:\n"""
+                mesg=f"所查询的玩家{name}@{server}\n在{this_result.stagename}中数据如下:\n"
                 if this_result.kills==0:
                     mesg+='未过本'
                 else:
-                    mesg+=f"""击杀次数：{this_result.kills}\n最高：{this_result.highest.color}{this_result.highest.percent}({this_result.bestjob})\n中位数：{this_result.medium.color}{this_result.medium.percent}\n平均数：{this_result.avarge.color}{this_result.avarge.percent}\n"""
+                    mesg+=f"击杀次数：{this_result.kills}\n最高：{this_result.highest.color}{this_result.highest.percent}({this_result.bestjob})\n中位数：{this_result.medium.color}{this_result.medium.percent}\n平均数：{this_result.avarge.color}{this_result.avarge.percent}\n"
     await app.send_message(sender,mesg[:-1])
 
 

@@ -15,5 +15,5 @@ log*
 !logs.py
 test*
 mcl*
-!plugins/
+!plugins/*
 .conda/
