@@ -1,6 +1,7 @@
 import json5 as json
 from ruamel import yaml
 from ruamel.yaml.comments import CommentedMap
+import os
 
 class BotConfig:
     def read(self,data):
@@ -28,7 +29,10 @@ class BotConfig:
                 delitembyindex(data[index[0]],index[1:])
         delitembyindex(self.data,index)
 
-
+def check_config_file():
+    if not os.path.exists("botconfig.yaml"):
+        print("未检测到配置文件\n请修改botconfig.example.yaml并重新保存为botconfig.yaml后重新运行")
+        exit()   
 
 def notcom(text):
     if len(text)==0:
