@@ -1,4 +1,4 @@
-from fflogsapi import FFLogsClient,GQLEnum, FightDifficulty
+from fflogsapi import FFLogsClient,GQLEnum
 import fflogsapi
 import json
 import fflogsapi.data

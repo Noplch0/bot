@@ -1,4 +1,3 @@
-import json5 as json
 from ruamel import yaml
 from ruamel.yaml.comments import CommentedMap
 import os
