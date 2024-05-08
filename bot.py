@@ -1,4 +1,5 @@
 from mybotlib.check import *
+
 check_config_file()
 
 from graia.ariadne.app import Ariadne
