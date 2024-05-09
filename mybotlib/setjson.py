@@ -1,4 +1,6 @@
 import json5 as json
+def read_str(str):
+    return json.loads(str)
 
 def format_json(origin_json):
     return json.dumps(origin_json,sort_keys=True,indent=4,ensure_ascii=False)
